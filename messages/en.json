@@ -1,0 +1,652 @@
+{
+  "Index": {
+    "title": "We promise you safety, freedom and flexibility.",
+    "subtitle": "Create a custom trip & get a price quote within 24 hours.",
+    "link": "MORE ABOUT CUSTOM TRIP",
+    "header": "Festivals",
+    "menu": [
+      {
+        "label": "About"
+      },
+      {
+        "label": "Events"
+      },
+      {
+        "label": "Tours"
+      },
+      {
+        "label": "Information"
+      },
+      {
+        "label": "Contacts"
+      }
+    ]
+  },
+  "About": {
+    "title": "ABOUT US",
+    "text": "Eternal Sky Tour LLC is an Ulaanbaatar based tour operator offering tours around Mongolia, hotel reservations and international rail ticket purchase from Mongolia. Established in 2004, Eternal Sky Tour LLC initially offered accommodations in our own Eternal Sky Tour Hostel/Guesthouse and international train ticket purchase. Today Eternal Sky Tour has grown to a fully registered and certified tour operator that specializes in tours and logistical management around Mongolia. These packages provide an opportunity to experience the must-see attractions."
+  },
+  "Contacts": {
+    "title": "ABOUT US",
+    "header": "Get in Touch with Eternal Sky Tour",
+    "text": "Our friendly and experienced staff are always ready to answer any questions that you may have about our travel products and services. Please fill out the form below and we will be in touch within a lightning speed.",
+    "second": "Leave us your request",
+    "third": "and we will get back to you.",
+    "fourth": "View on Google map",
+    "formHeader": "Booking form",
+    "name": "Name",
+    "email": "Email",
+    "country": "Country",
+    "tour": "Tour",
+    "number": "Number of participants",
+    "message": "Message",
+    "agree": "I agree to the terms and conditions",
+    "button": "Send form"
+  },
+  "Events": {
+    "title": "EVENTS",
+    "camel-festival": {
+      "title": "Camel festival",
+      "text": "This thrilling festival was first initiated in 1997 by the locals of Umnugovi Province (South Gobi) to celebrate Mongolian camels and protect the species and pass the rich Mongolian camel breeding heritage to the next generation. Nomads from afar and near wear their best traditional costumes and ride their best camels to attend the Festival.",
+      "td1": "Day 1",
+      "tdtext1": "Arrival in Ulaanbaatar (we will pick you up from the airport)",
+      "td2": "Day 2",
+      "tdtext2": "Early in the morning drive to the South Gobi",
+      "td3": "Day 3",
+      "tdtext3": "Camel festival day",
+      "td4": "Day 4",
+      "tdtext4": "Camel festival day",
+      "td5": "Day 5",
+      "tdtext5": "Travel back to Ulaanbaatar. Shopping and free time. Dinner/Mongolian food."
+    },
+    "eagle-festival": {
+      "title": "Eagle festival",
+      "text": "Join the Kazakh Eagle Hunters on a hunt during the cold winter months. The Kazakhs use eagles to hunt for foxes and hares that are easy to see against the snow. Freezing temperatures and long days on Mongolian horses discourage most people from attempting this adventure. For those who do, seeing an eagle released from a man's forearm swoop down and kill a fox a mile away is a truly unforgettable experience.",
+      "td1": "Day 1",
+      "tdtext1": "Arrival in Ulaanbaatar (we will pick you up from the airport)",
+      "td2": "Day 2",
+      "tdtext2": "Take a flight to Ulgii (Umnugobi Province) and transfer to the Festival place",
+      "td3": "Day 3",
+      "tdtext3": "Attend the Eagle Festival",
+      "td4": "Day 4",
+      "tdtext4": "Fly back to Ulaanbaatar"
+    },
+    "ice-festival": {
+      "title": "Ice festival",
+      "text": "Nomadic reindeer herders and shamans show off their cultural performances, such as art, music and shaman rituals. This Ice Festival has been developing year by year. International visitors come to the Festival to capture scenic images and experience winter Mongolia and nomadic culture. It is worth to visit here.",
+      "td1": "Day 1",
+      "tdtext1": "Arrival in Ulaanbaatar (we will pick you up from the airport)",
+      "td2": "Day 2",
+      "tdtext2": "Drive to Erdenet City and stay in hotel",
+      "td3": "Day 3",
+      "tdtext3": "After breakfast drive to Khuvsgul Lake",
+      "td4": "Day 4",
+      "tdtext4": "Enjoy the first day of Ice Festival",
+      "td5": "Day 5",
+      "tdtext5": "Enjoy the second day of Ice Festival",
+      "td6": "Day 6",
+      "tdtext6": "Back to Ulaanbaatar"
+    },
+    "naadam-festival": {
+      "title": "Naadam festival",
+      "text": "The core of the festival - three manly sports - the wrestling, horse-racing and archery embrace many elements of art, such as singing, dancing and performing. Nomadic Mongolians have known when to throw the parties. Naadam Festival is held in the most enjoyable month of the most pleasant season in the country. Therefore, everyone takes the opportunity and enjoys the Festival in diverse schedule such as travelling to the countryside, camping out and gathering in their closest herds.",
+      "td1": "Day 1",
+      "tdtext1": "Arrival in Ulaanbaatar (we will pick you up from the airport)",
+      "td2": "Day 2",
+      "tdtext2": "The Opening Ceremony of the Naadam Festival Day",
+      "td3": "Day 3",
+      "tdtext3": "Explore the Terelj National Park & the Chinggis Khaan Statue Complex and drive back to Ulaanbaatar"
+    },
+    "tsagaan-sar": {
+      "title": "Tsagaan Sar",
+      "text": "Winter in Mongolia is a remarkable experience for those willing to take themselves outside of their comfort zone. Pack your thermals and come to Mongolia this winter and do something a little out of the ordinary. Come and enjoy being part of a minority who visit Mongolia in the winter and actually interact with the local people and enjoy slowing-down and seeing and experiencing Mongolia like few other people get to do.",
+      "td1": "Day 1",
+      "tdtext1": "Arrival in Ulaanbaatar (we will pick you up from the airport)",
+      "td2": "Day 2",
+      "tdtext2": "drive to Chinggis Khaan Statue",
+      "tdtext2-1": "go to a local family, celebrate Lunar New Year eve (homestay)",
+      "td3": "Day 3",
+      "tdtext3": "attending first day of Lunar New Year",
+      "tdtext3-1": "try Mongolian cuisine",
+      "td4": "Day 4",
+      "tdtext4": "drive to Terelj National Park",
+      "td5": "Day 5",
+      "tdtext5": "back to Ulaanbaatar and go to the airport"
+    },
+    "festivals": [
+      {
+        "title": "Naadad Festival"
+      },
+      {
+        "title": "Camel Festival"
+      },
+      {
+        "title": "Eagle Festival"
+      }
+    ],
+    "event-container": [
+      {
+        "title": "Tsagaan Sar",
+        "description": "Tsagaan Sar /White Month/ takes place in the beginning of spring and is the biggest annual celebration in Mongolia. We recommend you to experience this festival and discover your memorable trip. Immerse yourself in the rich cultural traditions, taste traditional foods, and enjoy vibrant festivities that showcase Mongolia's unique heritage and hospitality."
+      },
+      {
+        "title": "Camel Festival",
+        "description": "Travel south to the Gobi Desert to attend the renowned \"Thousand Camel Festival\", one of the most famous winter festivals globally. Organized by a local non-governmental organization dedicated to protecting and preserving the Bactrian camel population, the festival aims to raise awareness about the decline of these majestic creatures over the past twelve years."
+      },
+      {
+        "title": "Eagle Festival",
+        "description": "Every year, the eagle hunters of the Altai Mountains in western Mongolia take part in a competition to determine the best among the 90 to 100 competing eagles. The competition assesses their speed, agility, beauty, and hunting skills, showcasing the remarkable bond between the hunters and their majestic eagles."
+      },
+      {
+        "title": "Ice festival",
+        "description": "Local communities gather on the lake for the winter Ice Festival. Several winter and cultural activities are held each year, such as ice skating, horse sleigh racing, ice sumo, and traditional winter games and competitions. It's a wonderful opportunity to embrace the winter spirit and engage in the vibrant festivities with the community."
+      },
+      {
+        "title": "Naadam Festival",
+        "description": "The Naadam Festival is the only one of its kind; it is a sophisticated and eloquent expression of nomadic culture. It is a revered celebration of national independence, embodying an exceptional combination of arts and sports. Immerse yourself in the rich traditions and vibrant festivities of this unique event."
+      }
+    ],
+    "eventContainer": "read more"
+  },
+  "Information": {
+    "title": "ABOUT MONGOLIA",
+    "subtitle": "MONGOLIA BASIC INFORMATION",
+    "text": "Mongolia is truly one of the world's last undiscovered travel destinations and the safest country to visit. It is a land where you can experience wide-open spaces, cobalt blue skies, forests, deserts, crystal clear rivers and lakes, and the traditional hospitality of the nomads. Permanent dwellings are few and far between, fences are even fewer and the land is owned by the people, like one large National Park. As a tremendous destination to experience the outdoors, Mongolia also boasts of a unique history dating back to the Mongol Empire of Ghinggis Khaan. Simply put, it is a land of adventure, horses, nomads, and the blue sky.",
+    "subtitle2": "Travel options",
+    "transport": [
+      {
+        "title": "Train ticket",
+        "description": "The Trans-Siberian Railway is the longest continuous rail line on earth, a 'bucket list' entry for every savvy traveler. The total distance by rail from Beijing to St. Petersburg, Russia, is 7925 km. The world's most famous railway route runs between Moscow - Ulaanbaatar - Beijing. You can start your trip at any of these points, and immerse yourself in three completely different cultures."
+      },
+      {
+        "title": "Car rent",
+        "description": "Explore Mongolia with comfort and flexibility by renting a car from our travel agency. Our fleet offers a diverse range of vehicles, from rugged 4x4s for off-road adventures to comfortable sedans for city exploration. Enjoy the freedom to set your own itinerary and discover the breathtaking landscapes of Mongolia at your own pace."
+      },
+      {
+        "title": "Bus ticket",
+        "description": "Embark on a hassle-free journey across Mongolia by choosing our reliable bus services. Discover the scenic beauty and cultural wonders as you travel comfortably in our well-maintained buses. Whether you're exploring the city or venturing into the countryside, our extensive network covers popular destinations."
+      },
+      {
+        "title": "Flights",
+        "description": "Experience the skies above Mongolia with our efficient and convenient air travel services. Fly effortlessly to your desired destinations on our modern and well-maintained fleet of aircraft. Whether you're planning a quick domestic hop or an international adventure, our airline offers a range of routes to suit your travel needs."
+      }
+    ],
+    "insurance": {
+      "title": "Travel Insurance",
+      "text1": "Travel insurance for independent travelers and intrepid families. You'd rather not think about all of the things that might go wrong on your trip, but these things can and do happen.",
+      "text2": "World Nomads travel insurance has been designed by travelers for travelers, to cover your trip essentials. Even if you run out of travel insurance or leave without it, World Nomads can cover you. We don't just keep you and your family protected, with us, you'll travel smarter and safer.",
+      "text3": "You can buy, extend and claim online, even after you've left home. Travel insurance from WorldNomads.com is available to people from over 150 countries. It's designed for adventurous travelers with cover for overseas medical, evacuation, baggage and a range of adventure sports and activities."
+    },
+    "phone": {
+      "title": [
+        {
+          "title": "G-Mobile"
+        },
+        {
+          "title": "Unitel"
+        },
+        {
+          "title": "Skytel"
+        },
+        {
+          "title": "Mobicom"
+        }
+      ],
+      "text": "Unitel, G-Mobile, Mobicom, and Skytel are prominent mobile providers in Mongolia. Unitel boasts extensive coverage and high-speed data services. G-Mobile focuses on affordable plans and innovative offerings. Mobicom, a pioneer, offers diverse telecom solutions. Skytel, known for reliability, excels in communication services and cutting-edge technologies. Together, they shape Mongolia's dynamic mobile landscape."
+    },
+    "visa": {
+      "title": "HOW TO GET MONGOLIAN VISA?",
+      "text": "Visa is required for all, except citizens of the following countries. Visas are available from the Mongolian embassy in your country. If there is no Mongolia embassy in your country, one month visas can be obtained on the spot once you arrive at the airport or railway station. There will also be a visa fee of $50. We will supply an official confirmation letter (by email or post) for your visa application once you book a travel service with us.",
+      "ul1": "Belarus, Brazil, Canada, Kazakhstan, Macao,USA - no need a visa for a visit not exceeding three months",
+      "ul2": "German, Israel, Japan, Malaysia, Russia,Turkey - no need a visa for a visit not exceeding one month",
+      "ul3": "Philippines - no need a visa for a visit not exceeding three weeks",
+      "ul4": "Singapore ,Hong Kong- no need a visa for a visit not exceeding two weeks",
+      "ul5": "People's Republic of China, Vietnam, Bulgaria, Thailand, Romania and Chile - who has diplomatic or official passport -no need a visa for a visit",
+      "ul6": "Laos, Yugoslavia, Czech, Slovak, Mexico -who has diplomatic or official passport -no need a visa for a visit not exceeding three months",
+      "ul7": "Hungary, Democratic People's Republic of Korea, Republic of Korea - who has diplomatic or official passport -no need a visa for a visit not exceeding three month",
+      "ul8": "India - needs Mongolian visa without visa fee",
+      "ul9": "Cuba - no need a visa for a visit not exceeding one month Mongolian visas are issued by Mongolian Diplomatic Missions abroad or upon arrival at a special request. The Mongolian Embassies Abroad list",
+      "subtitle": "THE FOLLOWING MATERIALS ARE REQUIRED TO OBTAIN MONGOLIAN VISA:",
+      "ul10": "VALID PASSPORT",
+      "ul11": "ONE PASSPORT SIZED PHOTO",
+      "ul12": "APPLICATION FORM PDF (VISA APPLICATION FORM) (VISA APPLICATION FORM FOR TOURIST)",
+      "ul13": "EITHER AN INVITATION OF THE RECEIVING ENTITY (STATE, GOVERNMENT, NON-GOVERNMENTAL ORGANIZATION, BUSINESS ENTITY) OR AN OFFICIAL REQUEST OF THE SENDING COUNTRY AND THE ORGANIZATION."
+    },
+    "visit": "Seasons in Mongolia",
+    "seasons": {
+        "title1": "Winter",
+        "description1": "Winter in Mongolia is marked by extreme cold, with temperatures plummeting to -20 to -35°C. The landscape transforms into a pristine snow-covered wonderland, offering a surreal and breathtaking experience.",
+        "description1-2": "Despite the harsh conditions, the Mongolian winter presents unique opportunities for cultural immersion, winter sports, and witnessing the resilience of nomadic communities.",
+        "title2": "Spring",
+        "description2": "Mongolian spring, spanning from March to May, witnesses temperatures rising from 0 to 20°C. This season unveils a landscape awakening from winter slumber, adorned with vibrant blooms.",
+        "description2-2": "Mild weather makes it an ideal time for outdoor activities and cultural exploration, allowing travelers to experience the nomadic way of life against the backdrop of picturesque scenery.",
+        "title3": "Summer",
+        "description3": "Mongolian summer, from June to August, graces the land with warm temperatures ranging from 20 to 35°C. The vast steppes and stunning landscapes come alive, providing an ideal season for outdoor adventures and cultural exploration.",
+        "description3-2": "The maximum temperature in the Gobi desert during this period can reach +58 degrees. Nomadic communities thrive during these months, showcasing their traditional way of life against the backdrop of lush greenery.",
+        "title4": "Autumn",
+        "description4": "Autumn in Mongolia, spanning from September to November, embraces temperatures ranging from 5 to 15°C. As the vibrant summer hues gradually fade, the landscapes transform into a mesmerizing canvas of golden and amber tones.",
+        "description4-2": "This season offers a unique blend of crisp air and breathtaking scenery, making it an ideal time for cultural exploration and outdoor activities. Nomadic herders prepare for winter, and the autumnal landscapes provide a picturesque backdrop for witnessing traditional Mongolian life."
+      },
+    "weather": {
+      "title": "Average weather in Mongolia",
+      "text1": "Mongolia's climate can be described has highly continental dominied climate with warm summers and long, dry and very cold winters. Known as \"the land of blue sky\", Mongolia is a very sunny country and has usually about 250 sunny days a year. The country has the world's most typical continental climate with extreme diurnal and annual ranges of temperature. Average temperature in most of the country is below zero from November to March and close to it in April and October. Winter nights of -40°C are common most years (minimum recorded -55°C at lake Uvs). Summer extremes reach as high as +40°C in the Gobi Desert and +33°C in the capital Ulaanbaatar. Monthly temperature variations of +45°C and more are not uncommon in many regions of Mongolia.",
+      "text2": "Mongolia experiences diverse climatic conditions throughout the seasons. In winter, temperatures plummet well below freezing, creating a harsh and snowy environment. The iconic Gobi Desert transforms into a winter wonderland, offering a unique experience for adventurous travelers. Spring marks the awakening of nature, with temperatures gradually rising and landscapes blooming with vibrant colors. It's an ideal time to witness the nomadic way of life, as herders move their livestock to lush pastures.",
+      "text3": "Summer brings warm temperatures and clear skies, making it the peak travel season. The vast steppes showcase lush grasslands, and the Gobi Desert becomes a scorching landscape with temperatures soaring. It's the perfect time for outdoor activities and cultural exploration, including the celebration of Naadam, Mongolia's traditional festival. In autumn, the weather starts to cool down, and the landscapes transition into golden hues, creating a breathtaking backdrop for travelers.",
+      "text4": "Overall, Mongolia's climate offers a unique blend of extreme conditions, from the frigid winters to the warm summers, providing a diverse and ever-changing landscape for those seeking an unforgettable adventure in this enchanting country."
+    }
+  },
+  "Tours": {
+    "title": "TOURS",
+    "subtitle": "Tours and trips",
+    "text": "Traveling to the Mongolia as part of a group has many advantages. You can meet like-minded individuals and make new friends. On top of that, group tours also allow for discounted bundle deals - so you get to enjoy everything Mongolia offer at much more reasonable price.",
+    "subtitle1": "Information about tours",
+    "includes": "What included",
+    "li1": "Guide",
+    "li2": "Breakfast/Lunch/Dinner",
+    "li3": "Meeting at the airport and transfer",
+    "li4": "Car with driver and fuel",
+    "li5": "Horse and Camel riding",
+    "li6": "Entrance fees (i.e. parks, events)",
+    "li7": "Accommodation",
+    "li8": "Photo",
+    "li9": "Support",
+    "subtitle2": "Available languages",
+    "li10": "English",
+    "li11": "Korean",
+    "li12": "Russian",
+    "li13": "Japanese",
+    "tourList": [
+      {
+        "title": "Central aimags tour"
+      },
+      {
+        "title": "Trip to Gobi"
+      },
+      {
+        "title": "City tour"
+      },
+      {
+        "title": "Khuvsgul Aimag trip"
+      },
+      {
+        "title": "Khuvsgul Lake tour"
+      },
+      {
+        "title": "Gobi Khangai tour"
+      }
+    ],
+    "Central": {
+      "title": "Central Mongolia",
+      "subtitle": "5 days 4 nights",
+      "text": "Immerse yourself in the captivating beauty of central Mongolia, where rolling hills, emerald grasslands, and meandering rivers paint a picturesque landscape. Experience the serenity of pristine nature, dotted with nomadic herder communities and their traditional gers. Central Mongolia invites you to explore its enchanting valleys, historic monasteries, and the majestic Khangai mountain range. Discover the heart of the country's cultural heritage as you witness age-old traditions against a backdrop of lush meadows. A journey through central Mongolia promises an awe-inspiring encounter with the charm of its landscapes and the enduring spirit of its people.",
+      "button": "Go to Booking",
+      "tdl1": "Day",
+      "tdl2": "Destinations",
+      "tdl3": "Schedule",
+      "td1-1": "Ulaanbaatar-Elsentasarkhai",
+      "td1-2": "(280km from UB)",
+      "li1td1": "09:00 am-Breakfast",
+      "li2td1": "10:00 am-Drive to Elsen Tasarkhai",
+      "li3td1": "12:00 am-Lunch time",
+      "li4td1": "02:00-30:00 pm-Arrival in Elsen tasarkhai",
+      "li5td1": "03:00 pm-Ride a camel",
+      "li6td1": "04:00 pm-Free time to see a beautiful of nature.",
+      "li7td1": "06:00 pm-Dinner",
+      "td2-1": "Elsentasarkhai-Tsenkher Hot Spring",
+      "td2-2": "(160km from Elsentasarkhai)",
+      "li1td2": "09:00 am-Breakfast",
+      "li2td2": "10:00 am-Drive to Tsenkher hot Spring",
+      "li3td2": "12:00 am-Lunch time",
+      "li4td2": "02:00-03-00pm-Arrival the place and get in Hot Spring/Spa",
+      "li5td2": "06:00 pm-Dinner",
+      "td3-1": "Tsenkher Hot Spring-Kharkhorin town",
+      "td3-2": "(120km from Tsenkher)",
+      "li1td3": "09:00 am-Breakfast",
+      "li2td3": "10:00 am-Drive to Kharkhorin",
+      "li3td3": "12:00 am-Lunch time",
+      "li4td3": "03:00 pm-Visit the ErdeneZuu Monastry",
+      "li5td3": "04:00 pm-KharKhorin Museum",
+      "li6td3": "06:00 pm-Dinner",
+      "td4-1": "Kharkhorin town- Rerelj National Park",
+      "li1td4": "09:00 am-Breakfast",
+      "li2td4": "10:00 am-Drive to Terelj National Park.",
+      "li3td4": "12:00 am-Lunch time",
+      "li4td4": "02:00 pm-Arrival in Terelj National Park",
+      "li5td4": "03:00 pm-Ride a horse",
+      "li6td4": "04:00 pm-Visiting to Araybal Monastry",
+      "li7td4": "06:00 pm-dinnerTime",
+      "td5-1": "Back to Ulaanbaatar",
+      "li1td5": "10:00 am-Breakfast",
+      "li2td5": "11:00 am-Drive to Ulaanbaatar",
+      "li3td5": "12:00 am-Lunch time",
+      "li4td5": "02:00 pm-Arrrival at the Guest House"
+    },
+    "Central-block": [
+      {
+        "title": "Day 1. Elsen Tasarkhai-Mini Gobi",
+        "description": "The Elsen Tasarkhai is located in Burd soum in Uvurkhangai Aimag (Province) 280 km west of Ulaanbaatar. The nature in this area is really spectacularand great for relaxing. The area is surrounded by sand dunes, and the hills are covered with rare bushes and there is even a small forest near the river."
+      },
+      {
+        "title": "Day 2. Tsenkher Hot Spring",
+        "description": "This spring lies south of Tsetserleg town in Arkhangai province. The flow comes out from far deep part of the ground and its water is not mixed withsoil water because it is hot. Also, the spring is kept in high pressure under the ground and the flow rate is high as 10 liters per second."
+      },
+      {
+        "title": "Day 3. Kharkhorin - Ancient capital city of Mongolia",
+        "description": "The historians know much about the Kharkhorin city, the city that lies on the Silk Road, and a destination that attracted many traders. In 1206,Chinggis Khaan established the Mongolian Great Empire and built the capital city of Kharkhorin."
+      },
+      {
+        "title": "Day 4. Terelj National Park",
+        "description": "Terelj is a unique mountain formation near the Ulaanbaatar city. Intercepted steep slopes of mountains in every rock mountain valley have a uniquesetting. For example, there are many legendary and historic rock caves such as Camel Rock, Friends Rock, Monks Rock, Lion Rock and a Turtle Rock."
+      },
+      {
+        "title": "Day 5. Back to Ulaanbaatar",
+        "description": "Ulaanbaatar is the capital of Mongolia. It is situated in the Tuul River valley, bordering the Bogd Khaan Uul National Park."
+      }
+    ],
+    "City": {
+      "title": "City tour",
+      "subtitle": "3 days 2 nights",
+      "text": "Ulaanbaatar can be a little difficult to navigate through, but with the assistance of our  experienced guides,  travelers can cross-off all the activities on their to-do list, from a visit to world-class museums, watch traditional theaters, sample international cuisines and experience the nigh life until  three in the morning. Indeed, this ever-changing city may be the biggest surprise of your Mongolian adventure.",
+      "button": "Go to Booking",
+      "tdl1": "Day",
+      "tdl2": "Destinations",
+      "tdl3": "Schedule",
+      "td1-1": "Ulaanbaatar",
+      "li1td1": "09:00 am-Breakfast",
+      "li2td1": "10:00 am-Drive to Elsen Tasarkhai",
+      "li3td1": "12:00 am-Lunch time",
+      "li4td1": "02:00-30:00 pm-Arrival in Elsen tasarkhai",
+      "li5td1": "03:00 pm-Ride a camel",
+      "li6td1": "04:00 pm-Free time to see a beautiful of nature.",
+      "li7td1": "06:00 pm-Dinner",
+      "td2-1": "Terelj National Park",
+      "td2-2": "(80km from UB)",
+      "li1td2": "09:00 am-Breakfast",
+      "li2td2": "10:00 am-Drive to Tsenkher hot Spring",
+      "li3td2": "12:00 am-Lunch time",
+      "li4td2": "02:00-03-00pm-Arrival the place and get in Hot Spring/Spa",
+      "li5td2": "06:00 pm-Dinner",
+      "td3-1": "Chinggis Khaan Statue",
+      "td3-2": "(50km from Ulaanbaatar)",
+      "li1td3": "09:00 am-Breakfast",
+      "li2td3": "10:00 am-Drive to Terelj National Park.",
+      "li3td3": "12:00 am-Lunch time",
+      "li4td3": "02:00 pm-Arrival in Terelj National Park",
+      "li5td3": "03:00 pm-Ride a horse",
+      "li6td3": "04:00 pm-Visiting to Araybal Monastry",
+      "li7td3": "06:00 pm-dinnerTime"
+    },
+    "City-block": [
+      {
+        "title": "Day 1. Ulaanbaatar City",
+        "description": "Arrival in Ulaanbaatar City touring with beautiful sightseeing places."
+      },
+      {
+        "title": "Day 2. Terelj National Park",
+        "description": "The park's most spectacular features are its huge granite blocks and cliffs, as well as meadows rich in wild flowers. Terelj offers fascinating rock formations including two famous formations named after what they resemble: Turtle Rock (in Mongolian: Melkhii Khad) and the Old Man Reading a Book (Praying Lama Rock) and a small meditation temple on top of the hill with a spectacular view."
+      },
+      {
+        "title": "Day 3. Chinggis Khaan Statue",
+        "description": "It is the largest horse-riding statue in the world located about 54 kilometers outside of Mongolia's capital city. Travelers, who venture to visit this must-see destination, can take an elevator to the top of the back of the horse, stroll along a pathway that leads to the horses head and marvel at some of the most impressive views outside the city limits."
+      }
+    ],
+    "Gobi": {
+      "title": "Gobi tour",
+      "subtitle": "7 days 6 nights",
+      "text": "Gobi is known for its dunes, mountains, and rare animals such as snow leopards and Bactrian camels. In the Gobi Gurvansaikhan National Park, the Khongoryn Els sand dunes are said to sing when the wind blows. The park also features the deep ice field of Yolyn Am canyon. Also, the Gobi is most known for its Dinosaur fossils that had been found at the red \"Flaming Cliffs\" of Bayanzag.",
+      "button": "Go to Booking",
+      "tdl1": "Day",
+      "tdl2": "Destinations",
+      "tdl3": "Schedule",
+      "td1-1": "White Stupa",
+      "td1-2": "(450km from UB)",
+      "li1td1": "08:00 am-Breakfast at the Guset House",
+      "li2td1": "09:00 am-Drive to White Stupa",
+      "li3td1": "12:00 am-Lunch time",
+      "li4td1": "05:00 pm-arrival in white Stupa",
+      "li5td1": "07:00 pm-Dinner",
+      "td2-1": "Yolyn Am",
+      "li1td2": "08:00 am-Breakfast at the Guset House",
+      "li2td2": "09:00 am-Drive to White Stupa",
+      "li3td2": "12:00 am-Lunch time",
+      "li4td2": "05:00 pm-arrival in white Stupa",
+      "li5td2": "07:00 pm-Dinner",
+      "td3-1": "Khongor Sand Dunes",
+      "li1td3": "09:00 am-Breakfast",
+      "li2td3": "10:00 am-Drive to Kharkhorin",
+      "li3td3": "12:00 am-Lunch time",
+      "li4td3": "03:00 pm-Visit the ErdeneZuu Monastry",
+      "li5td3": "04:00 pm-KharKhorin Museum",
+      "li6td3": "06:00 pm-Dinner",
+      "td4-1": "Bayanzag-Flaming Cliffs",
+      "li1td4": "09:00 am-Breakfast",
+      "li2td4": "10:00 am-Drive to Kharkhorin",
+      "li3td4": "12:00 am-Lunch time",
+      "li4td4": "03:00 pm-Visit the ErdeneZuu Monastry",
+      "li5td4": "04:00 pm-KharKhorin Museum",
+      "li6td4": "06:00 pm-Dinner",
+      "td5-1": "Baga Gazryn Chuluu-Small rocky formations",
+      "li1td5": "09:00 am-Breakfast",
+      "li2td5": "10:00 am-Arrival at the palce",
+      "li3td5": "12:00 am-Lunch time",
+      "li4td5": "06:00 pm-Dinner",
+      "td6-1": "Back to Ulaanbaatar",
+      "li1td6": "10:00 am-Breakfast",
+      "li2td6": "11:00 am-Drive to Ulaanbaatar",
+      "li3td6": "12:00 am-Lunch time",
+      "li4td6": "02:00 pm- Arrrival at the Guest House"
+    },
+    "Gobi-block": [
+      {
+        "title": "Day 1. White Stupa",
+        "description": "Tsagaan suvarga /White Stupa/, 90 degrees  vertically risen, consists of multiple colors of clay deposits. The destination is 65 km south west of Ulziit sum, Dundgovi province. Tsagaan suvarga is a big escarpment with 200 meters in height and continues for 400 meters."
+      },
+      {
+        "title": "Day 2. Yolyn Am",
+        "description": "It's an excellent spot to observe vultures, wild Argali sheep and golden eagles. It was first established to conserve the regional bird-life but eventually became a popular site to visit for the deep ice field that forms in winter and remains well into summer (although it had melted by the time we got there in August)."
+      },
+      {
+        "title": "Day 3. Khongor Sand Dunes",
+        "description": "This is one of the largest and most spectacular sand dunes in Mongolia. Rising as high as 200 meters, the dunes are 7-8 km wide and about 180 km long. Climbing the dunes is breathtaking, not only for the view at the top, but also for the singing sound it makes when you climb."
+      },
+      {
+        "title": "Day 4. Bayanzag",
+        "description": "It has a unique 5 km wide texture, approximately 8 km long. American paleontologist first found dinosaur bones and eggs in the area while he was on an expedition to locate a trace of ancient people with his crew in 1922."
+      },
+      {
+        "title": "Day 5. Baga Gazryn Chuluu",
+        "description": "Around the mountain pass and the valley one can see considerable number of ancient graves and monuments besides many gushing springs. There are many sights to see such as rocky ravine of a poplar called Sudutyn am, Jargalant cave, spring of eyesight."
+      },
+      {
+        "title": "Day 6. Terelj National Park",
+        "description": "Terelj is a unique mountain formation near the Ulaanbaatar city. Intercepted steep slopes of mountains in every rock mountain valley have a unique setting. For example, there are numerous legendary and historic rock caves such as Camel Rock, Friends Rock, Monks Rock, Lion Rock and a Turtle Rock."
+      },
+      {
+        "title": "Day 7. Back to Ulaanbaatar",
+        "description": "Ulaanbaatar is the capital of Mongolia. It's in the Tuul River valley, bordering the Bogd Khaan Uul National Park."
+      }
+    ],
+    "Khangai": {
+      "title": "Bogi-Khangai tour",
+      "subtitle": "7 days 6 nights",
+      "button": "Go to Booking",
+      "tdl1": "Day",
+      "tdl2": "Destinations",
+      "tdl3": "Schedule",
+      "td1-1": "Ulaanbaatar",
+      "li1td1": "09:00 am-Breakfast",
+      "li2td1": "10:00 am-Drive to Elsen Tasarkhai",
+      "li3td1": "12:00 am-Lunch time",
+      "li4td1": "02:00-30:00 pm-Arrival in Elsen tasarkhai",
+      "li5td1": "03:00 pm- Ride a camel",
+      "li6td1": "04:00 pm- Free time to see a beautiful of nature.",
+      "li7td1": "06:00 pm- Dinner",
+      "td2-1": "Terelj National Park",
+      "td2-2": "(80km from UB)",
+      "li1td2": "09:00 am-Breakfast",
+      "li2td2": "10:00 am- Drive to Tsenkher hot Spring",
+      "li3td2": "12:00 am- Lunch time",
+      "li4td2": "02:00-03-00pm- Arrival the place and get in Hot Spring/Spa",
+      "li5td2": "06:00 pm- Dinner",
+      "td3-1": "Chinggis Khaan Statue",
+      "td3-2": "(50km from Ulaanbaatar)",
+      "li1td3": "09:00 am-Breakfast",
+      "li2td3": "10:00 am-Drive to Terelj National Park.",
+      "li3td3": "12:00 am- Lunch time",
+      "li4td3": "02:00 pm - Arrival in Terelj National Park",
+      "li5td3": "03:00 pm- Ride a horse",
+      "li6td3": "04:00 pm-Visiting to Araybal Monastry",
+      "li7td3": "06:00 pm- dinnerTime"
+    },
+    "Khuvsgul1": {
+      "title": "Khuvsgul Lake tour",
+      "subtitle": "3 days 2 nights",
+      "text": "Khuvsgul lake is known as an Asian Switzerland and the Asian blue pearl. It is situated 1645 m above the sea level and is 136 km long and 262 m deep. It is the second most voluminous freshwater lake in Asia, and holds almost 70% of Mongolia's fresh water and 0.4% of all the fresh water in the world.",
+      "button": "Go to Booking",
+      "tdl1": "Day",
+      "tdl2": "Destinations",
+      "tdl3": "Schedule",
+      "td1-1": "Khuvsgul Lake",
+      "li1td1": "12:00 am- Lunch time",
+      "li2td1": "02:00 pm- Motor Boat trip",
+      "li3td1": "03:00 pm- Hiking the dreaming Rock",
+      "li4td1": "06:00 pm- Dinner time ",
+      "td2-1": "Khuvsgul Lake",
+      "li1td2": "09:00 am-Breakfast",
+      "li2td2": "11:00 am- Riding a horse",
+      "li3td2": "12:00 am- Lunch time",
+      "li4td2": "02:00 pm-  Visiting to reindeer herders family",
+      "li5td2": "06:00 pm- Dinner",
+      "td3-1": "Khuvsgul Lake-to Ulaanbaatar",
+      "li1td3": "In the morning, we will depart to Ulaanbaatar on a flight from the local airport.",
+      "li2td3": "1On the way to the local airport, we will visit Uushig ancient Deer Stone Monument as another wonder of the Khuvsgul region."
+    },
+    "Khuvsgul1-block": [
+      {
+        "title": "Day 1 and 2. Khuvsgul Lake (Murun Airport)", 
+        "description": "We will pick you up from the Murun airport. We suggest that you experience an untouched northern part of Mongolia - Khuvsgul Lake.  Also, enjoy the most spectacular scenes and  endless opportunities to catch on a photograph."
+      },
+      {
+        "title": "Day 3. Tsenkher Hot Spring", 
+        "description": "Ulaanbaatar is the capital of Mongolia. It is situated in the Tuul River valley, bordering the Bogd Khan Uul National Park."
+      }
+    ],
+    "Khuvsgul2": {
+      "title": "Khuvsgul Lake tour",
+      "subtitle": "8 days 7 nights",
+      "text": "Khuvsgul lake is known as an Asian Switzerland and the Asian blue pearl. It is situated 1645 m above the sea level and is 136 km long and 262 m in depth. It is the second most voluminous freshwater lake in Asia, and holds almost 70% of Mongolia's fresh water and 0.4% of all the fresh water in the world.",
+      "button": "Go to Booking",
+      "tdl1": "Day",
+      "tdl2": "Destinations",
+      "tdl3": "Schedule",
+      "td1-1": "Ulaanbaatar",
+      "li1td1": "09:00 am-Breakfast",
+      "li2td1": "10:00 am-Drive to Elsen Tasarkhai",
+      "li3td1": "12:00 am-Lunch time",
+      "li4td1": "02:00-30:00 pm-Arrival in Elsen tasarkhai",
+      "li5td1": "03:00 pm- Ride a camel",
+      "li6td1": "04:00 pm- Free time to see a beautiful of nature.",
+      "li7td1": "06:00 pm- Dinner",
+      "td2-1": "Terelj National Park",
+      "td2-2": "(80km from UB)",
+      "li1td2": "09:00 am-Breakfast",
+      "li2td2": "10:00 am- Drive to Tsenkher hot Spring",
+      "li3td2": "12:00 am- Lunch time",
+      "li4td2": "02:00-03-00pm- Arrival the place and get in Hot Spring/Spa",
+      "li5td2": "06:00 pm- Dinner",
+      "td3-1": "Chinggis Khaan Statue",
+      "td3-2": "(50km from Ulaanbaatar)",
+      "li1td3": "09:00 am-Breakfast",
+      "li2td3": "10:00 am-Drive to Terelj National Park.",
+      "li3td3": "12:00 am- Lunch time",
+      "li4td3": "02:00 pm - Arrival in Terelj National Park",
+      "li5td3": "03:00 pm- Ride a horse",
+      "li6td3": "04:00 pm-Visiting to Araybal Monastry",
+      "li7td3": "06:00 pm- dinnerTime",
+      "td4-1": "(50km from Ulaanbaatar)",
+      "li1td4": "09:00 am-Breakfast",
+      "li2td4": "10:00 am-Drive to Terelj National Park.",
+      "li3td4": "12:00 am- Lunch time",
+      "li4td4": "02:00 pm - Arrival in Terelj National Park",
+      "li5td4": "03:00 pm- Ride a horse",
+      "li6td4": "04:00 pm-Visiting to Araybal Monastry",
+      "li7td4": "06:00 pm- dinnerTime",
+      "td5-1": "(50km from Ulaanbaatar)",
+      "li1td5": "09:00 am-Breakfast",
+      "li2td5": "10:00 am-Drive to Terelj National Park.",
+      "li3td5": "12:00 am- Lunch time",
+      "li4td5": "02:00 pm - Arrival in Terelj National Park",
+      "td6-1": "(50km from Ulaanbaatar)",
+      "li1td6": "09:00 am-Breakfast",
+      "li2td6": "10:00 am-Drive to Terelj National Park.",
+      "li3td6": "12:00 am- Lunch time",
+      "li4td6": "02:00 pm - Arrival in Terelj National Park",
+      "td7-1": "(50km from Ulaanbaatar)",
+      "li1td7": "09:00 am-Breakfast",
+      "li2td7": "10:00 am-Drive to Terelj National Park.",
+      "li3td7": "12:00 am- Lunch time",
+      "li4td7": "02:00 pm - Arrival in Terelj National Park",
+      "td8-1": "(50km from Ulaanbaatar)",
+      "li1td8": "09:00 am-Breakfast",
+      "li2td8": "10:00 am-Drive to Terelj National Park.",
+      "li3td8": "12:00 am- Lunch time",
+      "li4td8": "02:00 pm - Arrival in Terelj National Park"
+    },
+    "Khuvsgul2-block": [
+      {
+        "title": "Day 1. Bulgan Province",
+        "description": "With a population of 13,000 at an elevation  of 1208 m, a small aimag capital, the city of Bulgan has long been known to foreigners as an overnight stop midway between Ulaanbaatar and the ever-popular Khuvsgul Nuur. If you have been traveling in central or southern Mongolia, Bulgan city may impress you with its conifers, log cabins and absence of gers."
+      },
+      {
+        "title": "Day 2 and 3. Khuvsgul Lake",
+        "description": "Khuvsgul is a land of thick forests, rushing rivers, sparkling lakes and rugged mountains. It's Mongolia's most beautiful province and seemingly every river bend or lake cove offers new and wonderful surprises."
+      },
+      {
+        "title": "Day 4. Zuun Nuur",
+        "description": "This large lake is the scenic highlight of Khuvsgul's far south. There are excellent camping sites all around, or you can stay in the Ger."
+      },
+      {
+        "title": "Day 5. Terkh White Lake",
+        "description": "Terkh White lake is located 648 km from Ulaanbaatar city in Arkhangai province. Fresh water and volcanogenic Terkh White lake is 16 km long and it runs from the west to the east, and 6km wide from north to south. This lake was created as a result of a 4050 cm thick basaltic blockage of Terkhiin River, following the eruption of Khorhiintogoo and some other volcanoes."
+      },
+      {
+        "title": "Day 6. Tsenkher Hot Spring",
+        "description": "This spring lies south of Tsetserleg town in Arkhangai province and pressure comes out from far deep part of the ground and its water is not mixed with soil waters because it is hot. Also, the spring is kept in high pressure under the ground and the flow rate is high as 10 liters per second."
+      },
+      {
+        "title": "Day 7. Mini Gobi",
+        "description": "Elsentasarkhai is a part of the Mongol Els sand dunes, which stretch from the Tuv, Uvurkhangai, and Bulgan provinces all the way to the west to become part of the Khugnu Khan mountain range. The sand dunes are 80 km long in total."
+      },
+      {
+        "title": "Day 8. Back to Ulaanbaatar",
+        "description": "Ulaanbaatar is the capital of Mongolia. It is situated in the Tuul River valley, bordering the Bogd Khaan Uul National Park."
+      }
+    ]
+  },
+  "Footer": {
+    "title1": "Eternal Sky Tour",
+    "address": "Zip code:14253",
+    "phone": "Phone Number:",
+    "telegram": "Telegram:",
+    "mail": "Email:",
+    "title2": "Travel Kit",
+    "links": [
+      {
+        "title": "Best time to visit Mongolia"
+      },
+      {
+        "title": "Visa"
+      },
+      {
+        "title": "Insurance"
+      },
+      {
+        "title": "Weather"
+      },
+      {
+        "title": "Phone connection"
+      }
+    ],
+    "title3": "Have a question?"
+  }
+}
