@@ -3,31 +3,33 @@
     "title": "We promise you safety, freedom and flexibility.",
     "subtitle": "Create a custom trip & get a price quote within 24 hours.",
     "link": "MORE ABOUT CUSTOM TRIP",
-    "header": "Festivals",
+    "header": "FESTIVALS",
     "menu": [
       {
-        "label": "About"
+        "label": "ABOUT US"
       },
       {
-        "label": "Events"
+        "label": "EVENTS"
       },
       {
-        "label": "Tours"
+        "label": "TOURS" 
       },
       {
-        "label": "Information"
+        "label": "INFORMATION"
       },
       {
-        "label": "Contacts"
+        "label": "CONTACT US"
       }
-    ]
+    ],
+    "language1": "ENGLISH",
+    "language2": "KOREAN"
   },
   "About": {
     "title": "ABOUT US",
     "text": "Eternal Sky Tour LLC is an Ulaanbaatar based tour operator offering tours around Mongolia, hotel reservations and international rail ticket purchase from Mongolia. Established in 2004, Eternal Sky Tour LLC initially offered accommodations in our own Eternal Sky Tour Hostel/Guesthouse and international train ticket purchase. Today Eternal Sky Tour has grown to a fully registered and certified tour operator that specializes in tours and logistical management around Mongolia. These packages provide an opportunity to experience the must-see attractions."
   },
   "Contacts": {
-    "title": "ABOUT US",
+    "title": "CONTACTS",
     "header": "Get in Touch with Eternal Sky Tour",
     "text": "Our friendly and experienced staff are always ready to answer any questions that you may have about our travel products and services. Please fill out the form below and we will be in touch within a lightning speed.",
     "second": "Leave us your request",
@@ -35,6 +37,8 @@
     "fourth": "View on Google map",
     "formHeader": "Booking form",
     "name": "Name",
+    "first": "First",
+    "last": "Last",
     "email": "Email",
     "country": "Country",
     "tour": "Tour",
@@ -45,6 +49,8 @@
   },
   "Events": {
     "title": "EVENTS",
+    "next": "Next",
+    "previous": "Previous",
     "camel-festival": {
       "title": "Camel festival",
       "text": "This thrilling festival was first initiated in 1997 by the locals of Umnugovi Province (South Gobi) to celebrate Mongolian camels and protect the species and pass the rich Mongolian camel breeding heritage to the next generation. Nomads from afar and near wear their best traditional costumes and ride their best camels to attend the Festival.",
@@ -115,34 +121,34 @@
     },
     "festivals": [
       {
-        "title": "Naadad Festival"
+        "title": "NAADAM FESTIVAL"
       },
       {
-        "title": "Camel Festival"
+        "title": "CAMEL FESTIVAL"
       },
       {
-        "title": "Eagle Festival"
+        "title": "EAGLE FESTIVAL"
       }
     ],
     "event-container": [
       {
-        "title": "Tsagaan Sar",
+        "title": "TSAGAAN SAR",
         "description": "Tsagaan Sar /White Month/ takes place in the beginning of spring and is the biggest annual celebration in Mongolia. We recommend you to experience this festival and discover your memorable trip. Immerse yourself in the rich cultural traditions, taste traditional foods, and enjoy vibrant festivities that showcase Mongolia's unique heritage and hospitality."
       },
       {
-        "title": "Camel Festival",
+        "title": "CAMEL FESTIVAL",
         "description": "Travel south to the Gobi Desert to attend the renowned \"Thousand Camel Festival\", one of the most famous winter festivals globally. Organized by a local non-governmental organization dedicated to protecting and preserving the Bactrian camel population, the festival aims to raise awareness about the decline of these majestic creatures over the past twelve years."
       },
       {
-        "title": "Eagle Festival",
+        "title": "EAGLE FESTIVAL",
         "description": "Every year, the eagle hunters of the Altai Mountains in western Mongolia take part in a competition to determine the best among the 90 to 100 competing eagles. The competition assesses their speed, agility, beauty, and hunting skills, showcasing the remarkable bond between the hunters and their majestic eagles."
       },
       {
-        "title": "Ice festival",
+        "title": "ICE FESTIVAL",
         "description": "Local communities gather on the lake for the winter Ice Festival. Several winter and cultural activities are held each year, such as ice skating, horse sleigh racing, ice sumo, and traditional winter games and competitions. It's a wonderful opportunity to embrace the winter spirit and engage in the vibrant festivities with the community."
       },
       {
-        "title": "Naadam Festival",
+        "title": "NAADAM FESTIVAL",
         "description": "The Naadam Festival is the only one of its kind; it is a sophisticated and eloquent expression of nomadic culture. It is a revered celebration of national independence, embodying an exceptional combination of arts and sports. Immerse yourself in the rich traditions and vibrant festivities of this unique event."
       }
     ],
@@ -216,16 +222,16 @@
     "seasons": {
         "title1": "Winter",
         "description1": "Winter in Mongolia is marked by extreme cold, with temperatures plummeting to -20 to -35°C. The landscape transforms into a pristine snow-covered wonderland, offering a surreal and breathtaking experience.",
-        "description1-2": "Despite the harsh conditions, the Mongolian winter presents unique opportunities for cultural immersion, winter sports, and witnessing the resilience of nomadic communities.",
+        "description1-1": "Despite the harsh conditions, the Mongolian winter presents unique opportunities for cultural immersion, winter sports, and witnessing the resilience of nomadic communities.",
         "title2": "Spring",
         "description2": "Mongolian spring, spanning from March to May, witnesses temperatures rising from 0 to 20°C. This season unveils a landscape awakening from winter slumber, adorned with vibrant blooms.",
-        "description2-2": "Mild weather makes it an ideal time for outdoor activities and cultural exploration, allowing travelers to experience the nomadic way of life against the backdrop of picturesque scenery.",
+        "description2-1": "Mild weather makes it an ideal time for outdoor activities and cultural exploration, allowing travelers to experience the nomadic way of life against the backdrop of picturesque scenery.",
         "title3": "Summer",
         "description3": "Mongolian summer, from June to August, graces the land with warm temperatures ranging from 20 to 35°C. The vast steppes and stunning landscapes come alive, providing an ideal season for outdoor adventures and cultural exploration.",
-        "description3-2": "The maximum temperature in the Gobi desert during this period can reach +58 degrees. Nomadic communities thrive during these months, showcasing their traditional way of life against the backdrop of lush greenery.",
+        "description3-1": "The maximum temperature in the Gobi desert during this period can reach +58 degrees. Nomadic communities thrive during these months, showcasing their traditional way of life against the backdrop of lush greenery.",
         "title4": "Autumn",
         "description4": "Autumn in Mongolia, spanning from September to November, embraces temperatures ranging from 5 to 15°C. As the vibrant summer hues gradually fade, the landscapes transform into a mesmerizing canvas of golden and amber tones.",
-        "description4-2": "This season offers a unique blend of crisp air and breathtaking scenery, making it an ideal time for cultural exploration and outdoor activities. Nomadic herders prepare for winter, and the autumnal landscapes provide a picturesque backdrop for witnessing traditional Mongolian life."
+        "description4-1": "This season offers a unique blend of crisp air and breathtaking scenery, making it an ideal time for cultural exploration and outdoor activities. Nomadic herders prepare for winter, and the autumnal landscapes provide a picturesque backdrop for witnessing traditional Mongolian life."
       },
     "weather": {
       "title": "Average weather in Mongolia",
@@ -237,9 +243,9 @@
   },
   "Tours": {
     "title": "TOURS",
-    "subtitle": "Tours and trips",
+    "subtitle": "TOURS & TRIPS",
     "text": "Traveling to the Mongolia as part of a group has many advantages. You can meet like-minded individuals and make new friends. On top of that, group tours also allow for discounted bundle deals - so you get to enjoy everything Mongolia offer at much more reasonable price.",
-    "subtitle1": "Information about tours",
+    "subtitle1": "INFORMATION ABOUT TOURS",
     "includes": "What included",
     "li1": "Guide",
     "li2": "Breakfast/Lunch/Dinner",
@@ -250,35 +256,35 @@
     "li7": "Accommodation",
     "li8": "Photo",
     "li9": "Support",
-    "subtitle2": "Available languages",
+    "subtitle2": "AVAILABLE LANGUAGES",
     "li10": "English",
     "li11": "Korean",
     "li12": "Russian",
     "li13": "Japanese",
     "tourList": [
       {
-        "title": "Central aimags tour"
+        "title": "CENTRAL AIMAGS TOUR"
       },
       {
-        "title": "Trip to Gobi"
+        "title": "TRIP TO THE GOBI DESERT"
       },
       {
-        "title": "City tour"
+        "title": "CITY TOUR"
       },
       {
-        "title": "Khuvsgul Aimag trip"
+        "title": "KHUVSGUL AIMAG TOUR"
       },
       {
-        "title": "Khuvsgul Lake tour"
+        "title": "KHUVSGUL LAKE TOUR"
       },
       {
-        "title": "Gobi Khangai tour"
+        "title": "GOBI-KHANGAI TOUR"
       }
     ],
     "Central": {
       "title": "Central Mongolia",
       "subtitle": "5 days 4 nights",
-      "text": "Immerse yourself in the captivating beauty of central Mongolia, where rolling hills, emerald grasslands, and meandering rivers paint a picturesque landscape. Experience the serenity of pristine nature, dotted with nomadic herder communities and their traditional gers. Central Mongolia invites you to explore its enchanting valleys, historic monasteries, and the majestic Khangai mountain range. Discover the heart of the country's cultural heritage as you witness age-old traditions against a backdrop of lush meadows. A journey through central Mongolia promises an awe-inspiring encounter with the charm of its landscapes and the enduring spirit of its people.",
+      "text": "Immerse yourself in the captivating beauty of central Mongolia, where rolling hills, emerald grasslands, and meandering rivers paint a picturesque landscape. Experience the serenity of pristine nature, dotted with nomadic herder communities and their traditional gers. Central Mongolia invites you to explore its enchanting valleys, historic monasteries, and the majestic Khangai mountain range. Discover the heart of the country's cultural heritage as you witness age-old traditions against a backdrop of lush meadows.",
       "button": "Go to Booking",
       "tdl1": "Day",
       "tdl2": "Destinations",
@@ -647,6 +653,20 @@
         "title": "Phone connection"
       }
     ],
-    "title3": "Have a question?"
+    "title3": "Have a question?",
+    "ntitle": "Name",
+    "ntitle1": "Email",
+    "ntitle2": "Message",
+    "button": "Send message",
+    "placeholder1": "First",
+    "placeholder2": "Last"
+  },
+  "InputForm": {
+    "t1": "City tour",
+    "t2": "Gobi tour",
+    "t3": "Central tour",
+    "t4": "Khuvsgul Lake tour (short)",
+    "t5": "Khuvsgul Lake tour",
+    "t6": "Gobi-Khangai tour"
   }
 }

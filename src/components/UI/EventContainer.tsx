@@ -21,7 +21,7 @@ const EventContainer = () => {
                 </div>
               </a>
               <div style={{ width: "50%" }}>
-                <strong style={{margin: "3%", fontSize: "180%"}}>{t(`event-container.${index}.title`)}</strong>
+                <p style={{margin: "3%", marginTop: "0", fontSize: "180%", fontWeight: "500"}}>{t(`event-container.${index}.title`)}</p>
                 <p style={{margin: "3%", fontSize: "140%"}}>
                   {t(`event-container.${index}.description`)}
                   <a href={element.href} style={{color: "#4d5df0"}}> {t('eventContainer')}</a>

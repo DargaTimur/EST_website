@@ -1,5 +1,5 @@
 import {useTranslations} from 'next-intl';
-import { TOURS_IMAGES } from '@/constants'
+import { TOURS_IMAGES } from '@/constants';
 
 const Tours = () => {
   const t = useTranslations('Tours');
@@ -13,13 +13,12 @@ const Tours = () => {
           width="100%"
           height="300px"
         />
-        <div style={{position: 'absolute', top: '60%', left: '50%', transform: 'translate(-50%, -50%)', textAlign: 'center', color: 'white'}}>
-          <h1 style={{fontSize: '200%', fontWeight: 'bold'}}>{t('title')}</h1>
+        <div style={{position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', textAlign: 'center', color: 'white'}}>
+          <h1 style={{fontSize: '400%', fontWeight: '500'}}>{t('title')}</h1>
         </div>
       </div>
-      {/*Картинка закончилась*/}
       <div>
-        <p style={{textAlign: "center", marginBottom: "3%", fontSize: "200%", fontWeight: "bolder"}}>
+        <p style={{textAlign: "center", marginBottom: "3%", fontSize: "200%", fontWeight: "500"}}>
           {t('subtitle')}
         </p>
       </div>
@@ -35,7 +34,7 @@ const Tours = () => {
                   style={{marginBottom: "2%",}}
                 /> 
               </a>
-              <p style={{fontSize: "140%", fontWeight: "bolder", textAlign: "center", marginBottom: '8%'}}>{t(`tourList.${index}.title`)}</p>
+              <p style={{fontSize: "140%", fontWeight: "500", textAlign: "center", marginBottom: '8%'}}>{t(`tourList.${index}.title`)}</p>
             </div>
           ))}
         </div>
@@ -45,8 +44,8 @@ const Tours = () => {
         <div>
         </div>
         <div>
-          <p style={{textAlign: "center", fontSize: "180%", fontWeight: "bolder", marginBottom: "3%"}}>{t('subtitle1')}</p>
-          <p style={{textAlign: "center", marginBottom: "3%", fontSize: "140%", fontWeight: "bolder"}}>{t('includes')}</p>
+          <p style={{textAlign: "center", fontSize: "180%", fontWeight: "500", marginBottom: "3%"}}>{t('subtitle1')}</p>
+          <p style={{textAlign: "center", marginBottom: "3%", fontSize: "140%", fontWeight: "500"}}>{t('includes')}</p>
           <ul style={{marginLeft: "2%", marginBottom: "3%", fontSize: "140%", columns: "3", gap: "20%", listStyleType: "disc"}}>
             <li>{t('li1')}</li>
             <li>{t('li2')}</li>
@@ -58,7 +57,7 @@ const Tours = () => {
             <li>{t('li8')}</li>
             <li>{t('li9')}</li>
           </ul>
-          <p style={{textAlign: "center", marginBottom: "3%", fontWeight: "bolder", fontSize: "160%"}}>{t('subtitle2')}</p>
+          <p style={{textAlign: "center", marginBottom: "3%", fontWeight: "500", fontSize: "160%"}}>{t('subtitle2')}</p>
           <ul style={{margin: "2%", fontSize: "140%", listStyleType: "disc", columns: "1"}}>
             <li>{t('li10')}</li>
             <li>{t('li11')}</li>

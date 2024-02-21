@@ -4,7 +4,7 @@ import OptionsContainer from '@/components/UI/OptionsContainer'
 const Information = () => {
   const t = useTranslations('Information');
   return (
-    <div style={{marginTop: "3%", marginLeft: "15%", marginRight: "15%"}}>
+    <div style={{marginTop: "10%", marginLeft: "15%", marginRight: "15%"}}>
       <div style={{}}>
         <p style={{textAlign: "center", marginBottom: "3%", fontSize: "200%", fontWeight: "bold"}}>{t('title')}</p>
         <div >

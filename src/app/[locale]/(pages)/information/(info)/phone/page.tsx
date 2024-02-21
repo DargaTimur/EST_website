@@ -4,7 +4,7 @@ import { mobileCompanies } from '@/constants'
 const Phone = () => {
   const t = useTranslations('Information')
   return (
-    <div style={{marginLeft: "20%", marginRight: "20%", marginTop: "3%", marginBottom: "3%"}}>
+    <div style={{marginLeft: "20%", marginRight: "20%", marginTop: "7.4%", marginBottom: "3%"}}>
       <img
         src='/pmain.jpg'
         style={{marginBottom: "3%"}}

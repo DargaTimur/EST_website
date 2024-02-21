@@ -11,11 +11,11 @@ const Contacts = () => {
             src='/3.jpg'
           />
           <div style={{position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', textAlign: 'center', color: 'white'}}>
-            <h1 style={{fontSize: '300%', fontWeight: 'bold'}}>{t('title')}</h1>
+            <h1 style={{fontSize: '400%', fontWeight: '630'}}>{t('title')}</h1>
           </div>
         </div>
       </div>
-      <div style={{width: "1903px", height: "200%", textAlign: "center"}}>
+      <div style={{width: "1903px", height: "100%", textAlign: "center"}}>
         <div style={{width: "1903px", height: "100%"}}>
           <div style={{display: "grid", gridTemplateColumns: "repeat(4, 1fr)", fontSize: "140%", textAlign: "center", backgroundColor: "#f5f5fa", paddingTop: "2%", paddingBottom: "2%"}}>
             <div style={{padding: "3%"}}>
@@ -63,7 +63,19 @@ const Contacts = () => {
         <p style={{fontSize: "200%", fontWeight: "bolder", textAlign: "center"}}>{t('second')}</p>
         <p style={{fontSize: "120%", textAlign: "center", marginBottom: "3%"}}>{t('third')}</p>
         <div style={{justifyContent: "center", marginLeft: "20%", marginRight: "20%", marginBottom: "3%"}}>
-          <InputForm/>
+          <InputForm
+            formHeader={t('formHeader')}
+            formTitle={t('name')}
+            formPlaceholder1={t('first')}
+            formPlaceholder2={t('last')}
+            mail={t('email')}
+            countryTitle={t('country')}
+            tourTitle={t('tour')}
+            numberTitle={t('number')}
+            messageTitle={t('message')}
+            agreeTitle={t('agree')}
+            buttonTitle={t('button')}
+          />
         </div>
       </div>
     </div>

@@ -1,14 +1,12 @@
 "use client";
-import React, { useState } from 'react'
+import React, { FormEvent, useState } from 'react'
 import Input from './Input';
 import Button from './Button';
 import TextArea from './TextArea';
 import Select from './Select';
 import TourSelect from './TourSelect';
-//import {useTranslations} from 'next-intl'; //изза "use client" не работает перевод, узнать почему.
 
-const InputForm = () => {
-  //const t = useTranslations('Contacts')
+const InputForm = ({...props}: any) => { 
 
   const [name, setName] = useState('');
   const [last, setLast] = useState('');
@@ -20,10 +18,11 @@ const InputForm = () => {
   const [agreeChecked, setAgreeChecked] = useState(false);
 
 
-  const sendForm = async (e: any) => {
+  const sendForm = async (e: FormEvent) => {
+    console.log('Data', name, last, country, tour, number, email, message);
     e.preventDefault();
 
-    const response = await fetch("/api/sendEmail", {
+    const response = await fetch("/api/sendForm", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -39,6 +38,7 @@ const InputForm = () => {
       }),
     });
 
+    {/*Change it*/}
     if (!agreeChecked) {
       alert('Please agree to the terms and conditions before submitting the form.');
     } else {
@@ -56,14 +56,14 @@ const InputForm = () => {
 
   return (
     <div>
-      <p style={{fontSize: "160%", fontWeight: "bolder"}}>Booking form</p>
+      <p style={{fontSize: "160%", fontWeight: "bolder", marginBottom: "3%"}}>{props.formHeader}</p>
       <form onSubmit={sendForm}>
-        <p style={{marginBottom: 0}}>Name <a style={{color: "red"}}>*</a></p>
-        <div style={{ width: "100%", display: "flex", gap: "10%"}}>
+        <p style={{marginBottom: 0}}>{props.formTitle} <a style={{color: "red"}}>*</a></p>
+        <div style={{ width: "100%", display: "flex", gap: "5%"}}>
           <Input
             type="text"
             id='name'
-            placeholder="First"
+            placeholder={props.formPlaceholder1}
             required
             value={name} 
             onChange={(e) => {
@@ -73,7 +73,7 @@ const InputForm = () => {
           <Input
             type="text"
             id='last'
-            placeholder="Last"
+            placeholder={props.formPlaceholder2}
             required
             value={last} 
             onChange={(e) => {
@@ -81,7 +81,7 @@ const InputForm = () => {
             }}
           />
         </div>
-        <p style={{marginBottom: 0}}>Email <a style={{color: "red"}}>*</a></p>
+        <p style={{marginBottom: 0}}>{props.mail} <a style={{color: "red"}}>*</a></p>
         <Input
           type="email"
           id='email'
@@ -93,15 +93,15 @@ const InputForm = () => {
           }}
         />
         <div>
-          <p style={{marginBottom: 0}}>Country</p>
+          <p style={{marginBottom: 0}}>{props.countryTitle}</p>
           <div>
             <Select/>
           </div>
-          <p style={{marginBottom: 0}}>Tour</p>
+          <p style={{marginBottom: 0}}>{props.tourTitle}</p>
           <div>
             <TourSelect/>
           </div>
-          <p style={{marginBottom: 0}}>Number of participants <a style={{color: "red"}}>*</a></p>
+          <p style={{marginBottom: 0}}>{props.numberTitle} <a style={{color: "red"}}>*</a></p>
           <Input
             type="number"
             id='number'
@@ -113,7 +113,7 @@ const InputForm = () => {
             }}
           />
         </div>
-        <p style={{marginBottom: 0}}>Message</p>
+        <p style={{marginBottom: 0}}>{props.messageTitle}</p>
         <TextArea
           id='message'
           required
@@ -130,11 +130,11 @@ const InputForm = () => {
               onChange={() => setAgreeChecked(!agreeChecked)}
               style={{ marginRight: '1%' }}
             />
-            I agree to the terms and conditions
+            {props.agreeTitle}
           </label>
         </div>
         <div style={{marginTop: "3%"}}>
-          <Button type="Submit" disabled={!agreeChecked}>Send form</Button>
+          <Button type="Submit" disabled={!agreeChecked}>{props.buttonTitle}</Button>
         </div>
       </form>
     </div>

@@ -1,13 +1,11 @@
 "use client";
 import React, { useState } from 'react'
 
-export default function FooterInput() {
+export default function FooterInput({title, mail, messages, button, pl1, pl2, ...props}: any) {
   const [name, setName] = useState('');
   const [last, setLast] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
-
-  //const [loading, setLoading] = useState(false);
 
   const sendMail = async (e: any) => {
     e.preventDefault();
@@ -25,6 +23,11 @@ export default function FooterInput() {
       }),
     });
 
+    if (!response.ok) {
+      // Обработка ошибок, если статус ответа не в диапазоне 200-299
+      console.error(`Ошибка запроса: ${response.status}`);
+    }
+
     setName('');
     setLast('');
     setEmail('');
@@ -36,18 +39,18 @@ export default function FooterInput() {
       <div >
         <div style={{display: "flex", width: "48%"}}>
           <label htmlFor='name'>
-            Name
+            {title}
           </label>
           <label htmlFor='last'>
           </label>
         </div>
-        <div style={{display: "flex"}}>
+        <div style={{display: "flex", gap: "3%"}}>
           <div>
             <div style={{ border: "1px solid #6a5acd" }}>
               <input
                 type='text'
                 id='name'
-                placeholder='First'
+                placeholder={pl1}
                 required
                 value={name}
                 onChange={(e) => {
@@ -61,7 +64,7 @@ export default function FooterInput() {
             <input
               type='text'
               id='last'
-              placeholder='Last'
+              placeholder={pl2}
               required
               value={last}
               onChange={(e) => {
@@ -73,7 +76,7 @@ export default function FooterInput() {
       </div>
       <div>
         <label htmlFor='email'>
-          Email
+          {mail}
         </label>
         <div style={{ border: "1px solid #6a5acd" }}>
           <input
@@ -90,7 +93,7 @@ export default function FooterInput() {
       </div>
       <div>
         <label htmlFor='message'>
-          Message
+          {messages}
         </label>
         <div style={{ border: "1px solid #6a5acd" }}>
           <textarea
@@ -110,7 +113,7 @@ export default function FooterInput() {
           type='submit'
           style={{marginTop: "10%", color: "#fff", backgroundColor: "#6a5acd", cursor: "pointer", border: "1px solid #ebeef5", padding: "3%"}}
         >
-          Send message
+          {button}
         </button>
       </div>
     </form>

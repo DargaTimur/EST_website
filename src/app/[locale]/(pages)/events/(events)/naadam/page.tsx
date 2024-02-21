@@ -1,4 +1,6 @@
 import {useTranslations} from 'next-intl';
+import Link from 'next/link';
+import '../../nextButton.css';
 
 const Naadam = () => {
   const t = useTranslations('Events')
@@ -44,6 +46,18 @@ const Naadam = () => {
               </tr>
             </tbody>
           </table>
+        </div>
+        <div style={{marginBottom: "5%", marginTop: "3%", display: "flex", justifyContent: "space-between"}}> 
+          <Link href={'./ice'}>
+            <button className='nextButton' style={{width: "90px"}}>
+              {t('previous')}
+            </button>
+          </Link>
+          <Link href={'./tsagaansar'}>
+            <button className='nextButton' style={{width: "90px"}}> 
+              {t('next')}
+            </button>
+          </Link>
         </div>
       </div>
     </div>

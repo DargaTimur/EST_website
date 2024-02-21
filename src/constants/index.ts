@@ -2,11 +2,11 @@ import exp from "constants";
 
 //Navigation
 export const NAV_LINKS = [
-  {href: '/about', key: 'about', label: 'About'},
-  {href: '/events', key: 'events', label: 'Events'},
-  {href: '/tours', key: 'tours', label: 'Tours'},
-  {href: '/information', key: 'information', label: 'Information'},
-  {href: '/contacts', key: 'contacts', label: 'Contacts'},
+  {href: '/tours', key: 'tours', title: 'Tours'},
+  {href: '/events', key: 'events', title: 'Events'},
+  {href: '/information', key: 'information', title: 'Information'},
+  {href: '/about', key: 'about', title: 'About'},
+  {href: '/contacts', key: 'contacts', title: 'Contacts'},
 ];
 
 export const links = [

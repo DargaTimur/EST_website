@@ -19,7 +19,7 @@ const Festivals = () => {
             />
           </a>
           <div style={{textAlign: "center"}}>
-            <Link href={element.href} style={{margin: "4%", fontSize: "140%", outline: "none", textDecoration: "none", color: "black", fontWeight: "bolder"}}>
+            <Link href={element.href} style={{margin: "4%", fontSize: "130%", outline: "none", textDecoration: "none", color: "black", fontWeight: "500"}}>
               {t(`festivals.${index}.title`)}
             </Link>
           </div>

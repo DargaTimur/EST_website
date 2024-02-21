@@ -14,28 +14,37 @@
   top: 0;
   left: 0;
   right: 0;
-  justify-content: space-between;
   align-items: center;
   transition: 0.3s;
   position: sticky;
+  z-index: 1000;
+}
+
+.switcher :hover {
+  color: #1f38ab;
+  transition: "color 0.4s ease";
 }
 
 .navbar.scrolled {
-  background-color: #020817;
+  background-color: #090a12;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  /* Закрепи навбар вверху */
+  padding: 0;
   z-index: 1000;
-  /* Подними навбар над остальными элементами страницы */
   transform: scaleY();
 }
 
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
-  transition: 0.4s; /* Добавьте плавный переход для анимации */
+  transition: 0.4s; 
+}
+
+.switcher {
+  align-items: center;
+  justify-content: center;
 }
 
 .navbar.scrolled .logo {
@@ -51,7 +60,7 @@ table {
 }
 
 thead {
-  background-color: #d3d8de; /* Цвет фона заголовка таблицы */
+  background-color: #d3d8de; 
 }
 
 th, td {
@@ -65,5 +74,5 @@ td {
 }
 
 tbody {
-  background-color: #ffffff; /* Цвет фона тела таблицы */
+  background-color: #ffffff;
 }

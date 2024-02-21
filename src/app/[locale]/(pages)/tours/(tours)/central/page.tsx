@@ -1,4 +1,3 @@
-import { CENTRAL } from '@/constants';
 import { CentralTour } from '@/constants';
 import Link from 'next/link';
 import '../../../../../../components/UI/button.css';
@@ -7,7 +6,7 @@ import {useTranslations} from 'next-intl';
 const Central = () => {
   const t = useTranslations('Tours');
   return (
-    <div style={{margin: "3%", marginTop: "5%"}}>
+    <div style={{margin: "3%", marginTop: "10%"}}>
       <div style={{marginLeft: "15%", marginRight: "15%", marginBottom: "3%"}}> {/*For description*/}
         <p style={{fontSize: "200%", fontWeight: "bold", marginBottom: "1%"}}>{t('Central.title')} <a style={{fontSize: "60%", color: "#1226db"}}>{t('Central.subtitle')}</a></p>
         <div style={{ display: "flex"}}>

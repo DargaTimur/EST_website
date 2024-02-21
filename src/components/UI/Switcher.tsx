@@ -1,30 +1,24 @@
-//"use client";
-
 import { useLocale } from 'next-intl';
-import { useRouter } from 'next/navigation';
-import React, { ChangeEvent, useTransition } from 'react';
+import React, { ChangeEvent } from 'react';
+import {useTranslations} from 'next-intl';
 
 export default function LocalSwitcher() {
-  const [isPending, startTransition] = useTransition();
-  const router = useRouter();
+  const t = useTranslations('Index');
   const localActive = useLocale();
 
   const onSelectChange = (e: ChangeEvent<HTMLSelectElement>) => {
     const nextLocale = e.target.value;
-    startTransition(() => {
-      router.push(`/${nextLocale}`);
-    });
+    location.href = `/${nextLocale}`;
   };
 
   return (
     <select 
       onChange={onSelectChange} 
       defaultValue={localActive} 
-      disabled={isPending} 
-      style={{ backgroundColor: "transparent", border:"none", outline: "none", fontSize: "150%", color: "#2775f2"}}
+      style={{ backgroundColor: "transparent", border:"none", outline: "none", fontSize: "106%", fontWeight: "500", transition: "color 0.4s ease"}}
     >
-      <option value="ko">Korean</option>
-      <option value="en">English</option>
+      <option style={{fontSize: "106%", fontWeight: "500"}} value="ko">{t('language2')}</option>
+      <option style={{fontSize: "106%", fontWeight: "500"}} value="en">{t('language1')}</option>
     </select>
   )
 }

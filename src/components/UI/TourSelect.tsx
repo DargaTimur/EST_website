@@ -16,4 +16,10 @@ const TourSelect = () => {
 
 export default TourSelect
 
-
+/*
+{booking.map(element => (
+  <option key={element.value} value={element.value}>
+    {element.label}
+  </option>
+))}
+*/

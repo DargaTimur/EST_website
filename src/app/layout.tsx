@@ -1,14 +1,18 @@
 import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Roboto } from "next/font/google";
 import "./[locale]/globals.css";
+import NavBarServer from "@/components/NavBarServer";
+import SocialIcons from "@/components/UI/SocialIcons";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Roboto({
+  subsets: ["latin"],
+  weight: "100"
+});
 
 export const metadata: Metadata = {
   title: "Eternal Sky Tour",
-  description: "Best",
+  description: "Best tours in Mongilia",
 };
 
 export default function RootLayout({
@@ -21,7 +25,8 @@ export default function RootLayout({
   return (
     <html lang={locale}>
       <body>
-        <Navbar/>
+        <NavBarServer/>
+        <SocialIcons/>
         {children}
         <Footer/>
       </body>
@@ -29,14 +34,3 @@ export default function RootLayout({
   );
 }
 
-/*
-import { ReactNode } from 'react';
-
-type Props = {
-  children: ReactNode;
-};
-
-const RootLayout = ({ children }: Props) => children;
-
-export default RootLayout;
-*/

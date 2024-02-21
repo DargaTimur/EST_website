@@ -6,8 +6,6 @@ import Link from "next/link"
 const Footer = () => {
   const t = useTranslations('Footer');
 
-
-
   return (
     <footer style={{ display: 'flex', backgroundColor: "#ebeef5", color: "#000" }}>
       <div style={{ flex: 1, padding: '2%'}}>
@@ -69,7 +67,15 @@ const Footer = () => {
         </div>
         <div style={{gap: "2%", display: "flex", width: "80%", marginLeft: "2%"}}>
           <div>
-            <FooterInput/>
+            {/*<FooterInput/>*/}
+            <FooterInput 
+              title={t('ntitle')} 
+              mail={t('ntitle1')} 
+              messages={t('ntitle2')} 
+              button={t('button')} 
+              pl1={t('placeholder1')} 
+              pl2={t('placeholder2')}
+            />
           </div>
         </div>
       </div>

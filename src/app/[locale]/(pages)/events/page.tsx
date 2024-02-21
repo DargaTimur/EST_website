@@ -13,7 +13,9 @@ const Events = () => {
             width="100%"
           />
         </div>
-        <p style={{textAlign: "center", marginBottom: "3%", fontSize: "200%", fontWeight: "bold"}}>{t('title')}</p>
+        <div style={{position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', textAlign: 'center', color: 'white'}}>
+          <p style={{textAlign: "center", marginBottom: "3%", fontSize: "400%", fontWeight: "500"}}>{t('title')}</p>
+        </div>
       </div>
       <div style={{marginLeft: "15%", marginRight: "15%", marginBottom: "5%"}}>
         <EventContainer/>
