@@ -1,7 +1,9 @@
 import {useTranslations} from 'next-intl';
 import OptionsContainer from '@/components/UI/OptionsContainer'
+import {unstable_setRequestLocale} from 'next-intl/server';
 
-const Information = () => {
+const Information = ({params: {locale}}: {params: {locale: string}}) => {
+  unstable_setRequestLocale(locale);
   const t = useTranslations('Information');
   return (
     <div style={{marginTop: "10%", marginLeft: "15%", marginRight: "15%"}}>

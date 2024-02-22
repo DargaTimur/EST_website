@@ -1,7 +1,9 @@
 import {useTranslations} from 'next-intl';
 import SeasonsSlider from '@/components/UI/SeasonsSlider';
+import {unstable_setRequestLocale} from 'next-intl/server';
 
-const Visit = () => {
+const Visit = ({params: {locale}}: {params: {locale: string}}) => {
+  unstable_setRequestLocale(locale);
   const t = useTranslations('Information');
   return (
     <div>

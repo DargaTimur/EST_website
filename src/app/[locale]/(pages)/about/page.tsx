@@ -1,7 +1,8 @@
-import React from 'react'
+import {unstable_setRequestLocale} from 'next-intl/server';
 import {useTranslations} from 'next-intl';
 
-const About = () => {
+const About = ({params: {locale}}: {params: {locale: string}}) => {
+  unstable_setRequestLocale(locale);
   const t = useTranslations('About');
   return (
     <div>

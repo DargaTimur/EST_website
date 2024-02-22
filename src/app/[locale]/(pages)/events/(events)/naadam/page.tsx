@@ -1,8 +1,10 @@
 import {useTranslations} from 'next-intl';
 import Link from 'next/link';
 import '../../nextButton.css';
+import {unstable_setRequestLocale} from 'next-intl/server';
 
-const Naadam = () => {
+const Naadam = ({params: {locale}}: {params: {locale: string}}) => {
+  unstable_setRequestLocale(locale);
   const t = useTranslations('Events')
   return (
     <div>

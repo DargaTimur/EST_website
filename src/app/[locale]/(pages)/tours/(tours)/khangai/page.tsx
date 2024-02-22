@@ -1,9 +1,11 @@
-import { GOBI_KHANGAI } from '@/constants'
-import { KhangaiTour } from '@/constants'
+import { GOBI_KHANGAI } from '@/constants';
+import { KhangaiTour } from '@/constants';
 import Link from 'next/link';
-import '../../../../../../components/UI/button.css'
+import '../../../../../../components/UI/button.css';
+import {unstable_setRequestLocale} from 'next-intl/server';
 
-const GobiKhangai = () => {
+const GobiKhangai = ({params: {locale}}: {params: {locale: string}}) => {
+  unstable_setRequestLocale(locale);
   return (
     <div style={{margin: "3%", marginTop: "10%"}}>
       <div style={{marginLeft: "15%", marginRight: "15%", marginBottom: "3%"}}> {/*For description*/}

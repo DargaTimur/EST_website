@@ -1,6 +1,8 @@
 import {useTranslations} from 'next-intl';
+import {unstable_setRequestLocale} from 'next-intl/server';
 
-const Insurance = () => {
+const Insurance = ({params: {locale}}: {params: {locale: string}}) => {
+  unstable_setRequestLocale(locale);
   const t = useTranslations('Information')
   return (
     <div style={{margin: "1%"}}>  

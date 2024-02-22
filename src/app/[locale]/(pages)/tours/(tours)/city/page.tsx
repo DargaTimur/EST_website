@@ -2,8 +2,10 @@ import { CityTour } from '@/constants';
 import Link from 'next/link';
 import '../../../../../../components/UI/button.css';
 import {useTranslations} from 'next-intl';
+import {unstable_setRequestLocale} from 'next-intl/server';
 
-const City = () => {
+const City = ({params: {locale}}: {params: {locale: string}}) => {
+  unstable_setRequestLocale(locale);
   const t = useTranslations('Tours');
   return (
     <div style={{margin: "3%", marginTop: "10%"}}>

@@ -1,7 +1,9 @@
 import {useTranslations} from 'next-intl';
 import { mobileCompanies } from '@/constants'
+import {unstable_setRequestLocale} from 'next-intl/server';
 
-const Phone = () => {
+const Phone = ({params: {locale}}: {params: {locale: string}}) => {
+  unstable_setRequestLocale(locale);
   const t = useTranslations('Information')
   return (
     <div style={{marginLeft: "20%", marginRight: "20%", marginTop: "7.4%", marginBottom: "3%"}}>

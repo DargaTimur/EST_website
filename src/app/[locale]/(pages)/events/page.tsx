@@ -1,7 +1,9 @@
 import {useTranslations} from 'next-intl';
 import EventContainer from '@/components/UI/EventContainer';
+import {unstable_setRequestLocale} from 'next-intl/server';
 
-const Events = () => {
+const Events = ({params: {locale}}: {params: {locale: string}}) => {
+  unstable_setRequestLocale(locale);
   const t = useTranslations('Events');
   return (
     <div>

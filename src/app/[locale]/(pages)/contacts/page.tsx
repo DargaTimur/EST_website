@@ -1,7 +1,9 @@
 import {useTranslations} from 'next-intl';
 import InputForm from '@/components/UI/InputForm';
+import {unstable_setRequestLocale} from 'next-intl/server';
 
-const Contacts = () => {
+const Contacts = ({params: {locale}}: {params: {locale: string}}) => {
+  unstable_setRequestLocale(locale);
   const t = useTranslations('Contacts');
   return (
     <div>
