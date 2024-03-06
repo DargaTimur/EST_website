@@ -19,7 +19,7 @@ const SeasonsSlider = ({...props}: any) => {
         />
         <Carousel.Caption>
         <h1>{props.winter}</h1>
-        <div style={{fontSize: "180%", fontWeight: "bolder"}}>
+        <div style={{fontSize: "120%", fontWeight: "500", textAlign: "justify"}}>
           <p>{props.winterDescription1}</p>
           <p>{props.winterDescription2}</p>
         </div>
@@ -33,7 +33,7 @@ const SeasonsSlider = ({...props}: any) => {
         />
         <Carousel.Caption>
           <h1>{props.spring}</h1>
-          <div style={{fontSize: "180%", fontWeight: "bolder"}}>
+          <div style={{fontSize: "120%", fontWeight: "500", textAlign: "justify"}}>
             <p>{props.springDescription1}</p>
             <p>{props.springDescription2}</p>
           </div>
@@ -47,7 +47,7 @@ const SeasonsSlider = ({...props}: any) => {
         />
         <Carousel.Caption>
           <h1>{props.summer}</h1>
-          <div style={{fontSize: "180%", fontWeight: "bolder"}}>
+          <div style={{fontSize: "120%", fontWeight: "500", textAlign: "justify"}}>
             <p>{props.summerDescription1}</p>
             <p>{props.summerDescription2}</p>
           </div>
@@ -61,7 +61,7 @@ const SeasonsSlider = ({...props}: any) => {
         />
         <Carousel.Caption>
           <h1>{props.autumn}</h1>
-          <div style={{fontSize: "180%", fontWeight: "bolder"}}>
+          <div style={{fontSize: "120%", fontWeight: "500", textAlign: "justify"}}>
             <p>{props.autumnDescription1}</p>
             <p>{props.autumnDescription2}</p>
           </div>

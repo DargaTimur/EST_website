@@ -40,32 +40,38 @@ const Navbar = () => {
     }
   }
 
+
+
   return (
-    <div style={{marginLeft: "10rem", marginRight: "10rem" }}>
-      <nav className={`navbar ${scrolled ? 'scrolled' : ''}`} 
-        style={{display: "flex", justifyContent: "center", height: scrolled ? '70px' : '140px', position: 'fixed', top: 0, width: '100%'}} 
-      >
-        <Link href="/" className={`logo ${scrolled ? 'scrolled' : ''}`} style={{marginRight: "4rem"}}>
-          <Image src="/2.png" alt="logo" width={120} height={100}/>
-        </Link>
-        <div>
-          <ul style={{display: "flex", gap: "1.7rem", margin: 0, padding: 0}}>
-            {NAV_LINKS.map((link) => (
-              <Link href={link.href} key={link.key} 
-                className="nav-link"  
-                style={{fontSize: "106%", fontWeight: "500", textDecoration: "none", color: scrolled ? "#fff" : "#000", transition: "color 0.4s ease"}}
-                onMouseEnter={({ currentTarget }) => currentTarget.style.color = "#1f38ab"}
-                onMouseLeave={({ currentTarget }) => currentTarget.style.color = scrolled ? "#fff" : "#000"}
-              >
-                {menuLabel(link)}
-              </Link> 
-            ))} 
-          </ul>
-        </div>
-        <div className="switcher" style={{marginLeft: "1.7rem", color: scrolled ? "#fff" : "#000"}}>
-          <LocalSwitcher/>
-        </div>
-      </nav>
+    <div >
+      <div >
+        <nav className={`navbar ${scrolled ? 'scrolled' : ''}`} 
+          style={{display: "flex", justifyContent: "center", height: scrolled ? '70px' : '100px', position: 'fixed', top: 0, width: '100%'}} 
+        >
+          <Link href="/" className={`logo ${scrolled ? 'scrolled' : ''}`} style={{marginRight: "5%"}}>
+            <img src="/logo.png" alt="logo" height='auto'/> {/** */}
+          </Link>
+          <div className="header_burger">
+            <span></span>
+          </div>
+          <div className="header_menu">
+            <ul className="navbar_menu_container">{/** */}
+              {NAV_LINKS.map((link) => (
+                <Link href={link.href} key={link.key} 
+                  className="navbar_menu_buttons"
+                  onMouseEnter={({ currentTarget }) => currentTarget.style.color = "#2f2399"}
+                  onMouseLeave={({ currentTarget }) => currentTarget.style.color = "#000"}
+                >
+                  {menuLabel(link)}
+                </Link> 
+              ))} 
+            </ul>
+          </div>
+          <div className="switcher">{/** */}
+            <LocalSwitcher/>
+          </div>
+        </nav>
+      </div>
     </div>
   )
 }

@@ -1,14 +1,15 @@
-import {useTranslations} from 'next-intl';
+import {getTranslations} from 'next-intl/server';
 import { mobileCompanies } from '@/constants'
 import {unstable_setRequestLocale} from 'next-intl/server';
 
-const Phone = ({params: {locale}}: {params: {locale: string}}) => {
+const Phone = async ({params: {locale}}: {params: {locale: string}}) => {
   unstable_setRequestLocale(locale);
-  const t = useTranslations('Information')
+  const t = await getTranslations('Information')
   return (
-    <div style={{marginLeft: "20%", marginRight: "20%", marginTop: "7.4%", marginBottom: "3%"}}>
+    <div className='visibility_area' style={{marginTop: "7.4%"}}>
       <img
         src='/pmain.jpg'
+        alt='phone_page'
         style={{marginBottom: "3%"}}
       />
       <div style={{display: "flex", gap: "10%"}}>
@@ -19,16 +20,17 @@ const Phone = ({params: {locale}}: {params: {locale: string}}) => {
                 key={element.id} 
                 src={element.src} 
                 alt={element.title} 
-                width="600vw"
+                height='auto'
+                className='phone_page_png_size'
                 style={{marginBottom: "2%",}}
               /> 
             </a>
-          <p style={{fontSize: "140%", fontWeight: "bolder", textAlign: "center", marginBottom: '8%'}}>{t(`phone.title.${index}.title`)}</p>
+          <p className='phone_titles'>{t(`phone.title.${index}.title`)}</p>
         </div>
         ))}
       </div>
       <div>
-        <p style={{marginTop: "3%", fontSize: "140%"}}>{t('phone.text')}</p>
+        <p className='phone_text'>{t('phone.text')}</p>
       </div>
     </div>
   )

@@ -26,11 +26,11 @@
   },
   "About": {
     "title": "ABOUT US",
-    "text": "Eternal Sky Tour LLC is an Ulaanbaatar based tour operator offering tours around Mongolia, hotel reservations and international rail ticket purchase from Mongolia. Established in 2004, Eternal Sky Tour LLC initially offered accommodations in our own Eternal Sky Tour Hostel/Guesthouse and international train ticket purchase. Today Eternal Sky Tour has grown to a fully registered and certified tour operator that specializes in tours and logistical management around Mongolia. These packages provide an opportunity to experience the must-see attractions."
+    "text": "Our company was founded in 2024. We are a young tour company with significant expertise in our field. Despite our relative youth, our team comprises seasoned professionals, each a virtuoso in their craft. Our passion for exploration and dedication to delivering exceptional travel experiences set us apart. With a dynamic blend of creativity, expertise, and unwavering commitment, we craft personalized adventures that exceed expectations. From our knowledgeable guides to our detail-oriented planners, every team member is a master in their field, ensuring your journey is seamless and extraordinary. Join us for a new era of travel, where youth meets expertise, and every adventure is a masterpiece. Welcome to a travel experience like no other, curated by a team of true artisans."
   },
   "Contacts": {
     "title": "CONTACTS",
-    "header": "Get in Touch with Eternal Sky Tour",
+    "header": "Get in Touch with Saibai Tour",
     "text": "Our friendly and experienced staff are always ready to answer any questions that you may have about our travel products and services. Please fill out the form below and we will be in touch within a lightning speed.",
     "second": "Leave us your request",
     "third": "and we will get back to you.",
@@ -53,7 +53,7 @@
     "previous": "Previous",
     "camel-festival": {
       "title": "Camel festival",
-      "text": "This thrilling festival was first initiated in 1997 by the locals of Umnugovi Province (South Gobi) to celebrate Mongolian camels and protect the species and pass the rich Mongolian camel breeding heritage to the next generation. Nomads from afar and near wear their best traditional costumes and ride their best camels to attend the Festival.",
+      "text": "This thrilling festival was first initiated in 1997 by the locals of Umnugovi Province to celebrate Mongolian camels and protect the species, the rich Mongolian camel breeding heritage to the next generation.",
       "td1": "Day 1",
       "tdtext1": "Arrival in Ulaanbaatar (we will pick you up from the airport)",
       "td2": "Day 2",
@@ -67,7 +67,7 @@
     },
     "eagle-festival": {
       "title": "Eagle festival",
-      "text": "Join the Kazakh Eagle Hunters on a hunt during the cold winter months. The Kazakhs use eagles to hunt for foxes and hares that are easy to see against the snow. Freezing temperatures and long days on Mongolian horses discourage most people from attempting this adventure. For those who do, seeing an eagle released from a man's forearm swoop down and kill a fox a mile away is a truly unforgettable experience.",
+      "text": "Join the Kazakh Eagle Hunters on a hunt during the cold winter months. The Kazakhs use eagles to hunt for foxes and hares that are easy to see against the snow. For those who do, seeing an eagle released from a man's forearm swoop down and kill a fox a mile away is a truly unforgettable experience.",
       "td1": "Day 1",
       "tdtext1": "Arrival in Ulaanbaatar (we will pick you up from the airport)",
       "td2": "Day 2",
@@ -79,7 +79,7 @@
     },
     "ice-festival": {
       "title": "Ice festival",
-      "text": "Nomadic reindeer herders and shamans show off their cultural performances, such as art, music and shaman rituals. This Ice Festival has been developing year by year. International visitors come to the Festival to capture scenic images and experience winter Mongolia and nomadic culture. It is worth to visit here.",
+      "text": "Nomadic reindeer herders and shamans show off their cultural performances, such as art, music and shaman rituals. This Ice Festival has been developing year by year. International visitors come to the Festival to capture scenic images and experience nomadic culture.",
       "td1": "Day 1",
       "tdtext1": "Arrival in Ulaanbaatar (we will pick you up from the airport)",
       "td2": "Day 2",
@@ -95,7 +95,7 @@
     },
     "naadam-festival": {
       "title": "Naadam festival",
-      "text": "The core of the festival - three manly sports - the wrestling, horse-racing and archery embrace many elements of art, such as singing, dancing and performing. Nomadic Mongolians have known when to throw the parties. Naadam Festival is held in the most enjoyable month of the most pleasant season in the country. Therefore, everyone takes the opportunity and enjoys the Festival in diverse schedule such as travelling to the countryside, camping out and gathering in their closest herds.",
+      "text": "The core of the festival - three manly sports - the wrestling, horse-racing and archery embrace many elements of art, such as singing, dancing and performing. Nomadic Mongolians have known when to throw the parties. Naadam Festival is held in the most enjoyable month of the most pleasant season in the country.",
       "td1": "Day 1",
       "tdtext1": "Arrival in Ulaanbaatar (we will pick you up from the airport)",
       "td2": "Day 2",
@@ -105,7 +105,7 @@
     },
     "tsagaan-sar": {
       "title": "Tsagaan Sar",
-      "text": "Winter in Mongolia is a remarkable experience for those willing to take themselves outside of their comfort zone. Pack your thermals and come to Mongolia this winter and do something a little out of the ordinary. Come and enjoy being part of a minority who visit Mongolia in the winter and actually interact with the local people and enjoy slowing-down and seeing and experiencing Mongolia like few other people get to do.",
+      "text": "Winter in Mongolia is a remarkable experience for those willing to take themselves outside of their comfort zone. Pack your thermals and come to Mongolia this winter and do something a little out of the ordinary. Come and enjoy being part of a minority who visit Mongolia in the winter and actually interact with the local people.",
       "td1": "Day 1",
       "tdtext1": "Arrival in Ulaanbaatar (we will pick you up from the airport)",
       "td2": "Day 2",
@@ -167,10 +167,6 @@
       {
         "title": "Car rent",
         "description": "Explore Mongolia with comfort and flexibility by renting a car from our travel agency. Our fleet offers a diverse range of vehicles, from rugged 4x4s for off-road adventures to comfortable sedans for city exploration. Enjoy the freedom to set your own itinerary and discover the breathtaking landscapes of Mongolia at your own pace."
-      },
-      {
-        "title": "Bus ticket",
-        "description": "Embark on a hassle-free journey across Mongolia by choosing our reliable bus services. Discover the scenic beauty and cultural wonders as you travel comfortably in our well-maintained buses. Whether you're exploring the city or venturing into the countryside, our extensive network covers popular destinations."
       },
       {
         "title": "Flights",
@@ -242,7 +238,8 @@
     }
   },
   "Tours": {
-    "title": "TOURS",
+    "title": "CLASSIC TOURS", 
+    "individual_title": "INDIVIDUAL TOURS",
     "subtitle": "TOURS & TRIPS",
     "text": "Traveling to the Mongolia as part of a group has many advantages. You can meet like-minded individuals and make new friends. On top of that, group tours also allow for discounted bundle deals - so you get to enjoy everything Mongolia offer at much more reasonable price.",
     "subtitle1": "INFORMATION ABOUT TOURS",
@@ -263,22 +260,58 @@
     "li13": "Japanese",
     "tourList": [
       {
-        "title": "CENTRAL AIMAGS TOUR"
+        "title": "CITY TOUR",
+        "description": "Explore Ulaanbaatar effortlessly with our expert guides. Visit museums, theaters, sample international cuisines, and more!"
       },
       {
-        "title": "TRIP TO THE GOBI DESERT"
+        "title": "CENTRAL AIMAGS TOUR",
+        "description": "Explore central Mongolia's beauty—rolling hills, lush grasslands, and serene rivers. Immerse in nature, nomadic life, and traditional gers. "
       },
       {
-        "title": "CITY TOUR"
+        "title": "KHUVSGUL LAKE TOUR",
+        "description": "Khuvsgul Lake, the \"Asian blue pearl,\" at 1645 m altitude, is 136 km long and 262 m deep, holding nearly 70% of Mongolia's fresh water."
       },
       {
-        "title": "KHUVSGUL AIMAG TOUR"
-      },
-      {
-        "title": "KHUVSGUL LAKE TOUR"
+        "title": "TRIP TO THE GOBI DESER",
+        "description": "Explore Gobi's wonders: singing Khongoryn Els dunes, Yolyn Am's ice canyon. Encounter rare wildlife in Gobi Gurvansaikhan National Park."
       },
       {
         "title": "GOBI-KHANGAI TOUR"
+      }
+    ],
+    "tourDays": [
+      {
+        "days": "3 days 2 nights"
+      },
+      {
+        "days": "5 days 4 nights"
+      },
+      {
+        "days": "5 days 4 nights"
+      },
+      {
+        "days": "7 days 6 nights"
+      }
+    ],
+    "individualList": [
+      {
+        "title": "HORSE TOUR ",
+        "description": "Explore Ulaanbaatar effortlessly with our expert guides. Visit museums, theaters, sample international cuisines, and more!"
+      },
+      {
+        "title": "REINDEER HERDERS LAND",
+        "description": "Explore Ulaanbaatar effortlessly with our expert guides. Visit museums, theaters, sample international cuisines, and more!"
+      }
+    ],
+    "individuals": [
+      {
+        "tour": "EXPLORE MONGOLIAN ALTAI"
+      },
+      {
+        "tour": "HORSE TOUR"
+      },
+      {
+        "tour": "REINDEER HERDERS LAND"
       }
     ],
     "Central": {
@@ -440,7 +473,12 @@
       "li1td6": "10:00 am-Breakfast",
       "li2td6": "11:00 am-Drive to Ulaanbaatar",
       "li3td6": "12:00 am-Lunch time",
-      "li4td6": "02:00 pm- Arrrival at the Guest House"
+      "li4td6": "02:00 pm- Arrrival at the Guest House",
+      "td7-1": "Back to Ulaanbaatar",
+      "li1td7": "10:00 am-Breakfast",
+      "li2td7": "11:00 am-Drive to Ulaanbaatar",
+      "li3td7": "12:00 am-Lunch time",
+      "li4td7": "02:00 pm- Arrrival at the Guest House"
     },
     "Gobi-block": [
       {
@@ -630,27 +668,30 @@
     ]
   },
   "Footer": {
-    "title1": "Eternal Sky Tour",
+    "title1": "Saibai Tour",
     "address": "Zip code:14253",
-    "phone": "Phone Number:",
+    "phone": "Number:",
     "telegram": "Telegram:",
     "mail": "Email:",
-    "title2": "Travel Kit",
+    "title2": "Information",
     "links": [
       {
-        "title": "Best time to visit Mongolia"
+        "title": "Seasons of Mongolia"
       },
       {
-        "title": "Visa"
+        "title": "Visa information"
       },
       {
         "title": "Insurance"
       },
       {
-        "title": "Weather"
+        "title": "Weather in Mongolia"
       },
       {
         "title": "Phone connection"
+      },
+      {
+        "title": "Accomodation"
       }
     ],
     "title3": "Have a question?",

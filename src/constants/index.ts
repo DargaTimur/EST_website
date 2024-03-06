@@ -10,11 +10,12 @@ export const NAV_LINKS = [
 ];
 
 export const links = [
-  {href: '/information/visit', key: 'visit', label: 'Best time to visit Mongolia'},
-  {href: '/information/visa', key: 'visa', label: 'Visa'},
+  {href: '/information/visit', key: 'visit', label: 'Seasons of Mongolia'},
+  {href: '/information/visa', key: 'visa', label: 'Visa information'},
   {href: '/information/insurance', key: 'insurance', label: 'Insurance'},
-  {href: '/information/weather', key: 'weather', label: 'Weather'},
+  {href: '/information/weather', key: 'weather', label: 'Weather in Mongolia'},
   {href: '/information/phone', key: 'phone', label: 'Phone connection'},
+  {href: '/information/hotels', key: 'hotel', label: 'Accomodation'},
 ];
 
 export const FOOTER_CONTACT_INFO = {
@@ -33,11 +34,12 @@ export const FOOTER_CONTACT_INFO = {
 export const FOOTER_LINKS = {
   title: 'Learn more',
   links: [
-    'Time to visit Mongolia',
+    'Seasons of Mongolia',
     'Visa information',
     'Insurance',
-    'Weather',
-    'Mobile connection'
+    'Weather in Mongolia',
+    'Mobile connection',
+    'Accomodation'
   ]
 }
 
@@ -61,12 +63,32 @@ export const images = [
 ];
 // Лучше добавить title в объекте ниже
 export const TOURS_IMAGES = [
-  {id: 1, href: '/tours/central', src: "/tmcentral.jpg"}, 
-  {id: 2, href: '/tours/gobi', src: "/tmgobi.jpg"},
-  {id: 3, href: '/tours/city', src: "/tmcity.jpg"},
-  {id: 4, href: '/tours/khuvsgul1', src: "/tmkhuvsgul1.jpg"},
-  {id: 5, href: '/tours/khuvsgul2', src: "/tmkhuvsgul2.jpg"},
-  {id: 6, href: '/tours/khangai', src: "/tmkhangai.jpg"},
+  {id: 1, href: '/tours/city', src: "/tmcity.jpg"}, 
+  {id: 2, href: '/tours/central', src: "/tmcentral.jpg"},
+  {id: 3, href: '/tours/khuvsgul1', src: "/tmkhuvsgul1.jpg"},
+]
+
+export const TOURS_IMAGES_2 = [
+  {id: 4, href: '/tours/gobi', src: "/tmgobi.jpg"},
+  {id: 5, href: '/tours/khangai', src: "/tmkhangai.jpg"},
+]
+
+export const TOURS_LINK = [
+  {id: 1, href: '/tours/city', src: "/tmcity.jpg"}, 
+  {id: 2, href: '/tours/central', src: "/tmcentral.jpg"},
+  {id: 3, href: '/tours/khuvsgul1', src: "/tmkhuvsgul1.jpg"},
+  {id: 4, href: '/tours/gobi', src: "/tmgobi.jpg"},
+]
+
+export const INDIVIDUAL = [
+  {id: 1, href: '/tours/altai', src: "/altai.jpg"}, 
+  {id: 2, href: '/tours/horse', src: "/horse.jpg"},
+  {id: 3, href: '/tours/reindeer', src: "/tsaatan.jpg"},
+]
+
+export const INDIVIDUAL_TOURS = [
+  {id: 1, href: '/tours/horse', src: "/horse.jpg"},
+  {id: 2, href: '/tours/reindeer', src: "/tsaatan.jpg"},
 ]
 
 export const EVENTS = [
@@ -80,7 +102,6 @@ export const EVENTS = [
 export const OPTIONS = [
   {id: 1, src: "/15.jpg"},
   {id: 2, src: "/16.jpg"},
-  {id: 2, src: "/17.jpg"},
   {id: 3, src: "/18.jpg"},
 ]
 

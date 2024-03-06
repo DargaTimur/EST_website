@@ -1,3 +1,5 @@
+import "./globals.css";
+
 export default function LocaleLayout({
   children,
   params: {locale}
@@ -5,5 +7,5 @@ export default function LocaleLayout({
   children: React.ReactNode;
   params: {locale: string};
 }) {
-  return children;
+  return children; 
 }

@@ -1,24 +1,23 @@
 import {useTranslations} from 'next-intl';
-import Image from 'next/image'
-import { OPTIONS } from '@/constants'
+import { OPTIONS } from '@/constants';
 
 const OptionsContainer = () => {
   const t = useTranslations('Information')
   return (
     <div style={{marginBottom: "5%"}}>
-      <div style={{margin: '1%', padding: "1%"}}>
+      <div >
         {OPTIONS.map((element, index) => (
-          <div key={index} style={{ margin: '1%', padding: "1%"}}>
+          <div key={index}>
             <div style={{display: "Flex", marginBottom: "3%"}}>
-              <Image
+              <img
                 src={element.src}
-                alt=''
-                width={450}
-                height={280}
+                alt='options'
+                width='40%'
+                height='auto%'
               />
-              <div style={{marginLeft: "1.5%"}}>
-                <p style={{marginBottom: "2%", marginLeft: "2%", fontSize: "180%", fontWeight: "bold"}}>{t(`transport.${index}.title`)}</p>
-                <p style={{marginBottom: "1%", marginLeft: "3%", marginRight: "3%", fontSize: "140%"}}>{t(`transport.${index}.description`)}</p>
+              <div style={{marginLeft: "1.5%", textAlign: 'justify'}}>
+                <p className='options_title'>{t(`transport.${index}.title`)}</p>
+                <p className='options_text'>{t(`transport.${index}.description`)}</p>
               </div>
             </div>
           </div>

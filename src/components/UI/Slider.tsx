@@ -5,7 +5,7 @@ import { Carousel } from "react-bootstrap";
 
 function Slider() {
   return (
-    <Carousel controls={false}>
+    <Carousel interval={3000} controls={false}>
       <Carousel.Item>
         <img
           className="d-block w-100"

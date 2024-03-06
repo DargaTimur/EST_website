@@ -1,25 +1,23 @@
-import {useTranslations} from 'next-intl';
+import {getTranslations} from 'next-intl/server';
 import EventContainer from '@/components/UI/EventContainer';
 import {unstable_setRequestLocale} from 'next-intl/server';
 
-const Events = ({params: {locale}}: {params: {locale: string}}) => {
+const Events = async ({params: {locale}}: {params: {locale: string}}) => {
   unstable_setRequestLocale(locale);
-  const t = useTranslations('Events');
+  const t = await getTranslations('Events');
   return (
     <div>
       <div>
-        <div style={{marginBottom: "3%"}}> 
-          <img
-            src='/3-3.jpg'
-            alt='Name'
-            width="100%"
-          />
-        </div>
-        <div style={{position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', textAlign: 'center', color: 'white'}}>
-          <p style={{textAlign: "center", marginBottom: "3%", fontSize: "400%", fontWeight: "500"}}>{t('title')}</p>
+        <img
+          src='/3-3.jpg'
+          alt='Name'
+          width='100%'
+        />
+        <div className='header_container_for_picture'>
+          <h1 className='header_on_picture'>{t('title')}</h1>
         </div>
       </div>
-      <div style={{marginLeft: "15%", marginRight: "15%", marginBottom: "5%"}}>
+      <div className='visibility_area'>
         <EventContainer/>
       </div>
     </div>

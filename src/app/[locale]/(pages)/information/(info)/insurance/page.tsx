@@ -1,18 +1,18 @@
-import {useTranslations} from 'next-intl';
+import {getTranslations} from 'next-intl/server';
 import {unstable_setRequestLocale} from 'next-intl/server';
 
-const Insurance = ({params: {locale}}: {params: {locale: string}}) => {
+const Insurance = async ({params: {locale}}: {params: {locale: string}}) => {
   unstable_setRequestLocale(locale);
-  const t = useTranslations('Information')
+  const t = await getTranslations('Information')
   return (
-    <div style={{margin: "1%"}}>  
-      <div style={{marginLeft: "20%", marginRight: "20%", marginTop: "10%", marginBottom: "4%"}}>
-        <p style={{fontSize: "200%", fontWeight: "bolder", textAlign: "center"}}>{t('insurance.title')}</p>
-        <div style={{fontSize: "120%", marginBottom: "3%"}}>
+    <div className='visa_margin_top'>  
+      <div style={{marginTop: "13%"}} className='visibility_area'>
+        <h2 className='visa_title'>{t('insurance.title')}</h2>
+        <div className='visa_text'>
           <p>{t('insurance.text1')}</p>
           <p>{t('insurance.text2')}</p>
+          <p>{t('insurance.text3')}</p>
         </div>
-          <p style={{fontSize: "120%"}}>{t('insurance.text3')}</p>
       </div>
     </div>
   )

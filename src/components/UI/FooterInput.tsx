@@ -1,5 +1,6 @@
 "use client";
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import '../UI/button.css';
 
 export default function FooterInput({title, mail, messages, button, pl1, pl2, ...props}: any) {
   const [name, setName] = useState('');
@@ -36,17 +37,16 @@ export default function FooterInput({title, mail, messages, button, pl1, pl2, ..
 
   return (
     <form onSubmit={sendMail}>
-      <div >
+      <div>
         <div style={{display: "flex", width: "48%"}}>
-          <label htmlFor='name'>
+          <label style={{color: "#fff"}} className='footer_containers_text' htmlFor='name'>
             {title}
           </label>
-          <label htmlFor='last'>
-          </label>
+          <label htmlFor='last'></label>
         </div>
         <div style={{display: "flex", gap: "3%"}}>
           <div>
-            <div style={{ border: "1px solid #6a5acd" }}>
+            <div style={{ border: "1px solid #fff1b5"}}>
               <input
                 type='text'
                 id='name'
@@ -56,11 +56,11 @@ export default function FooterInput({title, mail, messages, button, pl1, pl2, ..
                 onChange={(e) => {
                   setName(e.target.value)
                 }}
-                style={{ width: "100%", border: "none", outline: "none" }}
+                className='footer_input_field'
               />
             </div>
           </div>
-          <div style={{ border: "1px solid #6a5acd" }}>
+          <div style={{ border: "1px solid #fff1b5" }}>
             <input
               type='text'
               id='last'
@@ -70,15 +70,16 @@ export default function FooterInput({title, mail, messages, button, pl1, pl2, ..
               onChange={(e) => {
                 setLast(e.target.value)
               }}
+              className='footer_input_field'
             />
           </div>
         </div>
       </div>
       <div>
-        <label htmlFor='email'>
+        <label style={{color: "#fff"}} className='footer_containers_text' htmlFor='email'>
           {mail}
         </label>
-        <div style={{ border: "1px solid #6a5acd" }}>
+        <div style={{ border: "1px solid #fff1b5" }}>
           <input
             type='email'
             id='email'
@@ -87,17 +88,17 @@ export default function FooterInput({title, mail, messages, button, pl1, pl2, ..
             onChange={(e) => {
               setEmail(e.target.value)
             }}
-            style={{ width: "100%" }}
+            style={{ width: "100%"}}
           />
         </div>
       </div>
       <div>
-        <label htmlFor='message'>
+        <label style={{color: "#fff"}} className='footer_containers_text' htmlFor='message'>
           {messages}
         </label>
-        <div style={{ border: "1px solid #6a5acd" }}>
+        <div >
           <textarea
-            rows={4}
+            rows={5}
             name='message'
             required
             value={message}
@@ -111,7 +112,8 @@ export default function FooterInput({title, mail, messages, button, pl1, pl2, ..
       <div >
         <button
           type='submit'
-          style={{marginTop: "10%", color: "#fff", backgroundColor: "#6a5acd", cursor: "pointer", border: "1px solid #ebeef5", padding: "3%"}}
+          style={{marginTop: "5%", marginBottom: "5%"}}
+          className='myButton '
         >
           {button}
         </button>

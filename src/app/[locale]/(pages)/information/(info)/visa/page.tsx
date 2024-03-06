@@ -1,16 +1,16 @@
-import {useTranslations} from 'next-intl';
+import {getTranslations} from 'next-intl/server';
 import {unstable_setRequestLocale} from 'next-intl/server';
 
-const Visa = ({params: {locale}}: {params: {locale: string}}) => {
+const Visa = async ({params: {locale}}: {params: {locale: string}}) => {
   unstable_setRequestLocale(locale);
-  const t = useTranslations('Information');
+  const t = await getTranslations('Information');
   return (
-    <div style={{marginTop: "10%"}}>
-      <div style={{marginLeft: "20%", marginRight: "20%"}}>
+    <div className='visa_margin_top'>
+      <div className='visibility_area'>
         <div>
-          <p style={{fontSize: "200%", fontWeight: "bold", textAlign: "center", marginBottom: "4%"}}>{t('visa.title')}</p>
-          <p style={{fontSize: "120%"}}>{t('visa.text')}</p>
-          <ul style={{listStyleType: "disc", marginBottom: "3%"}}>
+          <h1 className='visa_title'>{t('visa.title')}</h1>
+          <p className='visa_text'>{t('visa.text')}</p>
+          <ul className='visa_points'>
             <li>{t('visa.ul1')}</li>
             <li>{t('visa.ul2')}</li>
             <li>{t('visa.ul3')}</li>
@@ -21,8 +21,8 @@ const Visa = ({params: {locale}}: {params: {locale: string}}) => {
             <li>{t('visa.ul8')}</li>
             <li>{t('visa.ul9')}</li>
           </ul>
-          <p style={{fontSize: "120%", fontWeight: "bold", marginBottom: "3%"}}>{t('visa.subtitle')}</p>
-          <ul style={{fontWeight: "bolder", listStyleType: "disc", marginBottom: "5%"}}>
+          <h2 className='visa_text'>{t('visa.subtitle')}</h2>
+          <ul style={{fontWeight: "500"}} className='visa_points'>
             <li>{t('visa.ul10')}</li>
             <li>{t('visa.ul11')}</li>
             <li>{t('visa.ul12')}</li>

@@ -8,53 +8,1083 @@
   box-sizing: border-box;
 }
 
+.footer_input_field {
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.header_container_for_picture {
+  position: absolute;
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+}
+
+.header_on_picture {
+  font-size: 400%;
+  font-weight: 500;
+}
+
+.header_for_divede {
+  font-size: 200%;
+  font-weight: 500;
+  text-align: center;
+}
+
+.mainpage_header_on_pictute {
+  font-size: 120%;
+  font-weight: 500;
+}
+
+.mainpage_link_on_pictute {
+  color: #fff;
+  font-size: 140%;
+  font-weight: 500;
+}
+
+.visibility_area {
+  margin-top: 2%;
+  margin-right: 15%;
+  margin-bottom: 0%;
+  margin-left: 15%;
+}
+
+/*Main page images*/
+
+.main_page_festivals_container {
+  width: calc(33.33% - 2%); 
+  box-sizing: border-box;
+}
+
+.main_page_three_tours_container {
+  width: calc(33.33% - 2%); 
+  box-sizing: border-box;
+}
+
+.main_page_two_tours_container {
+  width: calc(50% - 2%); 
+  box-sizing: border-box;
+}
+
+.main_page_individual_tours_container {
+  width: calc(33.33% - 2%); 
+  box-sizing: border-box;
+}
+
+/*tours page images*/
+
+.tours_page_image_container {
+  width: calc(50% - 2%); 
+  box-sizing: border-box;
+}
+
+.mainpage_festivals_title {
+  margin: 4;
+  font-size: 130%;
+  font-weight: 500;
+  outline: none;
+  text-decoration: none;
+  color: #000;
+}
+
+/*Tours*/
+
+.tour_items_header {
+  text-align: center;
+  font-size: 200%;
+  font-weight: 650;
+  margin-top: 6%;
+  margin-bottom: 3%;
+}
+
+.tour_container_header_desc {
+  display: block;
+  font-size: 160%;
+  color: #ebc934;
+  margin-bottom: 1%;
+}
+
+.tour_container_desc {
+  font-size: 120%;
+  margin: 0;
+}
+
+.tour_container_header_desc_mini {
+  display: block;
+  font-size: 120%;
+  color: #ebc934;
+  margin-bottom: 1%;
+}
+
+.tour_container_desc_mini {
+  font-size: 100%;
+  margin: 0;
+}
+
+.tours_image_container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 1.5%;
+  margin: 0;
+  text-align: justify;
+}
+
+/*Events*/
+
+.event_block_header {
+  margin-right: 3%;
+  margin-left: 3%;
+  font-size: 150%;
+  font-weight: 500;
+}
+
+.event_block_desc {
+  margin-right: 3%;
+  margin-left: 3%;
+  font-size: 110%;
+  text-align: justify;
+}
+
+/*Information*/
+
+.information_margin {
+  margin-top: 13%;
+}
+
+.information_main_header {
+  font-size: 250%;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 8%;
+}
+
+.information_second_header {
+  font-size: 200%;
+  font-weight: 500;
+  text-align: center;
+}
+
+.information_desc {
+  font-size: 140%;
+  text-align: justify;
+  margin-bottom: 3%;
+}
+
+.information_space {
+  display: flex;
+  justify-content: space-between;
+}
+
+.information_option {
+  text-align: center;
+  font-size: 200%;
+  justify-content: center;
+  font-weight: 500;
+  margin-bottom: 5%;
+}
+
+.options_title {
+  margin-bottom: 2%;
+  margin-left: 2%;
+  font-size: 160%;
+  font-weight: 500;
+}
+
+.options_text {
+  margin-bottom: 1%;
+  margin-left: 2%;
+  font-size: 130%;
+}
+
+/*ABOUT*/
+
+.about_titles {
+  text-align: center;
+  font-size: 200%;
+  font-weight: 500;
+  margin-top: 2%;
+}
+
+.about_text {
+  font-size: 120%;
+  margin-bottom: 3%;
+  margin-top: 3%;
+}
+
+.about_chess_image_container {
+  background-color: #ffde4d;
+  width: 50%;
+  overflow: hidden;
+}
+
+.about_chess_text_container {
+  background-color: #ffde4d;
+  width: 50%;
+  padding: 3%;
+}
+
+.about_chess_header {
+  font-size: 140%;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.about_image_styles {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about_true_positioning {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*Contacts*/
+
+.contact_plank {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  font-size: 140%;
+  text-align: center;
+  background-color: #f9f5ff;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.contact_paddings {
+  padding-left: 45%;
+  margin-bottom: 5%;
+  width: 55%;
+}
+
+.contact_subheader {
+  font-size: 200%;
+  font-weight: 500;
+  text-align: center;
+}
+
+.contact_text {
+  font-size: 120%;
+}
+
+/*Footer*/
+
+.footer_containers_title {
+  font-size: 160%;
+  font-weight: bolder;
+  margin-bottom: 3%;
+}
+
+.footer_containers_text {
+  font-size: 120%;
+}
+
+.contact_form,
+.about_mission_text {
+  font-size: 120%;
+}
+
+.contacts_form_header {
+  font-size: 160%;
+  font-weight: bolder;
+  margin-bottom: 3%;
+}
+
+.visa_title {
+  font-size: 160%;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 4%;
+}
+
+.visa_text {
+  font-size: 120%;
+  text-align: justify;
+}
+
+.visa_points {
+  list-style-type: disc;
+  margin-bottom: 3%;
+  text-align: justify;
+  font-size: 110%;
+}
+
+.visa_margin_top {
+  margin-top: 10%;
+}
+
+.phone_page_png_size {
+  width: 400px;
+}
+
+.phone_titles {
+  font-size: 140%;
+  font-weight: bolder;
+  text-align: center;
+  margin-bottom: 8%;
+}
+
+.phone_text {
+  margin-top: 3%;
+  font-size: 130%;
+  text-align: justify;
+}
+
+.hotels_container_text {
+  font-size: 180%;
+  font-weight: 500;
+}
+
+
+
 .navbar {
   display: flex;
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
   align-items: center;
   transition: 0.3s;
   position: sticky;
-  z-index: 1000;
+  z-index: 50;
 }
 
 .switcher :hover {
-  color: #1f38ab;
+  color: #2f2399;
   transition: "color 0.4s ease";
 }
 
 .navbar.scrolled {
-  background-color: #090a12;
+  background-color: #ffde4d;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   padding: 0;
-  z-index: 1000;
+  z-index: 50;
   transform: scaleY();
 }
 
 .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
   transition: 0.4s; 
+  width: 170px;
 }
 
 .switcher {
   align-items: center;
   justify-content: center;
+  margin-left: 1.7rem;
+  color: #000;
+}
+
+.switcher_btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 110%;
+  font-weight: 500;
+  transition: color 0.4s ease;
+}
+
+.switcher_change_btn {
+  font-size: 106%;
+  font-weight: 500;
 }
 
 .navbar.scrolled .logo {
-  transform: scale(0.7);
+  transform: scale(0.6);
+}
+
+.container {
+  max-width: 1903px;
+}
+
+.main_container {
+  max-width: 100%;
+}
+
+.text_container {
+  font-size: 140%;
+  margin-bottom: 1%
+}
+
+.header_container {
+  font-size: 200%;
+  font-weight: 500;
+  text-align: center;
+}
+
+.image_container {
+  max-width: 100%;
+  height: 950px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.image_container_image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.events_button {
+  padding: 5px 15px;
+  color: #000;
+  background: linear-gradient(to right bottom, #ffdb4d, #deb102);
+  border: 1px solid #a38305;
+  border-radius: 10px;
+  cursor: pointer;
+  height: 40px;
+  width: 100px;
+}
+
+.events_button_btn {
+  display: flex; 
+  justify-content: space-between;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 3%;
+}
+
+.events_button:hover{
+  color: #542906; 
+  transition: color 0.3s ease;
+}
+
+.header_burger {
+  display: none;
+}
+
+/*BURGER*/
+
+.hotels_container {
+  position: absolute;
+  bottom: 45%; 
+  left: 50%; 
+  transform: translate(-50%, 50%); /* Смещение текста на половину его собственной ширины и высоты */
+  width: 100%;
+  color: #fff;
+  margin: 0;
+  text-align: center;
+  font-size: 200%;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.hotel_image {
+  position: relative;
+  overflow: hidden;
+}
+
+.hotel_image img{
+  transition: transform 1.8s ease;
+}
+
+.hotel_image:hover img {
+  transform: scale(1.1); /* Увеличение масштаба при наведении */
+}
+
+.hotel_image::after {
+  content: attr(data-text); /* Текст из атрибута data-text */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hotel_image:hover::after {
+  opacity: 1; /* Появление рамки с текстом при наведении */
+}
+
+.navbar_menu_buttons {
+  font-size: 110%;
+  font-weight: 500;
+  text-decoration: none;
+  color: #000;
+  transition: color 0.4s ease;
+}
+
+.navbar_menu_container {
+  display: flex;
+  gap: 1.7rem;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+
+@media (max-width: 1250px) {
+  .main_container{
+    max-width: 970px;
+  }
+  .header_container {
+    font-size: 140%;
+  }
+  .text_container {
+    font-size: 110%;
+  }
+  .events_button {
+    font-size: 110%;
+    width: 80px;
+    height: 35px;
+  }
+  .header_container_for_picture{
+    top: 31%
+  }
+  .mainpage_link_on_pictute,
+  .mainpage_header_on_pictute {
+    font-size: 110%;
+  }
+  .visibility_area {
+    margin-top: 2%;
+    margin-right: 10%;
+    margin-bottom: 3%;
+    margin-left: 10%;
+  }
+  .mainpage_festivals_title {
+    font-size: 110%;
+  }
+  .tour_items_header {
+    font-size: 180%;
+  }
+  .footer_containers_title {
+    font-size: 140%;
+  }
+  .footer_containers_text {
+    font-size: 100%;
+  }
+  .header_on_picture {
+    font-size: 300%;
+  }
+  .header_for_divede {
+    font-size: 180%;
+  }
+  .tour_container_header_desc {
+    font-size: 150%;
+  }
+  .tour_container_desc {
+    font-size: 100%;
+  }
+  .tour_container_header_desc_mini {
+    font-size: 100%;
+  }
+  .tour_container_desc_mini {
+    font-size: 70%;
+  }
+  .event_block_header {
+    font-size: 130%;
+  }
+  .event_block_desc {
+    font-size: 100%;
+  }
+  .information_main_header {
+    font-size: 220%;
+  }
+  .options_text {
+    font-size: 120%;
+  }
+  .contacts_form_header,
+  .option_title{
+    font-size: 140%;
+  }
+  .information_desc {
+    font-size: 130%;
+  }
+  .visa_title,
+  .about_titles {
+    font-size: 180%;
+  }
+  .visa_text,
+  .about_text {
+    font-size: 110%;
+  }
+  .phone_titles,
+  .contact_plank{
+    font-size: 120%;
+  }
+  .contact_paddings {
+    width: 55%;
+  }
+  .contact_subheader {
+    font-size: 180%;
+  }
+  .phone_text,
+  .contact_form,
+  .contact_text {
+    font-size: 110%;
+  }
+  .visa_points {
+    font-size: 100%;
+  }
+  .visa_margin_top {
+    margin-top: 12%;
+  }
+  .phone_page_png_size {
+    width: 300px;
+  }
+  .hotels_container_text{
+    font-size: 150%;
+  }
+}
+
+@media (max-width: 992px) {
+  .main_container{
+    max-width: 750px;
+  }
+  .header_container {
+    font-size: 100%;
+  }
+  .text_container {
+    font-size: 80%;
+  }
+  .events_button {
+    font-size: 90%;
+    width: 70px;
+    height: 30px;
+  }
+  .header_container_for_picture{
+    top: 32%
+  }
+  .mainpage_link_on_pictute,
+  .mainpage_header_on_pictute {
+    font-size: 100%;
+  }
+  .visibility_area {
+    margin-top: 2%;
+    margin-right: 7%;
+    margin-bottom: 3%;
+    margin-left: 7%;
+  }
+  .mainpage_festivals_title {
+    font-size: 90%;
+  }
+  .tour_items_header {
+    font-size: 140%;
+  }
+  .navbar_menu_container{
+    gap: 1.5rem;
+  }
+  .navbar_menu_buttons {
+    font-size: 100%;
+  }
+  .switcher_btn,
+  .switcher_change_btn {
+    font-size: 100%;
+  }
+  .visa_title,
+  .footer_containers_title {
+    font-size: 120%;
+  }
+  .footer_containers_text {
+    font-size: 80%;
+  }
+  .header_on_picture {
+    font-size:260%;
+  }
+  .header_for_divede {
+    font-size: 160%;
+  }
+  .event_block_header {
+    font-size: 110%;
+  }
+  .event_block_desc {
+    font-size: 80%;
+  }
+  .information_option,
+  .information_second_header,
+  .information_main_header {
+    font-size: 200%;
+  }
+  .phone_titles,
+  .visa_text,
+  .options_text {
+    font-size: 100%;
+  }
+  .information_desc {
+    font-size: 110%;
+  }
+  .contacts_form_header,
+  .option_title{
+    font-size: 120%;
+  }
+  .about_titles {
+    font-size: 150%;
+  }
+  .phone_text,
+  .about_mission_text,
+  .about_text {
+    font-size: 90%;
+  }
+  .contact_plank{
+    font-size: 100%;
+  }
+  .contact_paddings {
+    width: 55%;
+  }
+  .contact_subheader {
+    font-size: 170%;
+  }
+  .contact_form,
+  .contact_text {
+    font-size: 100%;
+  }
+  .visa_points {
+    font-size: 90%;
+  }
+  .visa_margin_top {
+    margin-top: 16%;
+  }
+  .hotels_container_text{
+    font-size: 130%;
+  }
+}
+
+@media (max-width: 767px) {
+  .main_container{
+    max-width: 500px;
+  }
+  .header_container {
+    font-size: 80%;
+  }
+  .text_container {
+    font-size: 50%;
+  }
+  .events_button {
+    font-size: 70%;
+    width: 60px;
+    height: 25px;
+  }
+  .header_burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    z-index: 55;
+  }
+  .header_burger span {
+    position: absolute;
+    background-color: #fff;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+  }
+  .header_burger:before,
+  .header_burger:after {
+    content: '';
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+  }
+  .header_burger:before {
+    top: 0;
+  }
+  .header_burger:after {
+    bottom: 0;
+  }
+  .header_menu {
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #fff1b5;
+    padding: 70px 0 0 0;
+  }
+  .logo {
+    z-index: 55;
+    flex: 0 0 40px;
+  }
+  .navbar {
+    width: 100%;
+  }
+  .main_page_individual_tours_container,
+  .main_page_three_tours_container,
+  .main_page_two_tours_container,
+  .main_page_festivals_container {
+    width: 100%; 
+  }
+  .header_container_for_picture{
+    top: 27%
+  }
+  .mainpage_link_on_pictute,
+  .mainpage_header_on_pictute {
+    font-size: 90%;
+  }
+  .visibility_area {
+    margin-top: 2%;
+    margin-right: 5%;
+    margin-bottom: 3%;
+    margin-left: 5%;
+  }
+  .tour_items_header {
+    font-size: 150%;
+  }
+  .mainpage_festivals_title {
+    font-size: 120%;
+  }
+  .navbar_menu_container{
+    gap: 1rem;
+  }
+  .phone_titles,
+  .navbar_menu_buttons {
+    font-size: 80%;
+  }
+  .switcher_btn,
+  .switcher_change_btn {
+    font-size: 80%;
+  }
+  .visa_title,
+  .footer_containers_title {
+    font-size: 100%;
+  }
+  .phone_text,
+  .footer_containers_text {
+    font-size: 70%;
+  }
+  .tours_page_image_container {
+    width: 100%;
+  }
+  .header_on_picture {
+    font-size: 220%;
+  }
+  .header_for_divede {
+    font-size: 140%;
+  }
+  .tour_container_header_desc {
+    font-size: 140%;
+  }
+  .tour_container_desc {
+    font-size: 100%;
+  }
+  .tour_container_header_desc_mini {
+    font-size: 140%;
+  }
+  .tour_container_desc_mini {
+    font-size: 100%;
+  }
+  .event_block_header {
+    font-size: 90%;
+  }
+  .event_block_desc {
+    font-size: 60%;
+  }
+  .information_option,
+  .information_second_header,
+  .information_main_header {
+    font-size: 170%;
+  }
+  .information_margin {
+    margin-top: 15%;
+  }
+  .information_desc {
+    font-size: 90%;
+  }
+  .visa_text,
+  .options_text {
+    font-size: 80%;
+  }
+  .contacts_form_header,
+  .option_title{
+    font-size: 100%;
+  }
+  .about_titles {
+    font-size: 125%;
+  }
+  .about_mission_text,
+  .about_text {
+    font-size: 70%;
+  }
+  .contact_plank{
+    font-size: 80%;
+  }
+  .contact_paddings {
+    width: 60%;
+  }
+  .contact_subheader {
+    font-size: 140%;
+  }
+  .contact_form,
+  .contact_text {
+    font-size: 80%;
+  }
+  .visa_points {
+    font-size: 75%;
+  }
+  .visa_margin_top {
+    margin-top: 20%;
+  }
+  .phone_page_png_size {
+    width: 160px;
+  }
+  .hotels_container_text{
+    font-size: 100%;
+  }
+}
+
+@media (max-width: 580px) {
+  .event_block_header {
+    font-size: 80%;
+  }
+  .event_block_desc {
+    font-size: 50%;
+  }
+  .information_margin {
+    margin-top: 17%;
+  }
+  .information_option,
+  .information_second_header {
+    font-size: 150%;
+  }
+  .contacts_form_header,
+  .options_title{
+    font-size: 90%;
+  }
+  .about_titles {
+    font-size: 110%;
+  }
+  .visa_points,
+  .about_mission_text,
+  .about_text {
+    font-size: 60%;
+  }
+  .phone_titles,
+  .visa_text,
+  .contact_plank{
+    font-size: 70%;
+  }
+  .contact_subheader {
+    font-size: 130%;
+  }
+  .visa_title,
+  .contact_form,
+  .contact_text {
+    font-size: 75%;
+  }
+  .visa_margin_top {
+    margin-top: 22%;
+  }
+  .phone_page_png_size {
+    width: 90px;
+  }
+  .phone_text{
+    font-size: 60%;
+  }
+  .hotels_container_text{
+    font-size: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .main_container{
+    max-width: 300px;
+  }
+  .header_container {
+    font-size: 50%;
+  }
+  .header_container_for_picture{
+    top: 17%
+  }
+  .mainpage_link_on_pictute,
+  .mainpage_header_on_pictute {
+    font-size: 70%;
+  }
+  .text_container {
+    font-size: 40%;
+  }
+  .events_button {
+    font-size: 50%;
+    width: 50px;
+    height: 20px;
+  }
+  .header_menu {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff1b5;
+    padding: 70px 0 0 0;
+  }
+  .header_on_picture {
+    font-size: 200%;
+  }
+  .header_for_divede {
+    font-size: 120%;
+  }
+  .event_block_header {
+    font-size: 70%;
+  }
+  .event_block_desc {
+    font-size: 45%;
+  }
+  .information_option,
+  .information_second_header,
+  .information_main_header {
+    font-size: 120%;
+  }
+  .information_margin {
+    margin-top: 30%;
+  }
+  .contacts_form_header,
+  .option_title{
+    font-size: 80%;
+  }
+  .visa_points
+  .options_text,
+  .information_desc {
+    font-size: 50%;
+  }
+  .about_titles {
+    font-size: 90%;
+  }
+  .phone_text,
+  .phone_titles,
+  .about_mission_text,
+  .about_text {
+    font-size: 55%;
+  }
+  .visa_text,
+  .contact_plank{
+    font-size: 60%;
+  }
+  .contact_paddings {
+    width: 58%;
+  }
+  .contact_subheader {
+    font-size: 120%;
+  }
+  .visa_title,
+  .contact_form,
+  .contact_text {
+    font-size: 70%;
+  }
+  .visa_margin_top {
+    margin-top: 28%;
+  }
+  .phone_page_png_size {
+    width: 80px;
+  }
+  .hotels_container_text{
+    font-size: 80%;
+  }
 }
 
 table {
   border-collapse: collapse;
   width: 100%;
-  font-size: 120%;
   color: darkslategray;
   margin: auto;
 }
@@ -74,5 +1104,5 @@ td {
 }
 
 tbody {
-  background-color: #ffffff;
+  background-color: #fff;
 }

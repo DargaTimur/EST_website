@@ -1,14 +1,14 @@
-import {useTranslations} from 'next-intl';
+import {getTranslations} from 'next-intl/server';
 import SeasonsSlider from '@/components/UI/SeasonsSlider';
 import {unstable_setRequestLocale} from 'next-intl/server';
 
-const Visit = ({params: {locale}}: {params: {locale: string}}) => {
+const Visit = async ({params: {locale}}: {params: {locale: string}}) => {
   unstable_setRequestLocale(locale);
-  const t = useTranslations('Information');
+  const t = await getTranslations('Information');
   return (
     <div>
-      <div style={{width: "100%", height: "100vh", objectFit: "cover", textAlign: "center"}}>
-        <div style={{width: "100%", height: "100%", position: "absolute", top: "0", left: "0", zIndex: "0", overflow: "hidden"}}>
+      <div >
+        <div >
           <SeasonsSlider  
             winter={t('seasons.title1')}
             winterDescription1={t('seasons.description1')}

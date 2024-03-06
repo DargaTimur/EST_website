@@ -6,20 +6,19 @@ import Link from "next/link";
 const Festivals = () => {
   const t = useTranslations('Events');
   return (
-    <div style={{display: "flex", flexWrap: "wrap", gap: "3%"}}>
+    <div style={{display: "flex", flexWrap: "wrap", justifyContent: "space-between"}}>
       {FESTIVALS.map((element, index) => (
-        <div key={index} style={{ marginBottom: "5%"}}>
+        <div key={index} className='main_page_festivals_container'>
           <a href={element.href}>
-            <Image
+            <img
               src={element.src}
-              alt=''
-              width={400}
-              height={300}
-              style={{ border: "1px solid #000", padding: "1%" }}
+              alt='festivals'
+              width='100%'
+              height='auto'
             />
           </a>
-          <div style={{textAlign: "center"}}>
-            <Link href={element.href} style={{margin: "4%", fontSize: "130%", outline: "none", textDecoration: "none", color: "black", fontWeight: "500"}}>
+          <div style={{textAlign: "center", backgroundColor: "#ffde4d", padding: "1%", marginBottom: "4%"}}>
+            <Link href={element.href} className='mainpage_festivals_title'>
               {t(`festivals.${index}.title`)}
             </Link>
           </div>

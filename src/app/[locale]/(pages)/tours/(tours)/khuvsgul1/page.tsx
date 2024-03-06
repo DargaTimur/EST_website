@@ -1,92 +1,417 @@
-import { KhuvsgulAimag } from '@/constants';
 import Link from 'next/link';
 import '../../../../../../components/UI/button.css';
-import {useTranslations} from 'next-intl';
+import {getTranslations} from 'next-intl/server';
 import {unstable_setRequestLocale} from 'next-intl/server';
 
-const Khuvsgul1 = ({params: {locale}}: {params: {locale: string}}) => {
+const Khuvsgul1 = async ({params: {locale}}: {params: {locale: string}}) => {
   unstable_setRequestLocale(locale);
-  const t = useTranslations('Tours');
+  const t = await getTranslations('Tours');
   return (
-    <div style={{margin: "3%", marginTop: "10%"}}>
-      <div style={{marginLeft: "15%", marginRight: "15%", marginBottom: "3%"}}> {/*For description*/}
-        <p style={{fontSize: "200%", fontWeight: "bold", marginBottom: "1%"}}>{t('Khuvsgul1.title')} <a style={{fontSize: "60%", color: "#1226db"}}>{t('Khuvsgul1.subtitle')} </a></p>
-        <div style={{ display: "flex"}}>
-          <div style={{marginRight: "3%", marginBottom: "3%", width: "50%"}}>
+    <div style={{marginTop: "8%"}}>
+      <div style={{marginLeft: "15%", marginRight: "15%"}}> {/*For description*/}
+        <div>
+          <div style={{position: 'relative', padding: "2%", backgroundColor: "#ffde4d"}}>
             <img
-              src='/tmkhuvsgul1.jpg'
+              src='/1.jpg'
+              alt='Route'
             />
           </div>
-          <div style={{width: "50%"}}>
-            <p style={{fontSize: "130%" }}>{t('Khuvsgul1.text')}</p>
-            <div style={{marginTop: "3%"}}>
-              <Link href="/contacts" className='myButton '>
-                {t('Khuvsgul1.button')}
-              </Link>
+          <div style={{position: 'relative'}}>
+            <img
+              src='/kt0.jpg'
+              alt='Ulaanbaatar'
+              style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+            />
+            <p className='tours_image_container' style={{fontSize: "200%", color: "#fff"}}>KHUVSGUL LAKE TOUR - 7 days 6 nights</p>
+          </div>
+          <div style={{display: "flex", padding: "2%", backgroundColor: "#f6f5ff"}}>
+            <div style={{width: "100%", marginRight: "8%"}}>{/*left cont*/}
+              <div>
+                <p style={{fontSize: "200%", fontWeight: "500", marginBottom: "2%"}}>Day 1. Elsen Tasarkhai</p>
+              </div>
+              <div>
+                <p style={{textAlign: "justify", marginBottom: "4%", fontSize: "110%"}}>Ulaanbaatar, with our guides' help, unveils its treasures: museums, cashmere shops, and more. Navigate this vibrant city, enjoying world-class museums, traditional theaters, and diverse cuisines. Explore the lively cityscape, making your Mongolian adventure truly unforgettable.</p>
+              </div>
+              <div>
+                <p style={{fontSize: "140%", fontWeight: "500", marginBottom: "2%"}}>Please be advised</p>
+                <p style={{textAlign: "justify", fontSize: "110%"}}> Traffic congestion is frequent in Ulaanbaatar, and delays are possible. Smooth city roads contribute to a comfortable journey. </p>
+              </div>
+            </div>
+            <div style={{width: "100%"}}>{/*right cont*/}
+              <div>
+                <p style={{fontSize: "200%", marginBottom: "2%", fontWeight: "500"}}>PROGRAM</p>
+              </div>
+              <div style={{marginBottom: "4%", marginLeft: "1%", fontSize: "120%"}}>
+                <ul style={{fontWeight: "500", marginBottom: "1%"}}>
+                  <li>{t('City.li1td1')}</li>
+                  <li>{t('City.li2td1')}</li>
+                  <li>{t('City.li3td1')}</li>
+                  <li>{t('City.li4td1')}</li>
+                  <li>{t('City.li5td1')}</li>
+                  <li>{t('City.li6td1')}</li>
+                  <li>{t('City.li7td1')}</li>
+                </ul>
+              </div>
+              <div style={{display: "flex", gap: "1%", marginRight: "2%"}}>
+                <p style={{ display: "flex", alignItems: "center" }}>
+                  <img src='/eat.png' alt="eat" style={{ marginRight: "5px" }}/>3 meals
+                </p>
+                <p style={{ display: "flex", alignItems: "center" }}>
+                  <img src='/wifi.png' alt="wifi" style={{ marginRight: "5px" }}/>Wifi
+                </p>
+                <p style={{ display: "flex", alignItems: "center" }}>
+                  <img src='/battery.png' alt="battery" style={{ marginRight: "5px" }}/>Charging
+                </p>
+                <p style={{ display: "flex", alignItems: "center" }}>
+                  <img src='/shower.png' alt="shower" style={{ marginRight: "5px" }}/>Shower
+                </p>
+                <p style={{ display: "flex", alignItems: "center" }}>
+                  <img src='/bulb.png' alt="bulb" style={{ marginRight: "5px" }}/>Light
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div style={{marginLeft: "15%", marginRight: "15%", marginBottom: "9%"}}> {/*For table*/}
-        <table>
-          <thead>
-            <tr style={{fontWeight: "bolder", backgroundColor: "#c8d4e3"}}>
-              <td style={{textAlign: "center"}}>{t('Khuvsgul1.tdl1')}</td>
-              <td style={{textAlign: "center"}}>{t('Khuvsgul1.tdl2')}</td>
-              <td style={{textAlign: "center"}}>{t('Khuvsgul1.tdl3')}</td>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td style={{textAlign: "center"}}>1</td>
-              <td style={{textAlign: "center"}}>{t('Khuvsgul1.td1-1')}</td>
-              <td>{t('Khuvsgul1.li1td1')}<br/>
-                {t('Khuvsgul1.li2td1')}<br/>
-                {t('Khuvsgul1.li3td1')}<br/>
-                {t('Khuvsgul1.li4td1')}<br/>
-              </td>
-            </tr>
-          </tbody>
-          <tbody>
-            <tr>
-              <td style={{textAlign: "center"}}>2</td>
-              <td style={{textAlign: "center"}}>{t('Khuvsgul1.td2-1')}</td>
-              <td>{t('Khuvsgul1.li1td2')}<br/>
-                {t('Khuvsgul1.li2td2')}<br/>
-                {t('Khuvsgul1.li3td2')}<br/>
-                {t('Khuvsgul1.li4td2')}<br/>
-                {t('Khuvsgul1.li5td2')}
-              </td>
-            </tr>
-          </tbody>
-          <tbody>
-            <tr>
-              <td style={{textAlign: "center"}}>3</td>
-              <td style={{textAlign: "center"}}>{t('Khuvsgul1.td3-1')}</td>
-              <td>{t('Khuvsgul1.li1td3')}<br/>
-                {t('Khuvsgul1.li2td3')}
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div style={{marginLeft: "15%", marginRight: "15%"}}> {/*for container*/}
-        <div style={{marginBottom: "10%"}}>
-          {KhuvsgulAimag.map((element, index) => (
-            <div key={element.id}>
-              <div style={{display: "flex", marginBottom: "3%"}}>
-                <img
-                  src={element.src}
-                  alt={element.title}
-                  width="40%"
-                />
-                <div style={{marginLeft: "3%", marginBottom: "3%", fontSize: "130%"}}>
-                  <strong style={{color: "#1137ed"}}>{t(`Khuvsgul1-block.${index}.title`)}</strong>
-                  <p>{t(`Khuvsgul1-block.${index}.description`)}</p>
+        <div >
+          <div style={{position: 'relative'}}>
+            <img
+              src='/kt1.jpg'
+              alt='Ulaanbaatar'
+              style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+            />
+          </div>
+          <div style={{display: "flex", padding: "2%", backgroundColor: "#f6f5ff"}}>
+            <div style={{width: "100%", marginRight: "8%"}}>{/*left cont*/}
+              <div>
+                <p style={{fontSize: "200%", fontWeight: "500", marginBottom: "2%"}}>Day 2. Tsenher Hot Spring</p>
+              </div>
+              <div>
+                <p style={{textAlign: "justify", marginBottom: "4%", fontSize: "110%"}}>Ulaanbaatar, with our guides' help, unveils its treasures: museums, cashmere shops, and more. Navigate this vibrant city, enjoying world-class museums, traditional theaters, and diverse cuisines. Explore the lively cityscape, making your Mongolian adventure truly unforgettable.</p>
+              </div>
+              <div>
+                <p style={{fontSize: "140%", fontWeight: "500", marginBottom: "2%"}}>Please be advised</p>
+                <p style={{textAlign: "justify", fontSize: "110%"}}> Traffic congestion is frequent in Ulaanbaatar, and delays are possible. Smooth city roads contribute to a comfortable journey. </p>
+              </div>
+            </div>
+            <div style={{width: "100%"}}>{/*right cont*/}
+              <div>
+                <p style={{fontSize: "200%", marginBottom: "2%", fontWeight: "500"}}>PROGRAM</p>
+              </div>
+              <div style={{marginBottom: "4%", marginLeft: "1%", fontSize: "120%"}}>
+                <ul style={{fontWeight: "500", marginBottom: "1%"}}>
+                  <li>{t('City.li1td1')}</li>
+                  <li>{t('City.li2td1')}</li>
+                  <li>{t('City.li3td1')}</li>
+                  <li>{t('City.li4td1')}</li>
+                  <li>{t('City.li5td1')}</li>
+                  <li>{t('City.li6td1')}</li>
+                  <li>{t('City.li7td1')}</li>
+                </ul>
+              </div>
+              <div style={{display: "flex", gap: "1%", marginRight: "2%"}}>
+                <p style={{ display: "flex", alignItems: "center" }}>
+                  <img src='/eat.png' alt="eat" style={{ marginRight: "5px" }}/>3 meals
+                </p>
+                <p style={{ display: "flex", alignItems: "center" }}>
+                  <img src='/wifi.png' alt="wifi" style={{ marginRight: "5px" }}/>Wifi
+                </p>
+                <p style={{ display: "flex", alignItems: "center" }}>
+                  <img src='/battery.png' alt="battery" style={{ marginRight: "5px" }}/>Charging
+                </p>
+                <p style={{ display: "flex", alignItems: "center" }}>
+                  <img src='/shower.png' alt="shower" style={{ marginRight: "5px" }}/>Shower
+                </p>
+                <p style={{ display: "flex", alignItems: "center" }}>
+                  <img src='/bulb.png' alt="bulb" style={{ marginRight: "5px" }}/>Light
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div style={{position: 'relative'}}>
+            <img
+              src='/kt2.jpg'
+              alt='Ulaanbaatar'
+              style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+            />
+          </div>
+          <div style={{display: "flex", padding: "2%", backgroundColor: "#f6f5ff"}}>
+            <div style={{width: "100%", marginRight: "8%"}}>{/*left cont*/}
+              <div>
+                <p style={{fontSize: "200%", fontWeight: "500", marginBottom: "2%"}}>Day 3. Tsenher Lake</p>
+              </div>
+              <div>
+                <p style={{textAlign: "justify", marginBottom: "4%", fontSize: "110%"}}>Ulaanbaatar, with our guides' help, unveils its treasures: museums, cashmere shops, and more. Navigate this vibrant city, enjoying world-class museums, traditional theaters, and diverse cuisines. Explore the lively cityscape, making your Mongolian adventure truly unforgettable.</p>
+              </div>
+              <div>
+                <p style={{fontSize: "140%", fontWeight: "500", marginBottom: "2%"}}>Please be advised</p>
+                <p style={{textAlign: "justify", fontSize: "110%"}}> Traffic congestion is frequent in Ulaanbaatar, and delays are possible. Smooth city roads contribute to a comfortable journey. </p>
+              </div>
+            </div>
+            <div style={{width: "100%"}}>{/*right cont*/}
+              <div>
+                <p style={{fontSize: "200%", marginBottom: "2%", fontWeight: "500"}}>PROGRAM</p>
+              </div>
+              <div style={{marginBottom: "4%", marginLeft: "1%", fontSize: "120%"}}>
+                <ul style={{fontWeight: "500", marginBottom: "1%"}}>
+                  <li>{t('City.li1td1')}</li>
+                  <li>{t('City.li2td1')}</li>
+                  <li>{t('City.li3td1')}</li>
+                  <li>{t('City.li4td1')}</li>
+                  <li>{t('City.li5td1')}</li>
+                  <li>{t('City.li6td1')}</li>
+                  <li>{t('City.li7td1')}</li>
+                </ul>
+              </div>
+              <div style={{display: "flex", gap: "1%", marginRight: "2%"}}>
+                <p style={{ display: "flex", alignItems: "center" }}>
+                  <img src='/eat.png' alt="eat" style={{ marginRight: "5px" }}/>3 meals
+                </p>
+                <p style={{ display: "flex", alignItems: "center" }}>
+                  <img src='/wifi.png' alt="wifi" style={{ marginRight: "5px" }}/>Wifi
+                </p>
+                <p style={{ display: "flex", alignItems: "center" }}>
+                  <img src='/battery.png' alt="battery" style={{ marginRight: "5px" }}/>Charging
+                </p>
+                <p style={{ display: "flex", alignItems: "center" }}>
+                  <img src='/shower.png' alt="shower" style={{ marginRight: "5px" }}/>Shower
+                </p>
+                <p style={{ display: "flex", alignItems: "center" }}>
+                  <img src='/bulb.png' alt="bulb" style={{ marginRight: "5px" }}/>Light
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div style={{position: 'relative'}}>
+            <img
+              src='/kt3.jpg'
+              alt='Ulaanbaatar'
+              style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+            />
+          </div>
+          <div style={{display: "flex", padding: "2%", backgroundColor: "#f6f5ff"}}>
+            <div style={{width: "100%", marginRight: "8%"}}>{/*left cont*/}
+              <div>
+                <p style={{fontSize: "200%", fontWeight: "500", marginBottom: "2%"}}>Day 4. Ider Sum</p>
+              </div>
+              <div>
+                <p style={{textAlign: "justify", marginBottom: "4%", fontSize: "110%"}}>Ulaanbaatar, with our guides' help, unveils its treasures: museums, cashmere shops, and more. Navigate this vibrant city, enjoying world-class museums, traditional theaters, and diverse cuisines. Explore the lively cityscape, making your Mongolian adventure truly unforgettable.</p>
+              </div>
+              <div>
+                <p style={{fontSize: "140%", fontWeight: "500", marginBottom: "2%"}}>Please be advised</p>
+                <p style={{textAlign: "justify", fontSize: "110%"}}> Traffic congestion is frequent in Ulaanbaatar, and delays are possible. Smooth city roads contribute to a comfortable journey. </p>
+              </div>
+            </div>
+            <div style={{width: "100%"}}>{/*right cont*/}
+              <div>
+                <p style={{fontSize: "200%", marginBottom: "2%", fontWeight: "500"}}>PROGRAM</p>
+              </div>
+              <div style={{marginBottom: "4%", marginLeft: "1%", fontSize: "120%"}}>
+                <ul style={{fontWeight: "500", marginBottom: "1%"}}>
+                  <li>{t('City.li1td1')}</li>
+                  <li>{t('City.li2td1')}</li>
+                  <li>{t('City.li3td1')}</li>
+                  <li>{t('City.li4td1')}</li>
+                  <li>{t('City.li5td1')}</li>
+                  <li>{t('City.li6td1')}</li>
+                  <li>{t('City.li7td1')}</li>
+                </ul>
+              </div>
+              <div style={{display: "flex", gap: "1%", marginRight: "2%"}}>
+                <p style={{ display: "flex", alignItems: "center" }}>
+                  <img src='/eat.png' alt="eat" style={{ marginRight: "5px" }}/>3 meals
+                </p>
+                <p style={{ display: "flex", alignItems: "center" }}>
+                  <img src='/wifi.png' alt="wifi" style={{ marginRight: "5px" }}/>Wifi
+                </p>
+                <p style={{ display: "flex", alignItems: "center" }}>
+                  <img src='/battery.png' alt="battery" style={{ marginRight: "5px" }}/>Charging
+                </p>
+                <p style={{ display: "flex", alignItems: "center" }}>
+                  <img src='/shower.png' alt="shower" style={{ marginRight: "5px" }}/>Shower
+                </p>
+                <p style={{ display: "flex", alignItems: "center" }}>
+                  <img src='/bulb.png' alt="bulb" style={{ marginRight: "5px" }}/>Light
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div style={{position: 'relative'}}>
+            <img
+              src='/kt4.jpg'
+              alt='Ulaanbaatar'
+              style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+            />
+          </div>
+          <div style={{display: "flex", padding: "2%", backgroundColor: "#f6f5ff"}}>
+            <div style={{width: "100%", marginRight: "8%"}}>{/*left cont*/}
+              <div>
+                <p style={{fontSize: "200%", fontWeight: "500", marginBottom: "2%"}}>Day 5. Khuvsgul Lake</p>
+              </div>
+              <div>
+                <p style={{textAlign: "justify", marginBottom: "4%", fontSize: "110%"}}>Ulaanbaatar, with our guides' help, unveils its treasures: museums, cashmere shops, and more. Navigate this vibrant city, enjoying world-class museums, traditional theaters, and diverse cuisines. Explore the lively cityscape, making your Mongolian adventure truly unforgettable.</p>
+              </div>
+              <div>
+                <p style={{fontSize: "140%", fontWeight: "500", marginBottom: "2%"}}>Please be advised</p>
+                <p style={{textAlign: "justify", fontSize: "110%"}}> Traffic congestion is frequent in Ulaanbaatar, and delays are possible. Smooth city roads contribute to a comfortable journey. </p>
+              </div>
+            </div>
+            <div style={{width: "100%"}}>{/*right cont*/}
+              <div>
+                <p style={{fontSize: "200%", marginBottom: "2%", fontWeight: "500"}}>PROGRAM</p>
+              </div>
+              <div style={{marginBottom: "4%", marginLeft: "1%", fontSize: "120%"}}>
+                <ul style={{fontWeight: "500", marginBottom: "1%"}}>
+                  <li>{t('City.li1td1')}</li>
+                  <li>{t('City.li2td1')}</li>
+                  <li>{t('City.li3td1')}</li>
+                  <li>{t('City.li4td1')}</li>
+                  <li>{t('City.li5td1')}</li>
+                  <li>{t('City.li6td1')}</li>
+                  <li>{t('City.li7td1')}</li>
+                </ul>
+              </div>
+              <div style={{display: "flex", gap: "1%", marginRight: "2%"}}>
+                <p style={{ display: "flex", alignItems: "center" }}>
+                  <img src='/eat.png' alt="eat" style={{ marginRight: "5px" }}/>3 meals
+                </p>
+                <p style={{ display: "flex", alignItems: "center" }}>
+                  <img src='/wifi.png' alt="wifi" style={{ marginRight: "5px" }}/>Wifi
+                </p>
+                <p style={{ display: "flex", alignItems: "center" }}>
+                  <img src='/battery.png' alt="battery" style={{ marginRight: "5px" }}/>Charging
+                </p>
+                <p style={{ display: "flex", alignItems: "center" }}>
+                  <img src='/shower.png' alt="shower" style={{ marginRight: "5px" }}/>Shower
+                </p>
+                <p style={{ display: "flex", alignItems: "center" }}>
+                  <img src='/bulb.png' alt="bulb" style={{ marginRight: "5px" }}/>Light
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div style={{position: 'relative'}}>
+            <img
+              src='/kt5.jpg'
+              alt='Ulaanbaatar'
+              style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+            />
+          </div>
+          <div style={{display: "flex", padding: "2%", backgroundColor: "#f6f5ff"}}>
+            <div style={{width: "100%", marginRight: "8%"}}>{/*left cont*/}
+              <div>
+                <p style={{fontSize: "200%", fontWeight: "500", marginBottom: "2%"}}>Day 6. Bulgan Aimag</p>
+              </div>
+              <div>
+                <p style={{textAlign: "justify", marginBottom: "4%", fontSize: "110%"}}>Ulaanbaatar, with our guides' help, unveils its treasures: museums, cashmere shops, and more. Navigate this vibrant city, enjoying world-class museums, traditional theaters, and diverse cuisines. Explore the lively cityscape, making your Mongolian adventure truly unforgettable.</p>
+              </div>
+              <div>
+                <p style={{fontSize: "140%", fontWeight: "500", marginBottom: "2%"}}>Please be advised</p>
+                <p style={{textAlign: "justify", fontSize: "110%"}}> Traffic congestion is frequent in Ulaanbaatar, and delays are possible. Smooth city roads contribute to a comfortable journey. </p>
+              </div>
+            </div>
+            <div style={{width: "100%"}}>{/*right cont*/}
+              <div>
+                <p style={{fontSize: "200%", marginBottom: "2%", fontWeight: "500"}}>PROGRAM</p>
+              </div>
+              <div style={{marginBottom: "4%", marginLeft: "1%", fontSize: "120%"}}>
+                <ul style={{fontWeight: "500", marginBottom: "1%"}}>
+                  <li>{t('City.li1td1')}</li>
+                  <li>{t('City.li2td1')}</li>
+                  <li>{t('City.li3td1')}</li>
+                  <li>{t('City.li4td1')}</li>
+                  <li>{t('City.li5td1')}</li>
+                  <li>{t('City.li6td1')}</li>
+                  <li>{t('City.li7td1')}</li>
+                </ul>
+              </div>
+              <div style={{display: "flex", gap: "1%", marginRight: "2%"}}>
+                <p style={{ display: "flex", alignItems: "center" }}>
+                  <img src='/eat.png' alt="eat" style={{ marginRight: "5px" }}/>3 meals
+                </p>
+                <p style={{ display: "flex", alignItems: "center" }}>
+                  <img src='/wifi.png' alt="wifi" style={{ marginRight: "5px" }}/>Wifi
+                </p>
+                <p style={{ display: "flex", alignItems: "center" }}>
+                  <img src='/battery.png' alt="battery" style={{ marginRight: "5px" }}/>Charging
+                </p>
+                <p style={{ display: "flex", alignItems: "center" }}>
+                  <img src='/shower.png' alt="shower" style={{ marginRight: "5px" }}/>Shower
+                </p>
+                <p style={{ display: "flex", alignItems: "center" }}>
+                  <img src='/bulb.png' alt="bulb" style={{ marginRight: "5px" }}/>Light
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div style={{position: 'relative'}}>
+            <img
+              src='/kt6.jpg'
+              alt='Ulaanbaatar'
+              style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+            />
+          </div>
+          <div style={{display: "flex", padding: "2%", backgroundColor: "#f6f5ff"}}>
+            <div style={{width: "100%", marginRight: "8%"}}>{/*left cont*/}
+              <div>
+                <p style={{fontSize: "200%", fontWeight: "500", marginBottom: "2%"}}>Day 7. Back to Ulaanbaatar</p>
+              </div>
+              <div>
+                <p style={{textAlign: "justify", marginBottom: "4%", fontSize: "110%"}}>Ulaanbaatar, with our guides' help, unveils its treasures: museums, cashmere shops, and more. Navigate this vibrant city, enjoying world-class museums, traditional theaters, and diverse cuisines. Explore the lively cityscape, making your Mongolian adventure truly unforgettable.</p>
+              </div>
+              <div>
+                <p style={{fontSize: "140%", fontWeight: "500", marginBottom: "2%"}}>Please be advised</p>
+                <p style={{textAlign: "justify", fontSize: "110%"}}> Traffic congestion is frequent in Ulaanbaatar, and delays are possible. Smooth city roads contribute to a comfortable journey. </p>
+                <div style={{marginTop: "2%"}}>
+                  <Link href="/contacts/#targetBlock" className='myButton '>
+                    {t('City.button')}
+                  </Link>
                 </div>
               </div>
             </div>
-          ))}
+            <div style={{width: "100%"}}>{/*right cont*/}
+              <div>
+                <p style={{fontSize: "200%", marginBottom: "2%", fontWeight: "500"}}>PROGRAM</p>
+              </div>
+              <div style={{marginBottom: "4%", marginLeft: "1%", fontSize: "120%"}}>
+                <ul style={{fontWeight: "500", marginBottom: "1%"}}>
+                  <li>{t('City.li1td1')}</li>
+                  <li>{t('City.li2td1')}</li>
+                  <li>{t('City.li3td1')}</li>
+                  <li>{t('City.li4td1')}</li>
+                  <li>{t('City.li5td1')}</li>
+                  <li>{t('City.li6td1')}</li>
+                  <li>{t('City.li7td1')}</li>
+                </ul>
+              </div>
+              <div style={{display: "flex", gap: "1%", marginRight: "2%"}}>
+                <p style={{ display: "flex", alignItems: "center" }}>
+                  <img src='/eat.png' alt="eat" style={{ marginRight: "5px" }}/>3 meals
+                </p>
+                <p style={{ display: "flex", alignItems: "center" }}>
+                  <img src='/wifi.png' alt="wifi" style={{ marginRight: "5px" }}/>Wifi
+                </p>
+                <p style={{ display: "flex", alignItems: "center" }}>
+                  <img src='/battery.png' alt="battery" style={{ marginRight: "5px" }}/>Charging
+                </p>
+                <p style={{ display: "flex", alignItems: "center" }}>
+                  <img src='/shower.png' alt="shower" style={{ marginRight: "5px" }}/>Shower
+                </p>
+                <p style={{ display: "flex", alignItems: "center" }}>
+                  <img src='/bulb.png' alt="bulb" style={{ marginRight: "5px" }}/>Light
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

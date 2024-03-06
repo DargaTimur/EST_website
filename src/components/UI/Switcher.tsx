@@ -15,10 +15,10 @@ export default function LocalSwitcher() {
     <select 
       onChange={onSelectChange} 
       defaultValue={localActive} 
-      style={{ backgroundColor: "transparent", border:"none", outline: "none", fontSize: "106%", fontWeight: "500", transition: "color 0.4s ease"}}
+      className='switcher_btn'
     >
-      <option style={{fontSize: "106%", fontWeight: "500"}} value="ko">{t('language2')}</option>
-      <option style={{fontSize: "106%", fontWeight: "500"}} value="en">{t('language1')}</option>
+      <option className='switcher_change_btn' value="ko">{t('language2')}</option>
+      <option className='switcher_change_btn' value="en">{t('language1')}</option>
     </select>
   )
 }

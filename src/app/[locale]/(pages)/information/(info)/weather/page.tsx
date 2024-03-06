@@ -1,17 +1,17 @@
-import {useTranslations} from 'next-intl';
+import {getTranslations} from 'next-intl/server';
 import {unstable_setRequestLocale} from 'next-intl/server';
 
-const Weather = ({params: {locale}}: {params: {locale: string}}) => {
+const Weather = async ({params: {locale}}: {params: {locale: string}}) => {
   unstable_setRequestLocale(locale);
-  const t = useTranslations('Information');
+  const t = await getTranslations('Information');
   return (
-    <div>
-      <div style={{marginLeft: "20%", marginRight: "20%", marginTop: "10%", marginBottom: "4%"}}>
-        <p style={{fontSize: "200%", fontWeight: "bolder", textAlign: "center", marginBottom: "3%"}}>{t('weather.title')} </p>
-        <p style={{fontSize: "120%", marginBottom: "3%"}}>{t('weather.text1')}</p>
-        <p style={{marginBottom: "3%", fontSize: "120%"}}>{t('weather.text2')}</p>
-        <p style={{marginBottom: "3%", fontSize: "120%"}}>{t('weather.text3')}</p>
-        <p style={{marginBottom: "3%", fontSize: "120%"}}>{t('weather.text4')}</p>
+    <div className='visibility_area'>
+      <div className='visa_margin_top' style={{marginBottom: "4%", textAlign: "justify"}}>
+        <p className='visa_title'>{t('weather.title')} </p>
+        <p className='visa_text'>{t('weather.text1')}</p>
+        <p className='visa_text'>{t('weather.text2')}</p>
+        <p className='visa_text'>{t('weather.text3')}</p>
+        <p className='visa_text'>{t('weather.text4')}</p>
       </div>
     </div>
   )

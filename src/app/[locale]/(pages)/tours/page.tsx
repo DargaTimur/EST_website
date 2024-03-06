@@ -1,71 +1,94 @@
-import {useTranslations} from 'next-intl';
-import { TOURS_IMAGES } from '@/constants';
+import {getTranslations} from 'next-intl/server';
+import { TOURS_LINK, INDIVIDUAL_TOURS } from '@/constants';
 import {unstable_setRequestLocale} from 'next-intl/server';
 
-const Tours = ({params: {locale}}: {params: {locale: string}}) => {
+const Tours = async ({params: {locale}}: {params: {locale: string}}) => {
   unstable_setRequestLocale(locale);
-  const t = useTranslations('Tours');
+  const t = await getTranslations('Tours');
   return (
-    <div >
-      <div style={{width: "1903px", height: "875px", overflow: "hidden", textAlign: "center", marginBottom: "5%"}}> 
-        <img
-          style={{width: "100vw", height: "100vh", objectFit: "cover", position: "absolute", top: "0", left: "0", zIndex: "-1", overflow: "hidden"}}
-          src='/toursmain.jpg'
-          alt='Name'
-          width="100%"
-          height="300px"
-        />
-        <div style={{position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', textAlign: 'center', color: 'white'}}>
-          <h1 style={{fontSize: '400%', fontWeight: '500'}}>{t('title')}</h1>
-        </div>
+    <div>
+      <img
+        src='/toursmain.jpg'
+        alt='Name'
+        width='100%'
+      />
+      <div className='header_container_for_picture'>
+        <h1 className='header_on_picture'>TOURS</h1>
       </div>
-      <div>
-        <p style={{textAlign: "center", marginBottom: "3%", fontSize: "200%", fontWeight: "500"}}>
-          {t('subtitle')}
-        </p>
-      </div>
-      <div style={{marginLeft: "15%", marginRight: "15%"}}>
-        <div style={{display: "flex", flexWrap: "wrap", gap: "8%", marginBottom: '2%'}}>
-          {TOURS_IMAGES.map((element, index) => (
-            <div key={element.id}>
-              <a href={element.href}>
-                <img 
-                  key={element.id} 
-                  src={element.src}
-                  width="600vw"
-                  style={{marginBottom: "2%",}}
-                /> 
-              </a>
-              <p style={{fontSize: "140%", fontWeight: "500", textAlign: "center", marginBottom: '8%'}}>{t(`tourList.${index}.title`)}</p>
+      <div className='visibility_area'>
+        <h2 style={{marginBottom: "2%"}} className='header_for_divede'>{t('subtitle')}</h2>
+        <div >
+          <div style={{position: 'relative', marginBottom: "4%"}}>
+            <a href='/tours/khangai' style={{display: 'block'}}>
+              <img
+                src='/tmkhangai.jpg'
+                width="100%"
+                height="auto"
+              />
+            </a>
+            <div className='tours_image_container'>
+              <p className='tour_container_header_desc'>GOBI-KHANGAI TOUR - 15 days 14 nights</p>
+              <p className='tour_container_desc'>
+                Explore the heart of Mongolia with our Gobi-Khangai tour, an unforgettable journey that encapsulates the diverse beauty and cultural richness of our extraordinary country. The Gobi-Khangai tour offers a unique opportunity to witness Mongolia's nomadic traditions, as you encounterlocal herders and experience their hospitality in traditional ger camps. <a href='/tours/khangai' style={{color: "#ebc934"}}> Read more</a>
+              </p>
             </div>
-          ))}
+          </div>
+          <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between"}}>
+            {TOURS_LINK.map((element, index ) => (
+              <div style={{position: 'relative', marginBottom: "4%"}} key={element.id} className='tours_page_image_container'>
+                <a href={element.href}>
+                  <img 
+                    key={element.id} 
+                    src={element.src}
+                    alt='tours images'
+                    width='100%'
+                    height='auto'
+                  /> 
+                </a>
+                <div className='tours_image_container'>
+                  <p className='tour_container_header_desc_mini'>{t(`tourList.${index}.title`)} - {t(`tourDays.${index}.days`)}{/*here also make links like as tourList*/}</p>
+                  <p className='tour_container_desc_mini'>{t(`tourList.${index}.description`)} <a href={element.href} style={{color: "#ebc934"}}> Read more</a></p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
-      <div style={{marginLeft: "15%", marginRight: "15%"}}>
-        <p style={{marginBottom: "3%", fontSize: "130%"}}>{t('text')}</p>
         <div>
-        </div>
-        <div>
-          <p style={{textAlign: "center", fontSize: "180%", fontWeight: "500", marginBottom: "3%"}}>{t('subtitle1')}</p>
-          <p style={{textAlign: "center", marginBottom: "3%", fontSize: "140%", fontWeight: "500"}}>{t('includes')}</p>
-          <ul style={{marginLeft: "2%", marginBottom: "3%", fontSize: "140%", columns: "3", gap: "20%", listStyleType: "disc"}}>
-            <li>{t('li1')}</li>
-            <li>{t('li2')}</li>
-            <li>{t('li3')}</li>
-            <li>{t('li4')}</li>
-            <li>{t('li5')}</li>
-            <li>{t('li6')}</li>
-            <li>{t('li7')}</li>
-            <li>{t('li8')}</li>
-            <li>{t('li9')}</li>
-          </ul>
-          <p style={{textAlign: "center", marginBottom: "3%", fontWeight: "500", fontSize: "160%"}}>{t('subtitle2')}</p>
-          <ul style={{margin: "2%", fontSize: "140%", listStyleType: "disc", columns: "1"}}>
-            <li>{t('li10')}</li>
-            <li>{t('li11')}</li>
-            <li>{t('li12')}</li>
-            <li>{t('li13')}</li>
-          </ul>
+          <div style={{marginBottom: "3%"}}>
+            <h2 className='header_for_divede'>{t('individual_title')}</h2>
+          </div>
+          <div style={{position: 'relative', marginBottom: "4%"}}>
+            <a href='/tours/altai' style={{ display: 'block' }}>
+              <img
+                src='/altai.jpg'
+                width="100%"
+                height="auto"
+              />
+            </a>
+            <div className='tours_image_container'>
+              <p className='tour_container_header_desc'>ALTAI TAVAN BOGD TOUR - 7 days 6 nights</p>
+              <p className='tour_container_desc'>Explore the heart of Mongolia with our Gobi-Khangai tour, an unforgettable journey that encapsulates the diverse beauty and cultural richness of our extraordinary country. The Gobi-Khangai tour offers a unique opportunity to witness Mongolia's nomadic traditions, as you encounterlocal herders and experience their hospitality in traditional ger camps. <a href='/tours/altai' style={{color: "#ebc934"}}> Read more</a></p>
+            </div>
+          </div>
+          <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between"}}>
+            {INDIVIDUAL_TOURS.map((element, index ) => (
+              <div style={{position: 'relative', marginBottom: "4%"}} key={element.id} className='tours_page_image_container'>
+                <a href={element.href}>
+                  <img 
+                    key={element.id} 
+                    src={element.src}
+                    alt='individual tours images'
+                    width='100%'
+                    height='auto'
+                  /> 
+                </a>
+                <div className='tours_image_container'>
+                  <p className='tour_container_header_desc_mini'>{t(`individualList.${index}.title`)} - {t(`tourDays.${index}.days`)}{/*here also make links like as tourList*/}</p>
+                  <p className='tour_container_desc_mini'>{t(`individualList.${index}.description`)} <a href={element.href} style={{color: "#ebc934"}}> Read more</a></p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>

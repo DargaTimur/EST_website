@@ -39,7 +39,7 @@ const InputForm = ({...props}: any) => {
     });
 
     {/*Change it*/}
-    if (!agreeChecked) {
+    if (response.ok) {
       alert('Please agree to the terms and conditions before submitting the form.');
     } else {
       alert("Successful")
@@ -56,8 +56,8 @@ const InputForm = ({...props}: any) => {
 
   return (
     <div>
-      <p style={{fontSize: "160%", fontWeight: "bolder", marginBottom: "3%"}}>{props.formHeader}</p>
-      <form onSubmit={sendForm}>
+      <h2 className='contacts_form_header'>{props.formHeader}</h2>
+      <form onSubmit={sendForm} className='contact_form'>
         <p style={{marginBottom: 0}}>{props.formTitle} <a style={{color: "red"}}>*</a></p>
         <div style={{ width: "100%", display: "flex", gap: "5%"}}>
           <Input

@@ -1,4 +1,4 @@
-import { TOURS_IMAGES } from '@/constants'
+import { TOURS_IMAGES, TOURS_IMAGES_2 } from '@/constants'
 import {useTranslations} from 'next-intl';
 import Link from "next/link";
 
@@ -6,24 +6,40 @@ const Trips = () => {
   const t = useTranslations('Tours');
   return (
     <div >
-      <p style={{fontSize: "200%", fontWeight: "650", display: "flex", justifyContent: "center", marginBottom: "3%"}}>
-        {t('title')}
-      </p>
-      <div style={{display: "flex", flexWrap: "wrap", gap: "3%", marginBottom: '8%'}}>
+      <h2 className='tour_items_header'>{t('title')}</h2>
+      <div style={{display: "flex", flexWrap: "wrap", justifyContent: "space-between"}}>
         {TOURS_IMAGES.map((element, index) => (
-          <div key={element.id}>
+          <div key={element.id} className='main_page_three_tours_container'>
             <a href={element.href}>
               <img 
                 key={element.id} 
                 src={element.src} 
-                width={400} 
-                height={300}
-                style={{marginBottom: "3%",}}
+                width='100%' 
+                height="auto"
               /> 
             </a>
-            <div style={{textAlign: "center", marginBottom: "15%"}}>
-              <Link href={element.href} style={{margin: "4%", fontSize: "130%", outline: "none", textDecoration: "none", color: "black", fontWeight: "500"}}>
+            <div style={{textAlign: "center", backgroundColor: "#ffde4d", padding: "1%", marginBottom: "4%"}}>
+              <Link href={element.href} className='mainpage_festivals_title'>
                 {t(`tourList.${index}.title`)}
+              </Link>
+            </div>
+          </div>
+        ))}
+      </div>
+      <div style={{display: "flex", flexWrap: "wrap", justifyContent: "space-between", marginTop: "2.7%"}}>
+        {TOURS_IMAGES_2.map((elem, ind) => (
+          <div key={elem.id} className='main_page_two_tours_container'>
+            <a href={elem.href}>
+              <img 
+                key={elem.id} 
+                src={elem.src} 
+                width='100%' 
+                height="auto"
+              /> 
+            </a>
+            <div style={{textAlign: "center", marginBottom: "5%", backgroundColor: "#ffde4d", padding: "1%"}}>
+              <Link href={elem.href} className='mainpage_festivals_title'>
+                {t(`tourList.${ind + 3}.title`)}
               </Link>
             </div>
           </div>
