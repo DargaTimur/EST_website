@@ -18,7 +18,7 @@ export function generateStaticParams() {
 }
 
 export const metadata: Metadata = {
-  title: "Eternal Sky Tour",
+  title: "Saibai Tour",
   description: "Best tours in Mongilia",
 };
 

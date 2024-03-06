@@ -344,7 +344,48 @@
   font-weight: 500;
 }
 
+.tours_page_main_header {
+  font-size: 200%;
+  color: #fff;
+}
 
+.tour_left_column_header {
+  font-size: 200%;
+  font-weight: 500;
+  margin-bottom: 2%;
+}
+
+.tour_left_column_text_sec,
+.tour_left_column_text {
+  text-align: justify;
+  margin-bottom: 4%;
+  font-size: 110%;
+}
+
+.tour_left_column_subheader {
+  font-size: 140%;
+  font-weight: 500;
+  margin-bottom: 2%;
+}
+
+.tour_right_column_text {
+  text-align: justify;
+  margin-left: 1%;
+  margin-bottom: 4%;
+  font-size: 120%;
+}
+
+.tour_right_column_icons {
+  width: 40px;
+  margin-right: 5px;
+}
+
+.tour_right_column_icons_text {
+  font-size: 100%;
+  align-items: center;
+}
+
+/*add here*/
 
 .navbar {
   display: flex;
@@ -551,7 +592,7 @@
   .visibility_area {
     margin-top: 2%;
     margin-right: 10%;
-    margin-bottom: 3%;
+    margin-bottom: 0%;
     margin-left: 10%;
   }
   .mainpage_festivals_title {
@@ -665,7 +706,7 @@
   .visibility_area {
     margin-top: 2%;
     margin-right: 7%;
-    margin-bottom: 3%;
+    margin-bottom: 0%;
     margin-left: 7%;
   }
   .mainpage_festivals_title {
@@ -700,6 +741,7 @@
   .event_block_header {
     font-size: 110%;
   }
+  .tour_right_column_icons_text,
   .event_block_desc {
     font-size: 80%;
   }
@@ -722,18 +764,20 @@
   }
   .about_titles {
     font-size: 150%;
-  }
+  } 
   .phone_text,
   .about_mission_text,
   .about_text {
     font-size: 90%;
   }
+  .tour_right_column_text,
   .contact_plank{
     font-size: 100%;
   }
   .contact_paddings {
     width: 55%;
   }
+  .tours_page_main_header,
   .contact_subheader {
     font-size: 170%;
   }
@@ -741,6 +785,8 @@
   .contact_text {
     font-size: 100%;
   }
+  .tour_left_column_text_sec,
+  .tour_left_column_text,
   .visa_points {
     font-size: 90%;
   }
@@ -749,6 +795,18 @@
   }
   .hotels_container_text{
     font-size: 130%;
+  }
+  .tour_left_column_header{
+    font-size: 160%;
+  }
+  .tour_left_column_subheader {
+    font-size: 120%;
+  }
+  .tour_right_column_icons {
+    width: 28px;
+  }
+  .about_chess_header {
+    font-size: 110%;
   }
 }
 
@@ -827,7 +885,7 @@
   .visibility_area {
     margin-top: 2%;
     margin-right: 5%;
-    margin-bottom: 3%;
+    margin-bottom: 0%;
     margin-left: 5%;
   }
   .tour_items_header {
@@ -865,20 +923,21 @@
     font-size: 140%;
   }
   .tour_container_header_desc {
-    font-size: 140%;
+    font-size: 100%;
   }
   .tour_container_desc {
-    font-size: 100%;
+    font-size: 70%;
   }
   .tour_container_header_desc_mini {
-    font-size: 140%;
+    font-size: 100%;
   }
   .tour_container_desc_mini {
-    font-size: 100%;
+    font-size: 70%;
   }
   .event_block_header {
     font-size: 90%;
   }
+  .tour_right_column_icons_text,
   .event_block_desc {
     font-size: 60%;
   }
@@ -908,15 +967,19 @@
   .about_text {
     font-size: 70%;
   }
+  .tour_left_column_text_sec,
+  .tour_left_column_text,
   .contact_plank{
     font-size: 80%;
   }
   .contact_paddings {
     width: 60%;
   }
+  .tours_page_main_header,
   .contact_subheader {
     font-size: 140%;
   }
+  .tour_right_column_text,
   .contact_form,
   .contact_text {
     font-size: 80%;
@@ -931,6 +994,18 @@
     width: 160px;
   }
   .hotels_container_text{
+    font-size: 100%;
+  }
+  .tour_left_column_header{
+    font-size: 130%;
+  }
+  .tour_left_column_subheader {
+    font-size: 100%;
+  }
+  .tour_right_column_icons {
+    width: 25px;
+  }
+  .about_chess_header {
     font-size: 100%;
   }
 }
@@ -961,11 +1036,16 @@
   .about_text {
     font-size: 60%;
   }
+  .switcher_btn,
+  .tour_right_column_text,
+  .tour_left_column_text_sec,
+  .tour_left_column_text,
   .phone_titles,
   .visa_text,
   .contact_plank{
     font-size: 70%;
   }
+  .tours_page_main_header,
   .contact_subheader {
     font-size: 130%;
   }
@@ -983,7 +1063,44 @@
   .phone_text{
     font-size: 60%;
   }
+  .tour_left_column_subheader,
   .hotels_container_text{
+    font-size: 90%;
+  }
+  .tour_container_header_desc {
+    font-size: 90%;
+  }
+  .tour_container_desc {
+    font-size: 60%;
+  }
+  .tour_container_header_desc_mini {
+    font-size: 90%;
+  }
+  .tour_container_desc_mini {
+    font-size: 60%;
+  }
+  .tour_left_column_header{
+    font-size: 120%;
+  }
+  .tour_right_column_icons {
+    width: 20px;
+  }
+  .tour_right_column_icons_text {
+    width: 50%;
+  }
+  .footer_containers_title {
+    font-size: 90%;
+  }
+  .footer_containers_text {
+    font-size: 60%;
+  }
+  .navbar_menu_buttons {
+    font-size: 70%;
+  }
+  .navbar_menu_container{
+    gap: 0.8rem;
+  }
+  .about_chess_header {
     font-size: 90%;
   }
 }
@@ -1030,6 +1147,7 @@
   .event_block_desc {
     font-size: 45%;
   }
+  .tours_page_main_header,
   .information_option,
   .information_second_header,
   .information_main_header {
@@ -1038,6 +1156,7 @@
   .information_margin {
     margin-top: 30%;
   }
+  .tour_left_column_subheader,
   .contacts_form_header,
   .option_title{
     font-size: 80%;
@@ -1056,6 +1175,9 @@
   .about_text {
     font-size: 55%;
   }
+  .switcher_btn,
+  .tour_left_column_text_sec,
+  .tour_left_column_text,
   .visa_text,
   .contact_plank{
     font-size: 60%;
@@ -1079,6 +1201,81 @@
   }
   .hotels_container_text{
     font-size: 80%;
+  }
+  .tour_container_header_desc {
+    font-size: 80%;
+  }
+  .tour_container_desc {
+    font-size: 45%;
+  }
+  .tour_container_header_desc_mini {
+    font-size: 80%;
+  }
+  .tour_right_column_icons_text,
+  .tour_container_desc_mini {
+    font-size: 45%;
+  }
+  .tour_left_column_header{
+    font-size: 110%;
+  }
+  .tour_right_column_text {
+    font-size: 65%;
+  }
+  .tour_right_column_icons {
+    width: 18px;
+  }
+  .about_chess_header,
+  .footer_containers_title {
+    font-size: 80%;
+  }
+  .footer_containers_text {
+    font-size: 50%;
+  }
+  .navbar_menu_buttons {
+    font-size: 60%;
+  }
+  .navbar_menu_container{
+    gap: 0.6rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .tour_left_column_header{
+    font-size: 100%;
+  }
+  .tour_right_column_text,
+  .tour_left_column_text_sec,
+  .tour_left_column_text {
+    font-size: 60%;
+  }
+  .tour_left_column_subheader {
+    font-size: 75%;
+  }
+  .tours_page_main_header {
+    font-size: 110%;
+  }
+  .tour_right_column_icons {
+    width: 15px;
+  }
+  .tour_right_column_icons_text {
+    font-size: 40%;
+  }
+  .about_chess_header,
+  .footer_containers_title {
+    font-size: 75%;
+  }
+  .footer_containers_text {
+    font-size: 45%;
+  }
+  .switcher_btn,
+  .navbar_menu_buttons {
+    font-size: 45%;
+  }
+  .navbar_menu_container{
+    gap: 0.5rem;
+  }
+  .about_text {
+    font-size: 40%;
   }
 }
 

@@ -8,7 +8,7 @@ const Footer = () => {
 
   return (
     <footer style={{ backgroundColor: "#3d3d3b" }}>
-      <div style={{display: 'flex', justifyContent: "space-between"}} className="visibility_area">
+      <div style={{display: 'flex', justifyContent: "space-between", flexWrap: 'wrap'}} className="visibility_area">
         <div style={{ flex: 1, paddingTop: '2%', paddingBottom: '2%'}}>
           {/* Содержимое первой части футера */}
           <div style={{color: "#fff"}} >
