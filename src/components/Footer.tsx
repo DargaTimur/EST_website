@@ -16,26 +16,18 @@ const Footer = () => {
             <div className="footer_containers_text">
               <p>
                 Ulaanbaatar, Mongolia,<br />
-                Sukhbaatar District, 5th Khoroo,<br />
-                Narnii Road, 24-32, {t('address')}
+                Bayangol District, 9th Khoroo,<br />
+                3-2 building, {t('address')}
               </p>
               <div>
                 <strong >{t('phone')} </strong>
-                +976-99902202<br />
+                +976-99989049<br />
                 <strong style={{opacity: "0"}}>{t('phone')} </strong>
-                +976-80303997<br />
+                +976-89750308<br />
               </div>
-              <p style={{marginTop: "3%"}}>
-                <strong>{t('telegram')} </strong>
-                @ankhaa8899<br />
-                <strong style={{opacity: "0"}}>{t('telegram')} </strong>
-                @narangarav<br />
-              </p>
               <p>
                 <strong>{t('mail')} </strong>
-                saibaitour@gmail.com<br />
-                <strong style={{opacity: "0"}}>{t('mail')} </strong>
-                saibaitour@naver.com<br />
+                saibaitour1@gmail.com<br />
               </p>
             </div>
           </div>

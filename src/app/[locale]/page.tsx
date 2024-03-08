@@ -24,7 +24,7 @@ export default async function Index({params: {locale}}: {params: {locale: string
         </div>
       </div>
       <div className="visibility_area" >
-        <h2 className="tour_items_header">{t('header')}</h2>
+        <h2 className="tour_items_header trocchi-regular">{t('header')}</h2>
         <div>
           <Festivals/>
         </div>

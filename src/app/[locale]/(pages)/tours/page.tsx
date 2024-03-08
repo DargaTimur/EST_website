@@ -67,7 +67,7 @@ const Tours = async ({params: {locale}}: {params: {locale: string}}) => {
             </a>
             <div className='tours_image_container'>
               <p className='tour_container_header_desc'>ALTAI TAVAN BOGD TOUR - 7 days 6 nights</p>
-              <p className='tour_container_desc'>Explore the heart of Mongolia with our Gobi-Khangai tour, an unforgettable journey that encapsulates the diverse beauty and cultural richness of our extraordinary country. The Gobi-Khangai tour offers a unique opportunity to witness Mongolia's nomadic traditions, as you encounterlocal herders and experience their hospitality in traditional ger camps. <a href='/tours/altai' style={{color: "#ebc934"}}> Read more</a></p>
+              <p className='tour_container_desc'>Explore the breathtaking Altai Tavan Bogd tour, unveiling Mongolia's pristine beauty. Majestic mountains, diverse landscapes, and nomadic culture await in this unforgettable journey.<a href='/tours/altai' style={{color: "#ebc934"}}> Read more</a></p>
             </div>
           </div>
           <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between"}}>

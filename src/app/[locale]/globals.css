@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Trocchi&display=swap');
+
+.trocchi-regular {
+  font-family: "Trocchi", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -37,6 +45,7 @@
 .mainpage_header_on_pictute {
   font-size: 120%;
   font-weight: 500;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .mainpage_link_on_pictute {
@@ -387,6 +396,12 @@
 
 /*add here*/
 
+footer_visibility {
+  margin-top: 2%;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
 .navbar {
   display: flex;
   position: fixed;
@@ -565,7 +580,6 @@
   padding: 0;
   justify-content: center;
 }
-
 
 @media (max-width: 1250px) {
   .main_container{
@@ -905,12 +919,10 @@
   .switcher_change_btn {
     font-size: 80%;
   }
-  .visa_title,
-  .footer_containers_title {
+  .visa_title {
     font-size: 100%;
   }
-  .phone_text,
-  .footer_containers_text {
+  .phone_text{
     font-size: 70%;
   }
   .tours_page_image_container {
@@ -1088,12 +1100,6 @@
   .tour_right_column_icons_text {
     width: 50%;
   }
-  .footer_containers_title {
-    font-size: 90%;
-  }
-  .footer_containers_text {
-    font-size: 60%;
-  }
   .navbar_menu_buttons {
     font-size: 70%;
   }
@@ -1224,18 +1230,23 @@
   .tour_right_column_icons {
     width: 18px;
   }
-  .about_chess_header,
-  .footer_containers_title {
+  .about_chess_header {
     font-size: 80%;
-  }
-  .footer_containers_text {
-    font-size: 50%;
   }
   .navbar_menu_buttons {
     font-size: 60%;
   }
   .navbar_menu_container{
     gap: 0.6rem;
+  }
+  .footer_visibility {
+    flex-direction: column;
+  }
+  .footer_containers_title {
+    font-size: 120%;
+  }
+  .footer_containers_text {
+    font-size: 80%;
   }
 }
 
@@ -1260,12 +1271,8 @@
   .tour_right_column_icons_text {
     font-size: 40%;
   }
-  .about_chess_header,
-  .footer_containers_title {
+  .about_chess_header{
     font-size: 75%;
-  }
-  .footer_containers_text {
-    font-size: 45%;
   }
   .switcher_btn,
   .navbar_menu_buttons {

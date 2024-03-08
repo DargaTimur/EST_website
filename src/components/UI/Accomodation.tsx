@@ -3,7 +3,7 @@ import React from 'react'
 const Accomodation = () => {
   return (
     <div style={{position: 'relative', marginBottom: "3%"}}>
-      <h2 className='tour_items_header'>ACCOMMODATION</h2>
+      <h2 className='tour_items_header trocchi-regular'>ACCOMMODATION</h2>
       <img
         src='/tmcity.jpg'
         alt="City"

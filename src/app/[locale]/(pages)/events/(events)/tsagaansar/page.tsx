@@ -11,7 +11,7 @@ const TsagaanSar = async ({params: {locale}}: {params: {locale: string}}) => {
       <div className='image_container'>
         <div className='image_container_image'>
           <img
-                src='/19.jpg'
+                src='/tsagaan.jpg'
                 style={{marginBottom: "3%"}}
           />
         </div>

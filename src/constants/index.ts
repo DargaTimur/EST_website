@@ -63,14 +63,14 @@ export const images = [
 ];
 // Лучше добавить title в объекте ниже
 export const TOURS_IMAGES = [
-  {id: 1, href: '/tours/city', src: "/tmcity.jpg"}, 
-  {id: 2, href: '/tours/central', src: "/tmcentral.jpg"},
-  {id: 3, href: '/tours/khuvsgul1', src: "/tmkhuvsgul1.jpg"},
+  {id: 1, href: '/tours/city', src: "/ctmcity.jpg"}, 
+  {id: 2, href: '/tours/central', src: "/ctmcentral.jpg"},
+  {id: 3, href: '/tours/khuvsgul1', src: "/ctmkhuvsgul1.jpg"},
 ]
 
 export const TOURS_IMAGES_2 = [
-  {id: 4, href: '/tours/gobi', src: "/tmgobi.jpg"},
-  {id: 5, href: '/tours/khangai', src: "/tmkhangai.jpg"},
+  {id: 4, href: '/tours/gobi', src: "/ctmgobi.jpg"},
+  {id: 5, href: '/tours/khangai', src: "/ctmkhangai.jpg"},
 ]
 
 export const TOURS_LINK = [
@@ -81,18 +81,18 @@ export const TOURS_LINK = [
 ]
 
 export const INDIVIDUAL = [
-  {id: 1, href: '/tours/altai', src: "/altai.jpg"}, 
-  {id: 2, href: '/tours/horse', src: "/horse.jpg"},
-  {id: 3, href: '/tours/reindeer', src: "/tsaatan.jpg"},
+  {id: 1, href: '/tours/altai', src: "/caltai.jpg"}, 
+  {id: 2, href: '/tours/horse', src: "/chorse.jpg"},
+  {id: 3, href: '/tours/reindeer', src: "/ctsaatan.jpg"},
 ]
 
 export const INDIVIDUAL_TOURS = [
-  {id: 1, href: '/tours/horse', src: "/horse.jpg"},
-  {id: 2, href: '/tours/reindeer', src: "/tsaatan.jpg"},
+  {id: 1, href: '/tours/horse', src: "/chorse.jpg"},
+  {id: 2, href: '/tours/reindeer', src: "/ctsaatan.jpg"},
 ]
 
 export const EVENTS = [
-  {id: 1, href: '/events/tsagaansar', src: "/19.jpg", title: 'Tsagaan Sar', description: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden "},
+  {id: 1, href: '/events/tsagaansar', src: "/tsagaan.jpg", title: 'Tsagaan Sar', description: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden "},
   {id: 2, href: '/events/camel', src: "/22.jpg", title: "Camel Festival", description: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden "},
   {id: 3, href: '/events/eagle', src: "/20.jpg", title: 'Eagle Festival', description: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden "},
   {id: 4, href: '/events/ice', src: "/23.jpg", title: 'Ice festival', description: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden "},
@@ -101,14 +101,14 @@ export const EVENTS = [
 
 export const OPTIONS = [
   {id: 1, src: "/15.jpg"},
-  {id: 2, src: "/16.jpg"},
+  {id: 2, src: "/hyndai.jpg"}, 
   {id: 3, src: "/18.jpg"},
 ]
 
 export const FESTIVALS = [
-  {id: 1, href: '/events/naadam', src: "/21.jpg", title: 'Naadam Festival', description: "Far far"},
-  {id: 2, href: '/events/camel', src: "/22.jpg", title: 'Camel Festival', description: "Far far"},
-  {id: 3, href: '/events/eagle', src: "/20.jpg", title: 'Eagle Festival', description: "Far far"},
+  {id: 1, href: '/events/naadam', src: "/21-c.jpg", title: 'Naadam Festival', description: "Far far"},
+  {id: 2, href: '/events/camel', src: "/22-c.jpg", title: 'Camel Festival', description: "Far far"},
+  {id: 3, href: '/events/eagle', src: "/20-c.jpg", title: 'Eagle Festival', description: "Far far"},
 ]
 
 export const CENTRAL = "Immerse yourself in the captivating beauty of central Mongolia, where rolling hills, emerald grasslands, and meandering rivers paint a picturesque landscape. Experience the serenity of pristine nature, dotted with nomadic herder communities and their traditional gers. Central Mongolia invites you to explore its enchanting valleys, historic monasteries, and the majestic Khangai mountain range. Discover the heart of the country's cultural heritage as you witness age-old traditions against a backdrop of lush meadows. A journey through central Mongolia promises an awe-inspiring encounter with the charm of its landscapes and the enduring spirit of its people."

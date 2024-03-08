@@ -38,14 +38,14 @@ const About = async ({params: {locale}}: {params: {locale: string}}) => {
             <div className='about_true_positioning'>
               <div className='about_chess_image_container'>
                 <img
-                  src='/hyundai.jpg'
+                  src='/hyndai.jpg'
                   className='about_image_styles'
                   alt="Заполняющее изображение"
                 />
               </div>
               <div className='about_chess_text_container'>
                 <h2 className='about_chess_header'>HYUNDAI</h2>
-                <p className='about_text'>Hyundai H-1, a 9-passenger microbus, is an excellent choice for travelers seeking both comfort and efficiency on their journey. Manufactured by Hyundai, these microbuses offer a smooth ride on uneven and unpaved roads in rural areas. While providing ample space for 9 passengers and their luggage, it's important to note that, similar to jeeps, repairs might be challenging in remote locations. Consider the Hyundai H-1 for a comfortable group travel experience.</p>
+                <p className='about_text'>The Hyundai Starex, a 7-passenger microbus, stands out as an exceptional choice for travelers who prioritize comfort and efficiency on their journeys. Crafted by Hyundai, these microbuses are well-suited for navigating the diverse terrains of Mongolia, including rugged and unpaved roads in rural areas. With the capacity to accommodate 7 passengers along with their luggage, the Hyundai Starex ensures a smooth and enjoyable ride through various landscapes. It's worth mentioning that, akin to jeeps, repairs could pose challenges in remote locations. For a comfortable and reliable group travel experience, consider opting for the Hyundai.</p>
               </div>
             </div>
           </div>
@@ -81,7 +81,7 @@ const About = async ({params: {locale}}: {params: {locale: string}}) => {
             </div>
             <div className='about_chess_text_container'>
               <h2 className='about_chess_header'>SKILLED TEAM</h2>
-              <p className='about_mission_text'>As a service orientated company, we have 16 permanent staff employ full time at the office and over 300 personnel throughout the country who employ during the main travel season. All our staff are well trained, in-depth experienced and possess good knowledge for local areas and host & guest's expectations. Our managers who are responsible for different language speaking markets as English, Korean, German, Chinese, Russian and Japanese, communicate efficiently with our partners, speedily creating and helping to plan custom-made itineraries of unique travel products due to their clients' wishes, and offering at most reasonable and attractive net prices. Guides and local tour leaders are the most important element of safe and enjoyable adventures. Our guides/tour leaders speak English, Korean, German, French, Italian, Spanish, Russian, Japanese and Chinese languages.</p>
+              <p className='about_mission_text'>As a service orientated company, we have 4 permanent staff employ full time at the office and over 30 personnel throughout the country who employ during the main travel season. All our staff are well trained, in-depth experienced and possess good knowledge for local areas and host & guest's expectations. Our managers who are responsible for different language speaking markets as English, Korean, Chinese, Russian and Japanese, communicate efficiently with our partners, speedily creating and helping to plan custom-made itineraries of unique travel products due to their clients' wishes, and offering at most reasonable and attractive net prices. Guides and local tour leaders are the most important element of safe and enjoyable adventures. Our guides/tour leaders speak English, Korean,  Russian, Japanese and Chinese languages.</p>
             </div>
           </div>
           <div style={{display: "flex", justifyContent: "space-between"}}>
@@ -91,7 +91,7 @@ const About = async ({params: {locale}}: {params: {locale: string}}) => {
             </div>
             <div className='about_chess_image_container'>
               <img
-                src='/bt4.jpg'
+                src='/staff.jpg'
                 className='about_image_styles'
                 alt="Заполняющее изображение"
               />

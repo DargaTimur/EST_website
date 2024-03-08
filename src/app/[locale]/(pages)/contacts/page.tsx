@@ -28,8 +28,8 @@ const Contacts = async ({params: {locale}}: {params: {locale: string}}) => {
                 height='auto'
                 className='contact_paddings'
               />
-              <a href={`tel:${+976-99902202}`} style={{textDecoration: "none"}}>+976-99902202<br /></a>
-              <a href={`tel:${+976-80303997}`} style={{textDecoration: "none"}}>+976-80303997</a>
+              <a href={`tel:${+976-88109099}`} style={{textDecoration: "none"}}>+976-88109099<br /></a>
+              <a href={`tel:${+976-89750308}`} style={{textDecoration: "none"}}>+976-89750308</a>
             </div>
             <div style={{padding: "2%"}}>
               <img
@@ -38,8 +38,7 @@ const Contacts = async ({params: {locale}}: {params: {locale: string}}) => {
                 height='auto'
                 className='contact_paddings'
               />
-              <a href={`mailto:${'eternalskytour@gmail.com'}`} style={{textDecoration: "none"}}>saibaitour@gmail.com<br /></a>
-              <a href={`mailto:${'eternalskytour@naver.com'}`} style={{textDecoration: "none"}}>saibaitour@naver.com<br /></a>
+              <a href={`mailto:${'saibaitour1@gmail.com'}`} style={{textDecoration: "none"}}>saibaitour1@gmail.com<br /></a>
             </div>
             <div style={{padding: "2%"}}>
               <img
@@ -48,7 +47,7 @@ const Contacts = async ({params: {locale}}: {params: {locale: string}}) => {
                 height='auto'
                 className='contact_paddings'
               />
-              <a href={`https://www.google.com/maps?q=${encodeURIComponent('47.909307, 106.899953')}`} target="_blank" rel="noopener noreferrer" style={{textDecoration: "none"}}>{t('fourth')}</a>
+              <a href={`https://www.google.com/maps?q=${encodeURIComponent('47.924610, 106.863472')}`} target="_blank" rel="noopener noreferrer" style={{textDecoration: "none"}}>{t('fourth')}</a>
             </div>
             <div style={{padding: "2%"}}>
               <img
@@ -57,7 +56,7 @@ const Contacts = async ({params: {locale}}: {params: {locale: string}}) => {
                 height='auto'
                 className='contact_paddings'
               />
-              <p>14253, Narnii Road, 24-32,<br />Ulaanbaatar, Mongolia</p>
+              <p>16093-0024, 9 khoroo, 3-2 building,<br />Ulaanbaatar, Mongolia</p>
             </div>
           </div>
         </div>

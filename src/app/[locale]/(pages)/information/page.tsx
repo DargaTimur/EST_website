@@ -23,7 +23,7 @@ const Information = async ({params: {locale}}: {params: {locale: string}}) => {
       <div>
         <div>
           <img
-            src={'/terelj.jpg'}
+            src='/terelj.jpg'
             alt='picture'
             width='100%'
             style={{marginBottom: "2.7%"}}
@@ -31,12 +31,12 @@ const Information = async ({params: {locale}}: {params: {locale: string}}) => {
           <div>
             <div className='information_space'>
               <img
-                src={'/cousine1.jpg'}
+                src='/cousine1.jpg'
                 alt='food'
                 width='50%'
               />
               <img
-                src={'/cousine2.jpg'}
+                src='/cousine2.jpg'
                 alt='meal'
                 width='50%'
               />
@@ -49,7 +49,7 @@ const Information = async ({params: {locale}}: {params: {locale: string}}) => {
           <div>
             <div className='information_space'>
               <img
-                src={'/culture.jpg'}
+                src='/culture.jpg'
                 alt='song'
                 width='100%'
               />
@@ -62,7 +62,7 @@ const Information = async ({params: {locale}}: {params: {locale: string}}) => {
           <div>
             <div className='information_space'>
               <img
-                src={'/kashmere.jpg'}
+                src='/kashmere.jpg'
                 alt=''
                 width='100%'
               />
@@ -70,6 +70,58 @@ const Information = async ({params: {locale}}: {params: {locale: string}}) => {
             <div style={{marginTop: "2%"}}>
               <p className='information_second_header' style={{marginBottom: "2%"}}>Mongolian kashmere</p>
               <p className='information_desc'>Explore the epitome of luxury with Mongolia's finest cashmere, renowned for its exquisite quality and unmatched softness. Immerse yourself in the world of premium leather goods, where Mongolian craftsmanship takes center stage. From buttery-soft leather accessories to durable and stylish products, Mongolia showcases the artistry of its skilled artisans. Indulge in the allure of cashmere and leather, a testament to Mongolia's commitment to producing the highest quality and most refined goods, offering you an unparalleled blend of comfort and sophistication. Discover the touch of elegance that only the best Mongolian cashmere and leather goods can provide.</p>
+            </div>
+          </div>
+          <div>
+            <div className='information_space'>
+              <img
+                src='/muse.jpg'
+                alt='Museums'
+                width='100%'
+              />
+            </div>
+            <div style={{marginTop: "2%"}}>
+              <p className='information_second_header' style={{marginBottom: "2%"}}>Museums and Galleries in Ulaanbaatar</p>
+              <p className='information_desc'>National Museum of History <br/> Zanabazar Museum of Fine Arts <br/>Bogd Khaan Winter Palace Museum <br/>Choijin Lama Temple Museum <br/>The Central Museum of Mongolian Dinosaurs <br/>International Intellectual Museum <br/>Mongolian National Modern Art Gallery <br/> 976 Art Gallery <br/>Red Ger Art Gallery <br/>Art Mongolia <br/>Buddhist Temples and Monasteries in UB</p>
+            </div>
+          </div>
+          <div>
+            <div className='information_space'>
+              <img
+                src='/temp.jpg'
+                alt='Temples'
+                width='100%'
+              />
+            </div>
+            <div style={{marginTop: "2%"}}>
+              <p className='information_second_header' style={{marginBottom: "2%"}}>Temples</p>
+              <p className='information_desc'>Gandan Monastery <br/> DashChoilon Monastery <br/> Geser Temple</p>
+            </div>
+          </div>
+          <div>
+            <div className='information_space'>
+              <img
+                src='/music.jpg'
+                alt='Music and free Time'
+                width='100%'
+              />
+            </div>
+            <div style={{marginTop: "2%"}}>
+              <p className='information_second_header' style={{marginBottom: "2%"}}>Music, Ballet, Musical, Plays in UB</p>
+              <p className='information_desc'>Tumen Enkh National Song & Dance Ensemble <br/> State Opera & Ballet Theatre <br/> UB Fat Cat Jazz Club <br/> National Academic Drama Theatre <br/> Gandan Live House (bar)</p>
+            </div>
+          </div>
+          <div>
+            <div className='information_space'>
+              <img
+                src='/rest.jpg'
+                alt='Restaraunts'
+                width='100%'
+              />
+            </div>
+            <div style={{marginTop: "2%"}}>
+              <p className='information_second_header' style={{marginBottom: "2%"}}>Restaurants & chains</p>
+              <p className='information_desc'>Contemporary & classy: Rosewood, Choijin Lama Temple, Zoma Kitchen & Bar, Route 22<br/> Cozy &western: Green zone, Café 40k<br/>Mongolian: Modern Nomads, Mongol Zoog, Asiana<br/>Vegetarian & Vegan: Rosewood, Bluefin Cuisine D’Art, Luna Blanca, Foody (Shangri-la mall)<br/>Western Chain: KFC, Burger King, Pizza hut<br/>Korean: Uri Shigdan, Bon juk, Dony Pork<br/>Western & Italian: Verranda, Silk Road<br/>Burger places: Ruby room, The birch<br/>Western Cheese & Wine: MACU Fromagerie<br/>Japanese: Miko, Sakura bakery<br/>Indian: Delhi Dalbar, Hazara<br/>Hot Pot: The Bull, Momo Hotpot<br/>Artsy coffee & food: Exhibition Coffee Bar, Pastel<br/>Peruvian: Nazca Taste of Peru</p>
             </div>
           </div>
         </div>

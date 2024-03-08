@@ -6,7 +6,7 @@ const IndividualTours = () => {
   const t = useTranslations('Tours');
   return (
     <div>
-      <h2 className='tour_items_header'>{t('individual_title')}</h2>
+      <h2 className='tour_items_header trocchi-regular'>{t('individual_title')}</h2>
       <div style={{display: "flex", flexWrap: "wrap", justifyContent: "space-between"}}>
         {INDIVIDUAL.map((element, index) => (
           <div key={index} className='main_page_individual_tours_container'>

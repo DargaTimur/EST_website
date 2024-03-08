@@ -6,7 +6,7 @@ const Trips = () => {
   const t = useTranslations('Tours');
   return (
     <div >
-      <h2 className='tour_items_header'>{t('title')}</h2>
+      <h2 className='tour_items_header  trocchi-regular'>{t('title')}</h2>
       <div style={{display: "flex", flexWrap: "wrap", justifyContent: "space-between"}}>
         {TOURS_IMAGES.map((element, index) => (
           <div key={element.id} className='main_page_three_tours_container'>
