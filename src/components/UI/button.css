@@ -5,8 +5,9 @@
   border: 1px solid #a38305;
   border-radius: 10px;
   cursor: pointer;
-  height: 40px;
+  height: auto;
   display: inline-block;
+  text-align: center;
 }
 
 .myButton:hover {
@@ -17,7 +18,6 @@
 @media (max-width:1250px) {
   .myButton{
     padding: 5px 15px;
-    height: 40px;
     font-size: 100%;
   }
 }
@@ -25,7 +25,6 @@
 @media (max-width:992px) {
   .myButton{
     padding: 4px 12px;
-    height: 35px;
     font-size: 80%;
   }
 }
@@ -33,7 +32,6 @@
 @media (max-width:767px) {
   .myButton{
     padding: 3px 10px;
-    height: 30px;
     font-size: 60%;
   }
 }
@@ -41,7 +39,6 @@
 @media (max-width:480px) {
   .myButton{
     padding: 2px 9px;
-    height: 28px;
     font-size: 50%;
   }
 }

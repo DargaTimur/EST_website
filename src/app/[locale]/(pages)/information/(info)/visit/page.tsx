@@ -7,8 +7,8 @@ const Visit = async ({params: {locale}}: {params: {locale: string}}) => {
   const t = await getTranslations('Information');
   return (
     <div>
-      <div >
-        <div >
+      <div>
+        <div>
           <SeasonsSlider  
             winter={t('seasons.title1')}
             winterDescription1={t('seasons.description1')}

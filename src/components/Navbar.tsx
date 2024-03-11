@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import Link from "next/link";
 import {useState, useEffect} from "react";
 import LocalSwitcher from "./UI/Switcher";
@@ -9,6 +8,12 @@ import {useTranslations} from 'next-intl';
 const Navbar = () => {
   const t = useTranslations('Index');
   const [scrolled, setScrolled] = useState(false);
+
+  const [isMenuOpen, setMenuOpen] = useState(false);
+
+  const handleBurgerClick = () => {
+    setMenuOpen(!isMenuOpen); 
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,6 +27,27 @@ const Navbar = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+  useEffect(() => {
+    const handleBodyScroll = (e: { preventDefault: () => void; }) => {
+      if (isMenuOpen) {
+        e.preventDefault();
+      }
+    };
+
+    if (isMenuOpen) {
+      document.body.style.overflow = 'hidden';
+      window.addEventListener('scroll', handleBodyScroll, { passive: false });
+    } else {
+      document.body.style.overflow = 'auto';
+      window.removeEventListener('scroll', handleBodyScroll);
+    }
+
+    return () => {
+      document.body.style.overflow = 'auto';
+      window.removeEventListener('scroll', handleBodyScroll);
+    };
+  }, [isMenuOpen]);
 
   function menuLabel(link: { href: string, key: string, title: string }){
     switch (link.key){
@@ -40,40 +66,49 @@ const Navbar = () => {
     }
   }
 
-
-
+  function NavbarLink({ link }: { link: { href: string, key: string, title: string } }) {
+    const handleLinkClick = () => {
+      setMenuOpen(false);
+    };
+  
+    return (
+      <Link href={link.href} key={link.key} 
+        className="navbar_menu_buttons"
+        onMouseEnter={({ currentTarget }) => currentTarget.style.color = "#2f2399"}
+        onMouseLeave={({ currentTarget }) => currentTarget.style.color = "#000"}
+        onClick={handleLinkClick} // Добавляем обработчик клика
+      >
+        {menuLabel(link)}
+      </Link>
+    );
+  }
+  
   return (
     <div >
       <div >
-        <nav className={`navbar ${scrolled ? 'scrolled' : ''}`} 
-          style={{display: "flex", justifyContent: "center", height: scrolled ? '70px' : '100px', position: 'fixed', top: 0, width: '100%'}} 
+        <nav className={`navbar ${scrolled ? 'scrolled' : 'non_scrolled'}`} 
+          style={{display: "flex", justifyContent: "center", position: 'fixed', top: 0, width: '100%'}} 
         >
-          <Link href="/" className={`logo ${scrolled ? 'scrolled' : ''}`} style={{marginRight: "5%"}}>
-            <img src="/logo.png" alt="logo" height='auto'/> {/** */}
+          <Link href="/" className={`logo ${scrolled ? 'scrolled' : ''} logo_margin`}>
+            <img src="/logo.png" alt="logo" height='auto'/>
           </Link>
-          <div className="header_burger">
+          <div className={`header_burger ${isMenuOpen ? 'open' : ''}`} onClick={handleBurgerClick}>
             <span></span>
           </div>
-          <div className="header_menu">
-            <ul className="navbar_menu_container">{/** */}
+          <div className={`header_menu ${isMenuOpen ? 'open' : ''}`}>
+            <ul className="navbar_menu_container">
               {NAV_LINKS.map((link) => (
-                <Link href={link.href} key={link.key} 
-                  className="navbar_menu_buttons"
-                  onMouseEnter={({ currentTarget }) => currentTarget.style.color = "#2f2399"}
-                  onMouseLeave={({ currentTarget }) => currentTarget.style.color = "#000"}
-                >
-                  {menuLabel(link)}
-                </Link> 
+                <NavbarLink key={link.key} link={link}/>
               ))} 
             </ul>
           </div>
-          <div className="switcher">{/** */}
+          <div className="switcher">
             <LocalSwitcher/>
           </div>
         </nav>
       </div>
     </div>
-  )
+  );
 }
 
 export default Navbar

@@ -7,7 +7,7 @@ const City = async ({params: {locale}}: {params: {locale: string}}) => {
   unstable_setRequestLocale(locale);
   const t = await getTranslations('City');
   return (
-    <div style={{marginTop: "8%"}}>
+    <div className='tours_and_events_margin_top'>
       <div className='visibility_area'> {/*For description*/}
         <div>
           <div style={{position: 'relative', padding: "1%", backgroundColor: "#ffde4d"}}>
