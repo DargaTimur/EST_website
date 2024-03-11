@@ -3,8 +3,6 @@ import React, { FormEvent, useState } from 'react'
 import Input from './Input';
 import Button from './Button';
 import TextArea from './TextArea';
-import Select from './Select';
-import TourSelect from './TourSelect';
 
 const InputForm = ({...props}: any) => { 
 
@@ -95,11 +93,36 @@ const InputForm = ({...props}: any) => {
         <div>
           <p style={{marginBottom: 0}}>{props.countryTitle}</p>
           <div>
-            <Select/>
+            <select className='Input'>
+              <option>{props.choice}</option>
+              <option value='South Korea'>{props.country1} </option>
+              <option value='China'>{props.country2} </option>
+              <option value='France'>{props.country3} </option>
+              <option value='Germany'>{props.country4} </option>
+              <option value='Hungary'>{props.country5} </option>
+              <option value='India'>{props.country6} </option>
+              <option value='Japan'>{props.country7} </option>
+              <option value='Russia'>{props.country8} </option>
+              <option value='Singapore'>{props.country9} </option>
+              <option value='Canada'>{props.country10} </option>
+              <option value='Taiwan'>{props.country11} </option>
+              <option value='USA'>{props.country12} </option>
+              <option value='Other'>{props.country13} </option>
+            </select>
           </div>
           <p style={{marginBottom: 0}}>{props.tourTitle}</p>
           <div>
-            <TourSelect/>
+            <select className='Input'>
+              <option>{props.choice}</option>
+              <option value='city'>{props.choice1} </option>
+              <option value='gobi'>{props.choice2} </option>
+              <option value='central'>{props.choice3} </option>
+              <option value='khuvsgul'>{props.choice4} </option>
+              <option value='gobikhangai'>{props.choice5} </option>
+              <option value='horse'>{props.choice6} </option>
+              <option value='altai'>{props.choice7} </option>
+              <option value='tsaatan'>{props.choice8} </option>
+            </select>
           </div>
           <p style={{marginBottom: 0}}>{props.numberTitle} <a style={{color: "red"}}>*</a></p>
           <Input

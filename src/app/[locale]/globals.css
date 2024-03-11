@@ -93,7 +93,7 @@
 .mainpage_festivals_title {
   margin: 4;
   font-size: 130%;
-  font-weight: 500;
+  font-weight: bolder;
   outline: none;
   text-decoration: none;
   color: #000;
@@ -131,6 +131,12 @@
 .tour_container_desc_mini {
   font-size: 100%;
   margin: 0;
+}
+
+.tour_individual_text {
+  margin-bottom: 1.5%;
+  font-size: 120%;
+  text-align: justify;
 }
 
 .tours_image_container {
@@ -396,7 +402,7 @@
 
 /*add here*/
 
-footer_visibility {
+.footer_visibility {
   margin-top: 2%;
   margin-right: 10%;
   margin-left: 10%;
@@ -764,6 +770,7 @@ footer_visibility {
   .information_main_header {
     font-size: 200%;
   }
+  .tour_individual_text,
   .phone_titles,
   .visa_text,
   .options_text {
@@ -828,6 +835,7 @@ footer_visibility {
   .main_container{
     max-width: 500px;
   }
+  .tour_individual_text,
   .header_container {
     font-size: 80%;
   }
@@ -1043,6 +1051,7 @@ footer_visibility {
   .about_titles {
     font-size: 110%;
   }
+  .tour_individual_text,
   .visa_points,
   .about_mission_text,
   .about_text {
@@ -1175,6 +1184,7 @@ footer_visibility {
   .about_titles {
     font-size: 90%;
   }
+  .tour_individual_text,
   .phone_text,
   .phone_titles,
   .about_mission_text,
@@ -1283,6 +1293,9 @@ footer_visibility {
   }
   .about_text {
     font-size: 40%;
+  }
+  .tour_individual_text {
+    font-size: 50%;
   }
 }
 

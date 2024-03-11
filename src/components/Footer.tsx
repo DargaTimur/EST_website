@@ -21,9 +21,9 @@ const Footer = () => {
               </p>
               <div>
                 <strong >{t('phone')} </strong>
-                +976-99989049<br />
+                +976-88109099<br />
                 <strong style={{opacity: "0"}}>{t('phone')} </strong>
-                +976-89750308<br />
+                +976-89750308<br /> 
               </div>
               <p>
                 <strong>{t('mail')} </strong>

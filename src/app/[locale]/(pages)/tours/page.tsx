@@ -13,7 +13,7 @@ const Tours = async ({params: {locale}}: {params: {locale: string}}) => {
         width='100%'
       />
       <div className='header_container_for_picture'>
-        <h1 className='header_on_picture'>TOURS</h1>
+        <h1 className='header_on_picture'>{t('title_on_picture')}</h1>
       </div>
       <div className='visibility_area'>
         <h2 style={{marginBottom: "2%"}} className='header_for_divede'>{t('subtitle')}</h2>
@@ -27,9 +27,9 @@ const Tours = async ({params: {locale}}: {params: {locale: string}}) => {
               />
             </a>
             <div className='tours_image_container'>
-              <p className='tour_container_header_desc'>GOBI-KHANGAI TOUR - 15 days 14 nights</p>
+              <p className='tour_container_header_desc'>{t('main_tour')}</p>
               <p className='tour_container_desc'>
-                Explore the heart of Mongolia with our Gobi-Khangai tour, an unforgettable journey that encapsulates the diverse beauty and cultural richness of our extraordinary country. The Gobi-Khangai tour offers a unique opportunity to witness Mongolia's nomadic traditions, as you encounterlocal herders and experience their hospitality in traditional ger camps. <a href='/tours/khangai' style={{color: "#ebc934"}}> Read more</a>
+              {t('main_tour_desc')} <a href='/tours/khangai' style={{color: "#ebc934"}}> {t('read_more')}</a>
               </p>
             </div>
           </div>
@@ -47,7 +47,7 @@ const Tours = async ({params: {locale}}: {params: {locale: string}}) => {
                 </a>
                 <div className='tours_image_container'>
                   <p className='tour_container_header_desc_mini'>{t(`tourList.${index}.title`)} - {t(`tourDays.${index}.days`)}{/*here also make links like as tourList*/}</p>
-                  <p className='tour_container_desc_mini'>{t(`tourList.${index}.description`)} <a href={element.href} style={{color: "#ebc934"}}> Read more</a></p>
+                  <p className='tour_container_desc_mini'>{t(`tourList.${index}.description`)} <a href={element.href} style={{color: "#ebc934"}}> {t('read_more')}</a></p>
                 </div>
               </div>
             ))}
@@ -66,8 +66,8 @@ const Tours = async ({params: {locale}}: {params: {locale: string}}) => {
               />
             </a>
             <div className='tours_image_container'>
-              <p className='tour_container_header_desc'>ALTAI TAVAN BOGD TOUR - 7 days 6 nights</p>
-              <p className='tour_container_desc'>Explore the breathtaking Altai Tavan Bogd tour, unveiling Mongolia's pristine beauty. Majestic mountains, diverse landscapes, and nomadic culture await in this unforgettable journey.<a href='/tours/altai' style={{color: "#ebc934"}}> Read more</a></p>
+              <p className='tour_container_header_desc'>{t('altai')}</p>
+              <p className='tour_container_desc'>{t('altai_desc')}<a href='/tours/altai' style={{color: "#ebc934"}}> {t('read_more')}</a></p>
             </div>
           </div>
           <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between"}}>
@@ -83,8 +83,8 @@ const Tours = async ({params: {locale}}: {params: {locale: string}}) => {
                   /> 
                 </a>
                 <div className='tours_image_container'>
-                  <p className='tour_container_header_desc_mini'>{t(`individualList.${index}.title`)} - {t(`tourDays.${index}.days`)}{/*here also make links like as tourList*/}</p>
-                  <p className='tour_container_desc_mini'>{t(`individualList.${index}.description`)} <a href={element.href} style={{color: "#ebc934"}}> Read more</a></p>
+                  <p className='tour_container_header_desc_mini'>{t(`individualList.${index}.title`)} {/*here also make links like as tourList*/}</p>
+                  <p className='tour_container_desc_mini'>{t(`individualList.${index}.description`)} <a href={element.href} style={{color: "#ebc934"}}> {t('read_more')}</a></p>
                 </div>
               </div>
             ))}

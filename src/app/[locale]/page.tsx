@@ -5,7 +5,7 @@ import Link from "next/link";
 import {getTranslations} from 'next-intl/server';
 import {unstable_setRequestLocale} from 'next-intl/server';
 import IndividualTours from "@/components/UI/IndividualTours";
-import Accomodation from "@/components/UI/Accomodation";
+import Accommodation from "@/components/UI/Accomodation";
 
 export default async function Index({params: {locale}}: {params: {locale: string}}) {
   unstable_setRequestLocale(locale);
@@ -35,7 +35,9 @@ export default async function Index({params: {locale}}: {params: {locale: string
           <IndividualTours/>
         </div>
         <div>
-          <Accomodation/>
+          <Accommodation params={{
+            locale: ""
+          }}/>
         </div>
       </div>
     </main>

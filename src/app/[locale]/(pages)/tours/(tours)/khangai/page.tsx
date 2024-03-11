@@ -5,7 +5,7 @@ import {unstable_setRequestLocale} from 'next-intl/server';
 
 const GobiKhangai = async ({params: {locale}}: {params: {locale: string}}) => {
   unstable_setRequestLocale(locale);
-  const t = await getTranslations('Tours');
+  const t = await getTranslations('Khangai');
   return (
     <div style={{marginTop: "8%"}}>
       <div className='visibility_area'> {/*For description*/}
@@ -22,15 +22,15 @@ const GobiKhangai = async ({params: {locale}}: {params: {locale: string}}) => {
               alt='Ulaanbaatar'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
-            <p className='tours_image_container tours_page_main_header'>GOBI-KHANGAI TOUR - 13 days 12 nights</p>
+            <p className='tours_image_container tours_page_main_header'>{t('picture_text')}</p>
           </div>
           <div style={{display: "flex", padding: "2%", backgroundColor: "#f6f5ff"}}>
             <div style={{width: "100%", marginRight: "8%"}}>{/*left cont*/}
               <div>
-                <p className='tour_left_column_header'>Day 1. Baga Gazriin Chuluu</p>
+                <p className='tour_left_column_header'>{t('day1')}</p>
               </div>
               <div>
-                <p className='tour_left_column_text'>In addition to many springs, there are many ancient tombs and monuments around the mountain passes and valleys. There is much to see, including the poplar rock valley called Sudutyn am, the Jargalant cave, and rocks with ancient pictographs.</p>
+                <p className='tour_left_column_text'>{t('day1text')}</p>
               </div>
               <div>
                 <p className='tour_left_column_subheader'></p>
@@ -39,33 +39,33 @@ const GobiKhangai = async ({params: {locale}}: {params: {locale: string}}) => {
             </div>
             <div style={{width: "100%"}}>{/*right cont*/}
               <div>
-                <p className='tour_left_column_header'>PROGRAM</p>
+                <p className='tour_left_column_header'>{t('program')}</p>
               </div>
               <div className='tour_right_column_text'>
                 <ul style={{fontWeight: "500", marginBottom: "1%"}}>
-                  <li>08:00 AM - Breakfast</li>
-                  <li>09:00 AM - Move to Baga Gazar</li>
-                  <li>12:00 AM - Lunch Time</li>
-                  <li>13:00 PM - Return to trip</li>
-                  <li>15:00 PM - Arrive at venue</li>
-                  <li>06:00 PM - Dinner time</li>
+                  <li>{t('schedule1-1')}</li>
+                  <li>{t('schedule1-2')}</li>
+                  <li>{t('schedule1-3')}</li>
+                  <li>{t('schedule1-4')}</li>
+                  <li>{t('schedule1-5')}</li>
+                  <li>{t('schedule1-6')}</li>
                 </ul>
               </div>
-              <div style={{display: "flex", gap: "1%", marginRight: "3%"}}>
+              <div style={{display: "flex", gap: "2.2%", marginRight: "3%", alignItems: 'flex-start'}}>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/eat.png' alt="eat" className='tour_right_column_icons'/>3 meals
+                  <img src='/eat.png' alt="eat" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon1')}
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/wifi.png' alt="wifi" className='tour_right_column_icons'/>3g/4g
+                  <img src='/wifi.png' alt="wifi" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>3g/4g
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/battery.png' alt="battery" className='tour_right_column_icons'/>Charging
+                  <img src='/shower.png' alt="shower" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon4')}
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/shower.png' alt="shower" className='tour_right_column_icons'/>Shower
+                  <img src='/bulb.png' alt="bulb" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon5')}
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/bulb.png' alt="bulb" className='tour_right_column_icons'/>Light
+                  <img src='/battery.png' alt="battery" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon3')}
                 </p>
               </div>
             </div>
@@ -82,10 +82,10 @@ const GobiKhangai = async ({params: {locale}}: {params: {locale: string}}) => {
           <div style={{display: "flex", padding: "2%", backgroundColor: "#f6f5ff"}}>
             <div style={{width: "100%", marginRight: "8%"}}>{/*left cont*/}
               <div>
-                <p className='tour_left_column_header'>Day 2. Tsagaan Suvarga</p>
+                <p className='tour_left_column_header'>{t('day2')}</p>
               </div>
               <div>
-                <p className='tour_left_column_text'>Tsagaan suvarga /White Stupa/ is a hill that rises 90 degrees vertically and is made up of clay deposits of various colors. It is located 65 km southwest of Ulziit sum in Dundgovi province. Tsagaan suvarga is a large cliff 200 meters high and 400 meters long.</p>
+                <p className='tour_left_column_text'>{t('day2text')}</p>
               </div>
               <div>
                 <p className='tour_left_column_subheader'></p>
@@ -94,32 +94,32 @@ const GobiKhangai = async ({params: {locale}}: {params: {locale: string}}) => {
             </div>
             <div style={{width: "100%"}}>{/*right cont*/}
               <div>
-                <p className='tour_left_column_header'>PROGRAM</p>
+                <p className='tour_left_column_header'>{t('program')}</p>
               </div>
               <div className='tour_right_column_text'>
                 <ul style={{fontWeight: "500", marginBottom: "1%"}}>
-                  <li>08:00 AM - Breakfast</li>
-                  <li>09:00 AM - Move to White Stupa</li>
-                  <li>12:00 AM - Lunch Time</li>
-                  <li>14:00 PM - Arrival at destination</li>
-                  <li>18:00 PM - Dinner</li>
+                  <li>{t('schedule2-1')}</li>
+                  <li>{t('schedule2-2')}</li>
+                  <li>{t('schedule2-3')}</li>
+                  <li>{t('schedule2-4')}</li>
+                  <li>{t('schedule2-5')}</li>
                 </ul>
               </div>
-              <div style={{display: "flex", gap: "1%", marginRight: "3%"}}>
+              <div style={{display: "flex", gap: "2.2%", marginRight: "3%", alignItems: 'flex-start'}}>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/eat.png' alt="eat" className='tour_right_column_icons'/>3 meals
+                  <img src='/eat.png' alt="eat" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon1')}
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/wifi.png' alt="wifi" className='tour_right_column_icons'/>3g/4g
+                  <img src='/wifi.png' alt="wifi" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>3g/4g
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/battery.png' alt="battery" className='tour_right_column_icons'/>Charging
+                  <img src='/shower.png' alt="shower" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon4')}
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/shower.png' alt="shower" className='tour_right_column_icons'/>Shower
+                  <img src='/bulb.png' alt="bulb" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon5')}
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/bulb.png' alt="bulb" className='tour_right_column_icons'/>Light
+                  <img src='/battery.png' alt="battery" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon3')}
                 </p>
               </div>
             </div>
@@ -136,10 +136,10 @@ const GobiKhangai = async ({params: {locale}}: {params: {locale: string}}) => {
           <div style={{display: "flex", padding: "2%", backgroundColor: "#f6f5ff"}}>
             <div style={{width: "100%", marginRight: "8%"}}>{/*left cont*/}
               <div>
-                <p className='tour_left_column_header'>Day 3. Yolyn Am</p>
+                <p className='tour_left_column_header'>{t('day3')}</p>
               </div>
               <div>
-                <p className='tour_left_column_text'>It is a great place to spot eagles, wild argali sheep and golden eagles. Initially established to protect local birdlife, it eventually became a popular place to visit the deep ice floes that form in winter and remain well into summer.</p>
+                <p className='tour_left_column_text'>{t('day3text')}</p>
               </div>
               <div>
                 <p className='tour_left_column_subheader'></p>
@@ -148,32 +148,32 @@ const GobiKhangai = async ({params: {locale}}: {params: {locale: string}}) => {
             </div>
             <div style={{width: "100%"}}>{/*right cont*/}
               <div>
-                <p className='tour_left_column_header'>PROGRAM</p>
+                <p className='tour_left_column_header'>{t('program')}</p>
               </div>
               <div className='tour_right_column_text'>
                 <ul style={{fontWeight: "500", marginBottom: "1%"}}>
-                  <li>08:00 AM - Breakfast</li>
-                  <li>09:00 AM - Depart for Yolyn Am</li>
-                  <li>12:00 AM - Lunchtime</li>
-                  <li>03:00 PM - Arrival at venue</li>
-                  <li>06:00 PM - Dinner time</li>
+                  <li>{t('schedule3-1')}</li>
+                  <li>{t('schedule3-2')}</li>
+                  <li>{t('schedule3-3')}</li>
+                  <li>{t('schedule3-4')}</li>
+                  <li>{t('schedule3-5')}</li>
                 </ul>
               </div>
-              <div style={{display: "flex", gap: "1%", marginRight: "3%"}}>
+              <div style={{display: "flex", gap: "2.2%", marginRight: "3%", alignItems: 'flex-start'}}>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/eat.png' alt="eat" className='tour_right_column_icons'/>3 meals
+                  <img src='/eat.png' alt="eat" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon1')}
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/wifi.png' alt="wifi" className='tour_right_column_icons'/>3g/4g
+                  <img src='/wifi.png' alt="wifi" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>3g/4g
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/battery.png' alt="battery" className='tour_right_column_icons'/>Charging
+                  <img src='/shower.png' alt="shower" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon4')}
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/shower.png' alt="shower" className='tour_right_column_icons'/>Shower
+                  <img src='/bulb.png' alt="bulb" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon5')}
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/bulb.png' alt="bulb" className='tour_right_column_icons'/>Light
+                  <img src='/battery.png' alt="battery" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon3')}
                 </p>
               </div>
             </div>
@@ -190,10 +190,10 @@ const GobiKhangai = async ({params: {locale}}: {params: {locale: string}}) => {
           <div style={{display: "flex", padding: "2%", backgroundColor: "#f6f5ff"}}>
             <div style={{width: "100%", marginRight: "8%"}}>{/*left cont*/}
               <div>
-                <p className='tour_left_column_header'>Day 4. Hongor Els Dunes</p>
+                <p className='tour_left_column_header'>{t('day4')}</p>
               </div>
               <div>
-                <p className='tour_left_column_text'>This is one of the largest and most beautiful sand dunes in Mongolia. This 200m high sand dune is 7-8km wide and about 180km long. Climbing the dunes is interesting not only for the view from the top, but also for the sounds the dunes make while climbing.</p>
+                <p className='tour_left_column_text'>{t('day4text')}</p>
               </div>
               <div>
                 <p className='tour_left_column_subheader'></p>
@@ -202,33 +202,33 @@ const GobiKhangai = async ({params: {locale}}: {params: {locale: string}}) => {
             </div>
             <div style={{width: "100%"}}>{/*right cont*/}
               <div>
-                <p className='tour_left_column_header'>PROGRAM</p>
+                <p className='tour_left_column_header'>{t('program')}</p>
               </div>
               <div className='tour_right_column_text'>
                 <ul style={{fontWeight: "500", marginBottom: "1%"}}>
-                  <li>08:00 AM - Breakfast</li>
-                  <li>09:00 AM - Depart for Hongor Sand Dunes</li>
-                  <li>12:00 AM - Lunch time</li>
-                  <li>15:00 PM - Camel ride</li>
-                  <li>16:00 PM - Climb the sand dune</li>
-                  <li>18:00 PM - Dinner time</li>
+                  <li>{t('schedule4-1')}</li>
+                  <li>{t('schedule4-2')}</li>
+                  <li>{t('schedule4-3')}</li>
+                  <li>{t('schedule4-4')}</li>
+                  <li>{t('schedule4-5')}</li>
+                  <li>{t('schedule4-6')}</li>
                 </ul>
               </div>
-              <div style={{display: "flex", gap: "1%", marginRight: "3%"}}>
+              <div style={{display: "flex", gap: "2.2%", marginRight: "3%", alignItems: 'flex-start'}}>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/eat.png' alt="eat" className='tour_right_column_icons'/>3 meals
+                  <img src='/eat.png' alt="eat" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon1')}
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/wifi.png' alt="wifi" className='tour_right_column_icons'/>3g/4g
+                  <img src='/wifi.png' alt="wifi" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>3g/4g
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/battery.png' alt="battery" className='tour_right_column_icons'/>Charging
+                  <img src='/shower.png' alt="shower" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon4')}
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/shower.png' alt="shower" className='tour_right_column_icons'/>Shower
+                  <img src='/bulb.png' alt="bulb" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon5')}
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/bulb.png' alt="bulb" className='tour_right_column_icons'/>Light
+                  <img src='/battery.png' alt="battery" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon3')}
                 </p>
               </div>
             </div>
@@ -245,10 +245,10 @@ const GobiKhangai = async ({params: {locale}}: {params: {locale: string}}) => {
           <div style={{display: "flex", padding: "2%", backgroundColor: "#f6f5ff"}}>
             <div style={{width: "100%", marginRight: "8%"}}>{/*left cont*/}
               <div>
-                <p className='tour_left_column_header'>Day 5. Baynzag Cliff</p>
+                <p className='tour_left_column_header'>{t('day5')}</p>
               </div>
               <div>
-                <p className='tour_left_column_text'>It has a unique texture, measuring 5km wide and approximately 8km long. Roy Chapmen Endrius, an American paleontologist, first discovered fossil dinosaur bones and eggs in the area in 1922 while on an expedition with his crew to find traces of ancient people.</p>
+                <p className='tour_left_column_text'>{t('day5text')}</p>
               </div>
               <div>
                 <p className='tour_left_column_subheader'></p>
@@ -257,32 +257,32 @@ const GobiKhangai = async ({params: {locale}}: {params: {locale: string}}) => {
             </div>
             <div style={{width: "100%"}}>{/*right cont*/}
               <div>
-                <p className='tour_left_column_header'>PROGRAM</p>
+                <p className='tour_left_column_header'>{t('program')}</p>
               </div>
               <div className='tour_right_column_text'>
                 <ul style={{fontWeight: "500", marginBottom: "1%"}}>
-                  <li>08:00 AM - Breakfast</li>
-                  <li>09:00 AM - Depart for Bayanzag</li>
-                  <li>12:00 AM - Lunch time</li>
-                  <li>14:00 PM - Arrival at the ranch</li>
-                  <li>18:00 PM - Dinner time</li>
+                  <li>{t('schedule5-1')}</li>
+                  <li>{t('schedule5-2')}</li>
+                  <li>{t('schedule5-3')}</li>
+                  <li>{t('schedule5-4')}</li>
+                  <li>{t('schedule5-5')}</li>
                 </ul>
               </div>
-              <div style={{display: "flex", gap: "1%", marginRight: "3%"}}>
+              <div style={{display: "flex", gap: "2.2%", marginRight: "3%", alignItems: 'flex-start'}}>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/eat.png' alt="eat" className='tour_right_column_icons'/>3 meals
+                  <img src='/eat.png' alt="eat" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon1')}
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/wifi.png' alt="wifi" className='tour_right_column_icons'/>3g/4g
+                  <img src='/wifi.png' alt="wifi" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>3g/4g
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/battery.png' alt="battery" className='tour_right_column_icons'/>Charging
+                  <img src='/shower.png' alt="shower" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon4')}
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/shower.png' alt="shower" className='tour_right_column_icons'/>Shower
+                  <img src='/bulb.png' alt="bulb" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon5')}
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/bulb.png' alt="bulb" className='tour_right_column_icons'/>Light
+                  <img src='/battery.png' alt="battery" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon3')}
                 </p>
               </div>
             </div>
@@ -299,10 +299,10 @@ const GobiKhangai = async ({params: {locale}}: {params: {locale: string}}) => {
           <div style={{display: "flex", padding: "2%", backgroundColor: "#f6f5ff"}}>
             <div style={{width: "100%", marginRight: "8%"}}>{/*left cont*/}
               <div>
-                <p className='tour_left_column_header'>Day 6. Ongiin Hiid</p>
+                <p className='tour_left_column_header'>{t('day6')}</p>
               </div>
               <div>
-                <p className='tour_left_column_text'>It is located in Saihan-Ovoo soum, Dundgovi province. One of the largest monasteries in Mongolia, Ongi was founded in 1660 and consists of two temple complexes on the north and south banks of the Ongi River.</p>
+                <p className='tour_left_column_text'>{t('day6text')}</p>
               </div>
               <div>
                 <p className='tour_left_column_subheader'></p>
@@ -311,31 +311,31 @@ const GobiKhangai = async ({params: {locale}}: {params: {locale: string}}) => {
             </div>
             <div style={{width: "100%"}}>{/*right cont*/}
               <div>
-                <p className='tour_left_column_header'>PROGRAM</p>
+                <p className='tour_left_column_header'>{t('program')}</p>
               </div>
               <div className='tour_right_column_text'>
                 <ul style={{fontWeight: "500", marginBottom: "1%"}}>
-                  <li>08:00 AM - Breakfast</li>
-                  <li>12:00 AM - Lunch time</li>
-                  <li>17:00 PM - After arriving at the site, enjoy the beautiful nature, take photos, and hike.</li>
-                  <li>19:00 PM - Dinner</li>
+                  <li>{t('schedule6-1')}</li>
+                  <li>{t('schedule6-2')}</li>
+                  <li>{t('schedule6-3')}</li>
+                  <li>{t('schedule6-4')}</li>
                 </ul>
               </div>
-              <div style={{display: "flex", gap: "1%", marginRight: "3%"}}>
+              <div style={{display: "flex", gap: "2.2%", marginRight: "3%", alignItems: 'flex-start'}}>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/eat.png' alt="eat" className='tour_right_column_icons'/>3 meals
+                  <img src='/eat.png' alt="eat" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon1')}
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/wifi.png' alt="wifi" className='tour_right_column_icons'/>3g/4g
+                  <img src='/wifi.png' alt="wifi" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>3g/4g
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/battery.png' alt="battery" className='tour_right_column_icons'/>Charging
+                  <img src='/shower.png' alt="shower" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon4')}
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/shower.png' alt="shower" className='tour_right_column_icons'/>Shower
+                  <img src='/bulb.png' alt="bulb" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon5')}
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/bulb.png' alt="bulb" className='tour_right_column_icons'/>Light
+                  <img src='/battery.png' alt="battery" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon3')}
                 </p>
               </div>
             </div>
@@ -344,7 +344,7 @@ const GobiKhangai = async ({params: {locale}}: {params: {locale: string}}) => {
         <div >
           <div style={{position: 'relative'}}>
             <img
-              src='/gkt7.jpg'
+              src='/gkt6.jpg'
               alt='Ulaanbaatar'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
@@ -352,10 +352,10 @@ const GobiKhangai = async ({params: {locale}}: {params: {locale: string}}) => {
           <div style={{display: "flex", padding: "2%", backgroundColor: "#f6f5ff"}}>
             <div style={{width: "100%", marginRight: "8%"}}>{/*left cont*/}
               <div>
-                <p className='tour_left_column_header'>Day 7. Karkhorin Ancient Capital </p>
+                <p className='tour_left_column_header'>{t('day7')}</p>
               </div>
               <div>
-                <p className='tour_left_column_text'>In 1206, Genghis Khan founded the Mongol Empire and built its first capital, Kharkhorin. The city of Kharkhorin existed for 140 years, was the central capital of Mongolia for 32 years, and was home to various religious temples. This city was the largest trading city in the world at the time.</p>
+                <p className='tour_left_column_text'>{t('day7text')}</p>
               </div>
               <div>
                 <p className='tour_left_column_subheader'></p>
@@ -364,32 +364,32 @@ const GobiKhangai = async ({params: {locale}}: {params: {locale: string}}) => {
             </div>
             <div style={{width: "100%"}}>{/*right cont*/}
               <div>
-                <p className='tour_left_column_header'>PROGRAM</p>
+                <p className='tour_left_column_header'>{t('program')}</p>
               </div>
               <div className='tour_right_column_text'>
                 <ul style={{fontWeight: "500", marginBottom: "1%"}}>
-                  <li>08:00 AM - Breakfast</li>
-                  <li>09:00 AM - Transfer to Kharkhorin</li>
-                  <li>12:00 AM - Lunch time</li>
-                  <li>16:00 PM - Arrival at destination</li>
-                  <li>18:00 PM - Dinner</li>
+                  <li>{t('schedule7-1')}</li>
+                  <li>{t('schedule7-2')}</li>
+                  <li>{t('schedule7-3')}</li>
+                  <li>{t('schedule7-4')}</li>
+                  <li>{t('schedule7-5')}</li>
                 </ul>
               </div>
-              <div style={{display: "flex", gap: "1%", marginRight: "3%"}}>
+              <div style={{display: "flex", gap: "2.2%", marginRight: "3%", alignItems: 'flex-start'}}>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/eat.png' alt="eat" className='tour_right_column_icons'/>3 meals
+                  <img src='/eat.png' alt="eat" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon1')}
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/wifi.png' alt="wifi" className='tour_right_column_icons'/>3g/4g
+                  <img src='/wifi.png' alt="wifi" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>3g/4g
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/battery.png' alt="battery" className='tour_right_column_icons'/>Charging
+                  <img src='/shower.png' alt="shower" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon4')}
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/shower.png' alt="shower" className='tour_right_column_icons'/>Shower
+                  <img src='/bulb.png' alt="bulb" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon5')}
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/bulb.png' alt="bulb" className='tour_right_column_icons'/>Light
+                  <img src='/battery.png' alt="battery" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon3')}
                 </p>
               </div>
             </div>
@@ -406,43 +406,43 @@ const GobiKhangai = async ({params: {locale}}: {params: {locale: string}}) => {
           <div style={{display: "flex", padding: "2%", backgroundColor: "#f6f5ff"}}>
             <div style={{width: "100%", marginRight: "8%"}}>{/*left cont*/}
               <div>
-                <p className='tour_left_column_header'>Day 8. Tsenher Hot Spring</p>
+                <p className='tour_left_column_header'>{t('day8')}</p>
               </div>
               <div>
-                <p className='tour_left_column_text'>It is located south of the village of Tsenkher in Arkhangai province. The water flows from deep in the ground, and because it is hot, it does not mix with dirt and groundwater. Additionally, the springs are maintained under high pressure underground and the flow rate can reach 10 liters per second.</p>
+                <p className='tour_left_column_text'>{t('day8text')}</p>
               </div>
               <div>
-                <p className='tour_left_column_subheader'>★Caution★</p>
-                <p className='tour_left_column_text_sec'>Bring the clothes you need for the hot springs. (Swimsuit, Beachwear)</p>
+                <p className='tour_left_column_subheader'>{t('attention')}</p>
+                <p className='tour_left_column_text_sec'>{t('attention_desc')}</p>
               </div>
             </div>
             <div style={{width: "100%"}}>{/*right cont*/}
               <div>
-                <p className='tour_left_column_header'>PROGRAM</p>
+                <p className='tour_left_column_header'>{t('program')}</p>
               </div>
               <div className='tour_right_column_text'>
                 <ul style={{fontWeight: "500", marginBottom: "1%"}}>
-                  <li>08:00 AM - Breakfast</li>
-                  <li>09:00 AM - Move to Chengher Hot Springs</li>
-                  <li>12:00 AM - Free time after lunch</li>
-                  <li>19:00 PM - Dinner</li>
+                  <li>{t('schedule8-1')}</li>
+                  <li>{t('schedule8-2')}</li>
+                  <li>{t('schedule8-3')}</li>
+                  <li>{t('schedule8-4')}</li>
                 </ul>
               </div>
-              <div style={{display: "flex", gap: "1%", marginRight: "3%"}}>
+              <div style={{display: "flex", gap: "2.2%", marginRight: "3%", alignItems: 'flex-start'}}>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/eat.png' alt="eat" className='tour_right_column_icons'/>3 meals
+                  <img src='/eat.png' alt="eat" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon1')}
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/wifi.png' alt="wifi" className='tour_right_column_icons'/>3g/4g
+                  <img src='/wifi.png' alt="wifi" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>3g/4g
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/battery.png' alt="battery" className='tour_right_column_icons'/>Charging
+                  <img src='/shower.png' alt="shower" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon4')}
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/shower.png' alt="shower" className='tour_right_column_icons'/>Shower
+                  <img src='/bulb.png' alt="bulb" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon5')}
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/bulb.png' alt="bulb" className='tour_right_column_icons'/>Light
+                  <img src='/battery.png' alt="battery" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon3')}
                 </p>
               </div>
             </div>
@@ -459,10 +459,10 @@ const GobiKhangai = async ({params: {locale}}: {params: {locale: string}}) => {
           <div style={{display: "flex", padding: "2%", backgroundColor: "#f6f5ff"}}>
             <div style={{width: "100%", marginRight: "8%"}}>{/*left cont*/}
               <div>
-                <p className='tour_left_column_header'>Day 9. Terkhiin Tsagaan Lake</p>
+                <p className='tour_left_column_header'>{t('day9')}</p>
               </div>
               <div>
-                <p className='tour_left_column_text'>Terkhiin Tsagaan Lake is an incredibly beautiful lake with relatively pure fresh water. Lava flows from the Khorgo volcano blocked the north and south sides of the Terkh River, forming Terkhiin Tsagaan Lake at 2060 meters above sea level. The lake is 16 km long, 4-10 km wide, and 20 m deep, with a deepest point of 28 m and a surface assessment of over 20 km.</p>
+                <p className='tour_left_column_text'>{t('day9text')}</p>
               </div>
               <div>
                 <p className='tour_left_column_subheader'></p>
@@ -471,34 +471,34 @@ const GobiKhangai = async ({params: {locale}}: {params: {locale: string}}) => {
             </div>
             <div style={{width: "100%"}}>{/*right cont*/}
               <div>
-                <p className='tour_left_column_header'>PROGRAM</p>
+                <p className='tour_left_column_header'>{t('program')}</p>
               </div>
               <div className='tour_right_column_text'>
                 <ul style={{fontWeight: "500", marginBottom: "1%"}}>
-                  <li>08:00 AM - Breakfast</li>
-                  <li>09:00 AM - Transfer to Terhin Tsagan Lake</li>
-                  <li>13:00 PM - Free time after lunch</li>
-                  <li>19:00 PM - Dinner</li>
+                  <li>{t('schedule9-1')}</li>
+                  <li>{t('schedule9-2')}</li>
+                  <li>{t('schedule9-3')}</li>
+                  <li>{t('schedule9-4')}</li>
                   <li></li>
                   <li></li>
                   <li></li>
                 </ul>
               </div>
-              <div style={{display: "flex", gap: "1%", marginRight: "3%"}}>
+              <div style={{display: "flex", gap: "2.2%", marginRight: "3%", alignItems: 'flex-start'}}>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/eat.png' alt="eat" className='tour_right_column_icons'/>3 meals
+                  <img src='/eat.png' alt="eat" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon1')}
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/wifi.png' alt="wifi" className='tour_right_column_icons'/>3g/4g
+                  <img src='/wifi.png' alt="wifi" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>3g/4g
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/battery.png' alt="battery" className='tour_right_column_icons'/>Charging
+                  <img src='/shower.png' alt="shower" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon4')}
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/shower.png' alt="shower" className='tour_right_column_icons'/>Shower
+                  <img src='/bulb.png' alt="bulb" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon5')}
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/bulb.png' alt="bulb" className='tour_right_column_icons'/>Light
+                  <img src='/battery.png' alt="battery" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon3')}
                 </p>
               </div>
             </div>
@@ -515,10 +515,10 @@ const GobiKhangai = async ({params: {locale}}: {params: {locale: string}}) => {
           <div style={{display: "flex", padding: "2%", backgroundColor: "#f6f5ff"}}>
             <div style={{width: "100%", marginRight: "8%"}}>{/*left cont*/}
               <div>
-                <p className='tour_left_column_header'>Day 10. Ider Sum</p>
+                <p className='tour_left_column_header'>{t('day10')}</p>
               </div>
               <div>
-                <p className='tour_left_column_text'>I'm taking a day off at the guesthouse.</p>
+                <p className='tour_left_column_text'>{t('day10text')}</p>
               </div>
               <div>
                 <p className='tour_left_column_subheader'></p>
@@ -527,30 +527,30 @@ const GobiKhangai = async ({params: {locale}}: {params: {locale: string}}) => {
             </div>
             <div style={{width: "100%"}}>{/*right cont*/}
               <div>
-                <p className='tour_left_column_header'>PROGRAM</p>
+                <p className='tour_left_column_header'>{t('program')}</p>
               </div>
               <div className='tour_right_column_text'>
                 <ul style={{fontWeight: "500", marginBottom: "1%"}}>
-                  <li>Breakfast at 08:00 AM</li>
-                  <li>Lunch at 12:00 AM</li>
-                  <li>Dinner at 18:00 PM</li>
+                  <li>{t('schedule10-1')}</li>
+                  <li>{t('schedule10-2')}</li>
+                  <li>{t('schedule10-3')}</li>
                 </ul>
               </div>
-              <div style={{display: "flex", gap: "1%", marginRight: "3%"}}>
+              <div style={{display: "flex", gap: "2.2%", marginRight: "3%", alignItems: 'flex-start'}}>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/eat.png' alt="eat" className='tour_right_column_icons'/>3 meals
+                  <img src='/eat.png' alt="eat" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon1')}
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/wifi.png' alt="wifi" className='tour_right_column_icons'/>3g/4g
+                  <img src='/wifi.png' alt="wifi" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>3g/4g
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/battery.png' alt="battery" className='tour_right_column_icons'/>Charging
+                  <img src='/shower.png' alt="shower" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon4')}
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/shower.png' alt="shower" className='tour_right_column_icons'/>Shower
+                  <img src='/bulb.png' alt="bulb" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon5')}
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/bulb.png' alt="bulb" className='tour_right_column_icons'/>Light
+                  <img src='/battery.png' alt="battery" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon3')}
                 </p>
               </div>
             </div>
@@ -567,10 +567,10 @@ const GobiKhangai = async ({params: {locale}}: {params: {locale: string}}) => {
           <div style={{display: "flex", padding: "2%", backgroundColor: "#f6f5ff"}}>
             <div style={{width: "100%", marginRight: "8%"}}>{/*left cont*/}
               <div>
-                <p className='tour_left_column_header'>Day 11. Khuvsgul Lake</p>
+                <p className='tour_left_column_header'>{t('day11')}</p>
               </div>
               <div>
-                <p className='tour_left_column_text'>Khuvsgul is a land of dense forests, fast-flowing rivers, sparkling lakes, and rugged mountains. This is the most beautiful region of Mongolia, where every river bend or lake seems to offer a new and surprising surprise.</p>
+                <p className='tour_left_column_text'>{t('day11text')}</p>
               </div>
               <div>
                 <p className='tour_left_column_subheader'></p>
@@ -579,33 +579,33 @@ const GobiKhangai = async ({params: {locale}}: {params: {locale: string}}) => {
             </div>
             <div style={{width: "100%"}}>{/*right cont*/}
               <div>
-                <p className='tour_left_column_header'>PROGRAM</p>
+                <p className='tour_left_column_header'>{t('program')}</p>
               </div>
               <div className='tour_right_column_text'>
                 <ul style={{fontWeight: "500", marginBottom: "1%"}}>
-                  <li>Breakfast at 07:00 AM</li>
-                  <li>08:00 AM Move to Khuvsgul</li>
-                  <li>Lunch at 12:00 AM</li>
-                  <li>Horseback riding at 15:00 PM</li>
-                  <li>Visit Rock of Desire at 16:00 PM</li>
-                  <li>Dinner at 19:00 PM</li>
+                  <li>{t('schedule11-1')}</li>
+                  <li>{t('schedule11-2')}</li>
+                  <li>{t('schedule11-3')}</li>
+                  <li>{t('schedule11-4')}</li>
+                  <li>{t('schedule11-5')}</li>
+                  <li>{t('schedule11-6')}</li>
                 </ul>
               </div>
-              <div style={{display: "flex", gap: "1%", marginRight: "3%"}}>
+              <div style={{display: "flex", gap: "2.2%", marginRight: "3%", alignItems: 'flex-start'}}>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/eat.png' alt="eat" className='tour_right_column_icons'/>3 meals
+                  <img src='/eat.png' alt="eat" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon1')}
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/wifi.png' alt="wifi" className='tour_right_column_icons'/>3g/4g
+                  <img src='/wifi.png' alt="wifi" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>3g/4g
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/battery.png' alt="battery" className='tour_right_column_icons'/>Charging
+                  <img src='/shower.png' alt="shower" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon4')}
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/shower.png' alt="shower" className='tour_right_column_icons'/>Shower
+                  <img src='/bulb.png' alt="bulb" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon5')}
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/bulb.png' alt="bulb" className='tour_right_column_icons'/>Light
+                  <img src='/battery.png' alt="battery" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon3')}
                 </p>
               </div>
             </div>
@@ -622,10 +622,10 @@ const GobiKhangai = async ({params: {locale}}: {params: {locale: string}}) => {
           <div style={{display: "flex", padding: "2%", backgroundColor: "#f6f5ff"}}>
             <div style={{width: "100%", marginRight: "8%"}}>{/*left cont*/}
               <div>
-                <p className='tour_left_column_header'>Day 12. Bulgan Aimag</p>
+                <p className='tour_left_column_header'>{t('day12')}</p>
               </div>
               <div>
-                <p className='tour_left_column_text'>The city of Bulgan, a small aimak capital with a population of 13,000 at 1208 meters above sea level, has long been known to foreigners as an overnight stopover halfway between Ulaanbaatar and Khovsgol Nuur. If you've traveled to central or southern Mongolia, the city of Bulgan may impress you with its absence of conifers, log cabins, and gers.</p>
+                <p className='tour_left_column_text'>{t('day12text')}</p>
               </div>
               <div>
                 <p className='tour_left_column_subheader'></p>
@@ -634,31 +634,31 @@ const GobiKhangai = async ({params: {locale}}: {params: {locale: string}}) => {
             </div>
             <div style={{width: "100%"}}>{/*right cont*/}
               <div>
-                <p className='tour_left_column_header'>PROGRAM</p>
+                <p className='tour_left_column_header'>{t('program')}</p>
               </div>
               <div className='tour_right_column_text'>
                 <ul style={{fontWeight: "500", marginBottom: "1%"}}>
-                  <li>Breakfast at 07:00 AM</li>
-                  <li>08:00 AM Move to Bolgan Province</li>
-                  <li>Lunch at 12:00 AM</li>
-                  <li>Dinner at 18:00 PM (Mongolian traditional food Horhog)</li>
+                  <li>{t('schedule11-1')}</li>
+                  <li>{t('schedule11-2')}</li>
+                  <li>{t('schedule11-3')}</li>
+                  <li>{t('schedule11-4')}</li>
                 </ul>
               </div>
-              <div style={{display: "flex", gap: "1%", marginRight: "3%"}}>
+              <div style={{display: "flex", gap: "2.2%", marginRight: "3%", alignItems: 'flex-start'}}>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/eat.png' alt="eat" className='tour_right_column_icons'/>3 meals
+                  <img src='/eat.png' alt="eat" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon1')}
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/wifi.png' alt="wifi" className='tour_right_column_icons'/>3g/4g
+                  <img src='/wifi.png' alt="wifi" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>3g/4g
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/battery.png' alt="battery" className='tour_right_column_icons'/>Charging
+                  <img src='/shower.png' alt="shower" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon4')}
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/shower.png' alt="shower" className='tour_right_column_icons'/>Shower
+                  <img src='/bulb.png' alt="bulb" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon5')}
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/bulb.png' alt="bulb" className='tour_right_column_icons'/>Light
+                  <img src='/battery.png' alt="battery" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon3')}
                 </p>
               </div>
             </div>
@@ -675,49 +675,49 @@ const GobiKhangai = async ({params: {locale}}: {params: {locale: string}}) => {
           <div style={{display: "flex", padding: "2%", backgroundColor: "#f6f5ff"}}>
             <div style={{width: "100%", marginRight: "8%"}}>{/*left cont*/}
               <div>
-                <p className='tour_left_column_header'>Day 13. Back to Ulaanbaatar</p>
+                <p className='tour_left_column_header'>{t('day13')}</p>
               </div>
               <div>
-                <p className='tour_left_column_text'>Ulaanbaatar is the capital of Mongolia. It is located in the Tuul River Valley, bordering Bogd Khaan Uul National Park.</p>
+                <p className='tour_left_column_text'>{t('day13text')}</p>
               </div>
               <div>
-                <p className='tour_left_column_subheader'></p>
-                <p className='tour_left_column_text_sec'></p>
+                <p className='tour_left_column_subheader' style={{ visibility: 'hidden' }}>text</p>
+                <p className='tour_left_column_text_sec' style={{ visibility: 'hidden' }}>text</p>
                 <div style={{marginTop: "2%"}}>
                   <Link href="/contacts/#targetBlock" className='myButton '>
-                    {t('City.button')}
+                    {t('button')}
                   </Link>
                 </div>
               </div>
             </div>
             <div style={{width: "100%"}}>{/*right cont*/}
               <div>
-                <p className='tour_left_column_header'>PROGRAM</p>
+                <p className='tour_left_column_header'>{t('program')}</p>
               </div>
               <div className='tour_right_column_text'>
                 <ul style={{fontWeight: "500", marginBottom: "1%"}}>
-                  <li>Breakfast at 07:00 AM</li>
-                  <li>07:30 AM Transfer to Ulaanbaatar</li>
-                  <li>Lunch at 12:00 AM</li>
-                  <li>See Gobi cashmer at 15:00 PM</li>
-                  <li>Dinner at 18:00 PM</li>
+                  <li>{t('schedule13-1')}</li>
+                  <li>{t('schedule13-2')}</li>
+                  <li>{t('schedule13-3')}</li>
+                  <li>{t('schedule13-4')}</li>
+                  <li>{t('schedule13-5')}</li>
                 </ul>
               </div>
-              <div style={{display: "flex", gap: "1%", marginRight: "3%"}}>
+              <div style={{display: "flex", gap: "2.2%", marginRight: "3%", alignItems: 'flex-start'}}>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/eat.png' alt="eat" className='tour_right_column_icons'/>3 meals
+                  <img src='/eat.png' alt="eat" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon1')}
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/wifi.png' alt="wifi" className='tour_right_column_icons'/>3g/4g
+                  <img src='/wifi.png' alt="wifi" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>3g/4g
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/battery.png' alt="battery" className='tour_right_column_icons'/>Charging
+                  <img src='/shower.png' alt="shower" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon4')}
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/shower.png' alt="shower" className='tour_right_column_icons'/>Shower
+                  <img src='/bulb.png' alt="bulb" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon5')}
                 </p>
                 <p className='tour_right_column_icons_text'>
-                  <img src='/bulb.png' alt="bulb" className='tour_right_column_icons'/>Light
+                  <img src='/battery.png' alt="battery" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon3')}
                 </p>
               </div>
             </div>

@@ -6,7 +6,7 @@ const Trips = () => {
   const t = useTranslations('Tours');
   return (
     <div >
-      <h2 className='tour_items_header  trocchi-regular'>{t('title')}</h2>
+      <h2 className='tour_items_header trocchi-regular'>{t('title')}</h2>
       <div style={{display: "flex", flexWrap: "wrap", justifyContent: "space-between"}}>
         {TOURS_IMAGES.map((element, index) => (
           <div key={element.id} className='main_page_three_tours_container'>
@@ -16,17 +16,18 @@ const Trips = () => {
                 src={element.src} 
                 width='100%' 
                 height="auto"
+                style={{borderRadius: "10px"}}
               /> 
             </a>
-            <div style={{textAlign: "center", backgroundColor: "#ffde4d", padding: "1%", marginBottom: "4%"}}>
-              <Link href={element.href} className='mainpage_festivals_title'>
+            <div style={{textAlign: "center", padding: "1%"}}>
+              <Link href={element.href} className='mainpage_festivals_title trocchi-regular'>
                 {t(`tourList.${index}.title`)}
               </Link>
             </div>
           </div>
         ))}
       </div>
-      <div style={{display: "flex", flexWrap: "wrap", justifyContent: "space-between", marginTop: "2.7%"}}>
+      <div style={{display: "flex", flexWrap: "wrap", justifyContent: "space-between", marginTop: "0.7%"}}>
         {TOURS_IMAGES_2.map((elem, ind) => (
           <div key={elem.id} className='main_page_two_tours_container'>
             <a href={elem.href}>
@@ -35,10 +36,11 @@ const Trips = () => {
                 src={elem.src} 
                 width='100%' 
                 height="auto"
+                style={{borderRadius: "10px"}}
               /> 
             </a>
-            <div style={{textAlign: "center", marginBottom: "5%", backgroundColor: "#ffde4d", padding: "1%"}}>
-              <Link href={elem.href} className='mainpage_festivals_title'>
+            <div style={{textAlign: "center", marginBottom: "5%", padding: "1%"}}>
+              <Link href={elem.href} className='mainpage_festivals_title trocchi-regular'>
                 {t(`tourList.${ind + 3}.title`)}
               </Link>
             </div>

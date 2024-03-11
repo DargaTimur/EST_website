@@ -85,6 +85,28 @@ const Contacts = async ({params: {locale}}: {params: {locale: string}}) => {
             messageTitle={t('message')}
             agreeTitle={t('agree')}
             buttonTitle={t('button')}
+            choice={t('choice')}
+            choice1={t('choice1')}
+            choice2={t('choice2')}
+            choice3={t('choice3')}
+            choice4={t('choice4')}
+            choice5={t('choice5')}
+            choice6={t('choice6')}
+            choice7={t('choice7')}
+            choice8={t('choice8')}
+            country1={t('country1')}
+            country2={t('country2')}
+            country3={t('country3')}
+            country4={t('country4')}
+            country5={t('country5')}
+            country6={t('country6')}
+            country7={t('country7')}
+            country8={t('country8')}
+            country9={t('country9')}
+            country10={t('country10')}
+            country11={t('country11')}
+            country12={t('country12')}
+            country13={t('country13')}
           />
         </div>
       </div>

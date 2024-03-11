@@ -15,10 +15,11 @@ const Festivals = () => {
               alt='festivals'
               width='100%'
               height='auto'
+              style={{borderRadius: "10px"}}
             />
           </a>
-          <div style={{textAlign: "center", backgroundColor: "#ffde4d", padding: "1%", marginBottom: "4%"}}>
-            <Link href={element.href} className='mainpage_festivals_title'>
+          <div style={{textAlign: "center", padding: "1%", marginBottom: "4%"}}>
+            <Link href={element.href} className='mainpage_festivals_title trocchi-regular'>
               {t(`festivals.${index}.title`)}
             </Link>
           </div>
