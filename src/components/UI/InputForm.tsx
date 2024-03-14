@@ -4,7 +4,7 @@ import Input from './Input';
 import Button from './Button';
 import TextArea from './TextArea';
 
-const InputForm = ({...props}: any) => { 
+const InputForm = ({...props}: any) => {
 
   const [name, setName] = useState('');
   const [last, setLast] = useState('');
@@ -20,7 +20,7 @@ const InputForm = ({...props}: any) => {
     console.log('Data', name, last, country, tour, number, email, message);
     e.preventDefault();
 
-    const response = await fetch("/api/sendForm", {
+    const response = await fetch("/bookForm", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -63,7 +63,7 @@ const InputForm = ({...props}: any) => {
             id='name'
             placeholder={props.formPlaceholder1}
             required
-            value={name} 
+            value={name}
             onChange={(e) => {
               setName(e.target.value)
             }}
@@ -73,7 +73,7 @@ const InputForm = ({...props}: any) => {
             id='last'
             placeholder={props.formPlaceholder2}
             required
-            value={last} 
+            value={last}
             onChange={(e) => {
               setLast(e.target.value)
             }}
@@ -85,7 +85,7 @@ const InputForm = ({...props}: any) => {
           id='email'
           placeholder=""
           required
-          value={email} 
+          value={email}
           onChange={(e) => {
             setEmail(e.target.value)
           }}
@@ -130,7 +130,7 @@ const InputForm = ({...props}: any) => {
             id='number'
             placeholder=""
             required
-            value={number} 
+            value={number}
             onChange={(e) => {
               setNumber(e.target.value)
             }}
@@ -140,7 +140,7 @@ const InputForm = ({...props}: any) => {
         <TextArea
           id='message'
           required
-          value={message} 
+          value={message}
           onChange={(e) => {
             setMessage(e.target.value)
           }}
