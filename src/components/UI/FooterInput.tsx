@@ -11,14 +11,14 @@ export default function FooterInput({title, mail, messages, button, pl1, pl2, ..
   const sendMail = async (e: any) => {
     e.preventDefault();
 
-    const response = await fetch("/api/sendEmail", {
+    const response = await fetch("/contactForm", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
         name,
-        last, 
+        last,
         email,
         message
       }),
