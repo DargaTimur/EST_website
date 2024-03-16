@@ -24,6 +24,7 @@ const Tours = async ({params: {locale}}: {params: {locale: string}}) => {
                 src='/tmkhangai.jpg'
                 width="100%"
                 height="auto"
+                style={{borderRadius: "10px"}}
               />
             </a>
             <div className='tours_image_container'>
@@ -43,6 +44,7 @@ const Tours = async ({params: {locale}}: {params: {locale: string}}) => {
                     alt='tours images'
                     width='100%'
                     height='auto'
+                    style={{borderRadius: "10px"}}
                   /> 
                 </a>
                 <div className='tours_image_container'>
@@ -63,6 +65,7 @@ const Tours = async ({params: {locale}}: {params: {locale: string}}) => {
                 src='/altai.jpg'
                 width="100%"
                 height="auto"
+                style={{borderRadius: "10px"}}
               />
             </a>
             <div className='tours_image_container'>
@@ -80,6 +83,7 @@ const Tours = async ({params: {locale}}: {params: {locale: string}}) => {
                     alt='individual tours images'
                     width='100%'
                     height='auto'
+                    style={{borderRadius: "10px"}}
                   /> 
                 </a>
                 <div className='tours_image_container'>

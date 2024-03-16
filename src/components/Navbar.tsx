@@ -105,6 +105,7 @@ const Navbar = () => {
           <div className="switcher">
             <LocalSwitcher/>
           </div>
+          <div className={`overlay ${isMenuOpen ? 'open' : ''}`}></div>
         </nav>
       </div>
     </div>

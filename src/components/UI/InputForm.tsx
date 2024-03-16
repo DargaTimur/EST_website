@@ -38,7 +38,7 @@ const InputForm = ({...props}: any) => {
 
     {/*Change it*/}
     if (response.ok) {
-      alert('Please agree to the terms and conditions before submitting the form.');
+      alert('Thanks'); {/*Please agree to the terms and conditions before submitting the form.*/}
     } else {
       alert("Successful")
     }
@@ -114,11 +114,13 @@ const InputForm = ({...props}: any) => {
           <div>
             <select className='Input'>
               <option>{props.choice}</option>
+              <option value='mask' disabled style={{color: 'rgba(0, 0, 0, 0.5)', fontWeight: "bolder", fontStyle: "italic"}}>{props.disabled_mask1} </option>
               <option value='city'>{props.choice1} </option>
               <option value='gobi'>{props.choice2} </option>
               <option value='central'>{props.choice3} </option>
               <option value='khuvsgul'>{props.choice4} </option>
               <option value='gobikhangai'>{props.choice5} </option>
+              <option value='mask' disabled style={{color: 'rgba(0, 0, 0, 0.5)', fontWeight: "bolder", fontStyle: "italic"}}>{props.disabled_mask2} </option>
               <option value='horse'>{props.choice6} </option>
               <option value='altai'>{props.choice7} </option>
               <option value='tsaatan'>{props.choice8} </option>
@@ -145,7 +147,7 @@ const InputForm = ({...props}: any) => {
             setMessage(e.target.value)
           }}
         />
-        <div>
+        {/*<div>
           <label style={{ whiteSpace: 'nowrap' }}>
             <input
               type="checkbox"
@@ -155,9 +157,9 @@ const InputForm = ({...props}: any) => {
             />
             {props.agreeTitle}
           </label>
-        </div>
+        </div>*/}
         <div style={{marginTop: "3%"}}>
-          <Button type="Submit" disabled={!agreeChecked}>{props.buttonTitle}</Button>
+          <Button type="Submit">{props.buttonTitle}</Button>
         </div>
       </form>
     </div>

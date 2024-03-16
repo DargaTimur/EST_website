@@ -24,42 +24,6 @@ const TsagaanSar = async ({params: {locale}}: {params: {locale: string}}) => {
           <p className='text_container' style={{textAlign: 'justify'}}>{t('tsagaan-sar.text')}</p>
         </div>
         <div className='text_container'> 
-          <table>
-            <colgroup>
-              <col style={{ width: '30%' }} />
-              <col style={{ width: '70%' }} />
-            </colgroup>
-            <thead>
-              <tr>
-                <td>{t('tsagaan-sar.td1')}</td>
-                <td>{t('tsagaan-sar.tdtext1')}</td>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>{t('tsagaan-sar.td2')}</td>
-                <td>{t('tsagaan-sar.tdtext2')}<br/>{t('tsagaan-sar.tdtext2-1')}</td>
-              </tr>
-            </tbody>
-            <tbody>
-              <tr>
-                <td>{t('tsagaan-sar.td3')}</td>
-                <td>{t('tsagaan-sar.tdtext3')}<br/>{t('tsagaan-sar.tdtext3-1')}</td>
-              </tr>
-            </tbody>
-            <tbody>
-              <tr>
-                <td>{t('tsagaan-sar.td4')}</td>
-                <td>{t('tsagaan-sar.tdtext4')}</td>
-              </tr>
-            </tbody>
-            <tbody>
-              <tr>
-                <td>{t('tsagaan-sar.td5')}</td>
-                <td>{t('tsagaan-sar.tdtext5')}</td>
-              </tr>
-            </tbody>
-          </table>
         </div>
       </div>
       <div className='events_button_btn'>  

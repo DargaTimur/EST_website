@@ -16,13 +16,17 @@ const City = async ({params: {locale}}: {params: {locale: string}}) => {
               alt='Route'
             />
           </div>
+          <div className='tours_background_color'>
+            <h1 className='tours_main_description_header'>{t('picture_text')}</h1>
+            <p className='tours_main_description'>{t('description')}</p>
+          </div>
           <div style={{position: 'relative'}}>
             <img
               src='/cit0.jpg'
               alt='Ulaanbaatar'
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
-            <p className='tours_image_container tours_page_main_header'>{t('picture_text')}</p>
+            <p className='tours_page_main_header'></p>
           </div>
           <div style={{display: "flex", padding: "2%", backgroundColor: "#f6f5ff"}}>
             <div style={{width: "100%", marginRight: "8%"}}>{/*left cont*/}
@@ -49,6 +53,7 @@ const City = async ({params: {locale}}: {params: {locale: string}}) => {
                   <li>{t('schedule1-4')}</li>
                   <li>{t('schedule1-5')}</li>
                   <li>{t('schedule1-6')}</li>
+                  <li>{t('schedule1-7')}</li>
                 </ul>
               </div>
               <div style={{display: "flex", gap: "2.2%", marginRight: "3%", alignItems: 'flex-start'}}>
@@ -146,11 +151,6 @@ const City = async ({params: {locale}}: {params: {locale: string}}) => {
               <div>
                 <p className='tour_left_column_subheader'></p>
                 <p className='tour_left_column_text_sec'></p>
-                <div style={{marginTop: "2%"}}>
-                  <Link href="/contacts/#targetBlock" className='myButton '>
-                    {t('button')}
-                  </Link>
-                </div>
               </div>
             </div>
             <div style={{width: "100%"}}>{/*right cont*/}
@@ -182,6 +182,11 @@ const City = async ({params: {locale}}: {params: {locale: string}}) => {
                 <p className='tour_right_column_icons_text'>
                   <img src='/battery.png' alt="battery" style={{backgroundColor: "#32a848", borderRadius: "8px"}} className='tour_right_column_icons'/>{t('icon3')}
                 </p>
+              </div>
+              <div style={{marginTop: "2%"}}>
+                <Link href="/contacts/#targetBlock" className='myButton '>
+                  {t('button')}
+                </Link>
               </div>
             </div>
           </div>

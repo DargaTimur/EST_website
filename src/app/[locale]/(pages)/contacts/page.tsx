@@ -86,11 +86,13 @@ const Contacts = async ({params: {locale}}: {params: {locale: string}}) => {
             agreeTitle={t('agree')}
             buttonTitle={t('button')}
             choice={t('choice')}
+            disabled_mask1={t('disabled_mask1')}
             choice1={t('choice1')}
             choice2={t('choice2')}
             choice3={t('choice3')}
             choice4={t('choice4')}
             choice5={t('choice5')}
+            disabled_mask2={t('disabled_mask2')}
             choice6={t('choice6')}
             choice7={t('choice7')}
             choice8={t('choice8')}

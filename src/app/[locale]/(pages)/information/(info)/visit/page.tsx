@@ -24,8 +24,8 @@ const Visit = async ({params: {locale}}: {params: {locale: string}}) => {
             autumnDescription2={t('seasons.description4-1')}
           />
         </div>
-        <div style={{ position: "absolute", top: "40%", left: "50%", transform: "translate(-50%, -50%)"}}>
-          <p style={{fontSize: '400%', fontWeight: 'bold', color: "#fff"}}>{t('visit')}</p>
+        <div className='seasons_title_positioning'>
+          <p className='seasons_title_on_picture'>{t('visit')}</p>
         </div>
       </div>
     </div>

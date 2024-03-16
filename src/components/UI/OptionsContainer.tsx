@@ -8,14 +8,16 @@ const OptionsContainer = () => {
       <div >
         {OPTIONS.map((element, index) => (
           <div key={index}>
-            <div style={{display: "Flex", marginBottom: "3%"}}>
+            <div className='information_options_display'>
               <img
                 src={element.src}
                 alt='options'
-                width='40%'
-                height='auto%'
+                width='100%'
+                height='auto'
+                style={{borderRadius: "10px"}}
+                className='information_option_width'
               />
-              <div style={{marginLeft: "1.5%", textAlign: 'justify'}}>
+              <div className='information_option_width information_text_container_left_margin'>
                 <p className='options_title'>{t(`transport.${index}.title`)}</p>
                 <p className='options_text'>{t(`transport.${index}.description`)}</p>
               </div>

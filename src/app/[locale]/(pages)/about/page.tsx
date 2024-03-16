@@ -1,3 +1,4 @@
+import CarsSlider from '@/components/UI/CarsSlider';
 import {unstable_setRequestLocale} from 'next-intl/server';
 import {getTranslations} from 'next-intl/server';
 
@@ -22,38 +23,14 @@ const About = async ({params: {locale}}: {params: {locale: string}}) => {
           <p className='about_text'>{t('text')}</p>
           <div>
             <h2 style={{marginBottom: "2%"}} className='about_titles'>{t('vehicle')}</h2>
-            <div className='about_true_positioning'>
-              <div className='about_chess_text_container'>
-                <h2 className='about_chess_header'>UAZ</h2>
-                <p className='about_text'>{t('veh_desc1')}</p>
-              </div>
-              <div className='about_chess_image_container'>
-                <img
-                  src='/uaz.jpg'
-                  className='about_image_styles'
-                  alt="Заполняющее изображение"
-                />
-              </div>
-            </div>
-            <div className='about_true_positioning'>
-              <div className='about_chess_image_container'>
-                <img
-                  src='/hyndai.jpg'
-                  className='about_image_styles'
-                  alt="Заполняющее изображение"
-                />
-              </div>
-              <div className='about_chess_text_container'>
-                <h2 className='about_chess_header'>{t('veh_header2')}</h2>
-                <p className='about_text'>{t('veh_desc2')}</p>
-              </div>
-            </div>
+            <CarsSlider/>
+            <p className='cars_desciption'>{t('cars_desc')}</p>
           </div>
           <div>
             <h2 style={{marginBottom: "2%"}} className='about_titles'>{t('goals_header')}</h2>
           </div>
-          <div className='about_true_positioning'>
-            <div className='about_chess_text_container'>
+          <div className='about_true_positioning about_position_margin_between_block'>
+            <div className='about_chess_text_container about_border_top_left_radius about_block_border_top_right_radius'>
               <h2 className='about_chess_header'>{t('mission')}</h2>
               <ul className='about_mission_text' style={{listStyleType: "disc"}}>
                 <li>{t(`mission_desc.${0}.title`)}</li>
@@ -63,39 +40,47 @@ const About = async ({params: {locale}}: {params: {locale: string}}) => {
                 <li>{t(`mission_desc.${4}.title`)}</li>
               </ul>
             </div>
-            <div className='about_chess_image_container'>
+            <div className='about_chess_image_container about_border_top_right_radius about_block_border_bottom_right_radius about_block_border_bottom_left_radius'>
               <img
                 src='/bt1.jpg'
                 className='about_image_styles'
-                alt="Заполняющее изображение"
+                alt="Image"
               />
             </div>
           </div>
-          <div style={{display: "flex", justifyContent: "space-between"}}>
-            <div className='about_chess_image_container'>
+          <div className='about_true_positioning about_position_margin_between_block'>
+            <div className='about_chess_image_container about_block_border_top_left_radius about_block_border_top_right_radius'>
               <img
                 src='/bt3.jpg'
                 className='about_image_styles'
-                alt="Заполняющее изображение"
+                alt="Image"
               />
             </div>
-            <div className='about_chess_text_container'>
+            <div className='about_chess_text_container about_block_border_bottom_right_radius about_block_border_bottom_left_radius'>
               <h2 className='about_chess_header'>{t('team')}</h2>
               <p className='about_mission_text'>{t('team_desc')}</p>
             </div>
           </div>
-          <div style={{display: "flex", justifyContent: "space-between"}}>
-            <div className='about_chess_text_container'>
+          <div className='about_true_positioning'>
+            <div className='about_chess_text_container about_border_bottom_left_radius about_block_border_top_left_radius about_block_border_top_right_radius'>
               <h2 className='about_chess_header'>{t('staff')}</h2>
               <p className='about_mission_text'>{t('staff_desc')}</p>
             </div>
-            <div className='about_chess_image_container'>
+            <div className='about_chess_image_container about_border_bottom_right_radius about_block_border_bottom_right_radius about_block_border_bottom_left_radius'>
               <img
                 src='/staff.jpg'
                 className='about_image_styles'
                 alt="Заполняющее изображение"
               />
             </div>
+          </div>
+          <div>
+            <h2 className='about_titles' style={{marginTop: "3%"}}>ACCREDITATION</h2>
+            <img
+              src='/cert.png'
+              className='about_image_styles'
+              alt="certificate"
+            />
           </div>
         </div>
       </div>

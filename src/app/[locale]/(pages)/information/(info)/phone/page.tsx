@@ -12,7 +12,7 @@ const Phone = async ({params: {locale}}: {params: {locale: string}}) => {
         alt='phone_page'
         style={{marginBottom: "3%"}}
       />
-      <div style={{display: "flex", gap: "10%"}}>
+      <div className='phone_page_display'>
         {mobileCompanies.map((element, index) => (
           <div key={element.id} style={{ justifyContent: "center", alignItems: "center" }}>
             <a href={element.href}>

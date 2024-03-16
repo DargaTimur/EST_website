@@ -26,7 +26,7 @@ const Information = async ({params: {locale}}: {params: {locale: string}}) => {
             src='/terelj.jpg'
             alt='picture'
             width='100%'
-            style={{marginBottom: "2.7%"}}
+            style={{marginBottom: "2.7%", borderRadius: "10px"}}
           />
           <div>
             <div className='information_space'>
@@ -34,11 +34,13 @@ const Information = async ({params: {locale}}: {params: {locale: string}}) => {
                 src='/cousine1.jpg'
                 alt='food'
                 width='50%'
+                style={{borderBottomLeftRadius: "10px", borderTopLeftRadius: "10px"}}
               />
               <img
                 src='/cousine2.jpg'
                 alt='meal'
                 width='50%'
+                style={{borderBottomRightRadius: "10px", borderTopRightRadius: "10px"}}
               />
             </div>
             <div style={{marginTop: "2%"}}>
@@ -52,6 +54,7 @@ const Information = async ({params: {locale}}: {params: {locale: string}}) => {
                 src='/culture.jpg'
                 alt='song'
                 width='100%'
+                style={{borderRadius: "10px"}}
               />
             </div>
             <div style={{marginTop: "2%"}}>
@@ -63,12 +66,13 @@ const Information = async ({params: {locale}}: {params: {locale: string}}) => {
             <div className='information_space'>
               <img
                 src='/kashmere.jpg'
-                alt=''
+                alt='cashmere'
                 width='100%'
+                style={{borderRadius: "10px"}}
               />
             </div>
             <div style={{marginTop: "2%"}}>
-              <p className='information_second_header' style={{marginBottom: "2%"}}>{t('kashmere')}</p>
+              <p className='information_second_header' style={{marginBottom: "2%"}}>{t('cashmere')}</p>
               <p className='information_desc'>{t('kashmere_desc')}</p>
             </div>
           </div>
@@ -78,6 +82,7 @@ const Information = async ({params: {locale}}: {params: {locale: string}}) => {
                 src='/muse.jpg'
                 alt='Museums'
                 width='100%'
+                style={{borderRadius: "10px"}}
               />
             </div>
             <div style={{marginTop: "2%"}}>
@@ -91,6 +96,7 @@ const Information = async ({params: {locale}}: {params: {locale: string}}) => {
                 src='/temp.jpg'
                 alt='Temples'
                 width='100%'
+                style={{borderRadius: "10px"}}
               />
             </div>
             <div style={{marginTop: "2%"}}>
@@ -104,6 +110,7 @@ const Information = async ({params: {locale}}: {params: {locale: string}}) => {
                 src='/music.jpg'
                 alt='Music and free Time'
                 width='100%'
+                style={{borderRadius: "10px"}}
               />
             </div>
             <div style={{marginTop: "2%"}}>
@@ -117,6 +124,7 @@ const Information = async ({params: {locale}}: {params: {locale: string}}) => {
                 src='/rest.jpg'
                 alt='Restaraunts'
                 width='100%'
+                style={{borderRadius: "10px"}}
               />
             </div>
             <div style={{marginTop: "2%"}}>

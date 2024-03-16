@@ -24,48 +24,6 @@ const IceFestival = async ({params: {locale}}: {params: {locale: string}}) => {
           <p className='text_container' style={{textAlign: 'justify'}}>{t('ice-festival.text')}</p>
         </div>
         <div className='text_container'> 
-          <table>
-            <colgroup>
-              <col style={{ width: '30%' }} />
-              <col style={{ width: '70%' }} />
-            </colgroup>
-            <thead>
-              <tr>
-                <td>{t('ice-festival.td1')}</td>
-                <td>{t('ice-festival.tdtext1')}</td>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>{t('ice-festival.td2')}</td>
-                <td>{t('ice-festival.tdtext2')}</td>
-              </tr>
-            </tbody>
-            <tbody>
-              <tr>
-                <td>{t('ice-festival.td3')}</td>
-                <td>{t('ice-festival.tdtext3')}</td>
-              </tr>
-            </tbody>
-            <tbody>
-              <tr>
-                <td>{t('ice-festival.td4')}</td>
-                <td>{t('ice-festival.tdtext4')}</td>
-              </tr>
-            </tbody>
-            <tbody>
-              <tr>
-                <td>{t('ice-festival.td5')}</td>
-                <td>{t('ice-festival.tdtext5')}</td>
-              </tr>
-            </tbody>
-            <tbody>
-              <tr>
-                <td>{t('ice-festival.td6')}</td>
-                <td>{t('ice-festival.tdtext6')}</td>
-              </tr>
-            </tbody>
-          </table>
         </div>
       </div>
       <div className='events_button_btn'> 

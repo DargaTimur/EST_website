@@ -17,7 +17,7 @@ const Events = async ({params: {locale}}: {params: {locale: string}}) => {
           <h1 className='header_on_picture'>{t('title')}</h1>
         </div>
       </div>
-      <div className='visibility_area'>
+      <div className='visibility_area' style={{marginTop: "5%"}}>
         <EventContainer/>
       </div>
     </div>

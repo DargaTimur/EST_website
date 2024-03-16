@@ -6,8 +6,12 @@
   border-radius: 10px;
   cursor: pointer;
   height: auto;
-  display: inline-block;
+  display: flex;
   text-align: center;
+  width: 140px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
 }
 
 .myButton:hover {
@@ -32,13 +36,26 @@
 @media (max-width:767px) {
   .myButton{
     padding: 3px 10px;
-    font-size: 60%;
+    font-size: 90%;
+    width: 120px;
+    height: 35px;
   }
 }
 
 @media (max-width:480px) {
   .myButton{
     padding: 2px 9px;
-    font-size: 50%;
+    font-size: 90%;
+    width: 120px;
+    height: 35px;
+  }
+}
+
+@media (max-width:480px) {
+  .myButton{
+    padding: 2px 9px;
+    font-size: 90%;
+    width: 120px;
+    height: 35px;
   }
 }

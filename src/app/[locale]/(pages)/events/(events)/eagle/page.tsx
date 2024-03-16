@@ -24,36 +24,6 @@ const EagleFestival = async ({params: {locale}}: {params: {locale: string}}) => 
           <p className='text_container' style={{textAlign: 'justify'}}>{t('eagle-festival.text')}</p>
         </div>
         <div className='text_container'>
-          <table>
-            <colgroup>
-              <col style={{ width: '30%' }} />
-              <col style={{ width: '70%' }} />
-            </colgroup>
-            <thead>
-              <tr>
-                <td>{t('eagle-festival.td1')}</td>
-                <td>{t('eagle-festival.tdtext1')}</td>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>{t('eagle-festival.td2')}</td>
-                <td>{t('eagle-festival.tdtext2')}</td>
-              </tr>
-            </tbody>
-            <tbody>
-              <tr>
-                <td>{t('eagle-festival.td3')}</td>
-                <td>{t('eagle-festival.tdtext3')}</td>
-              </tr>
-            </tbody>
-            <tbody>
-              <tr>
-                <td>{t('eagle-festival.td4')}</td>
-                <td>{t('eagle-festival.tdtext4')}</td>
-              </tr>
-            </tbody>
-          </table>
         </div>
       </div>
       <div className='events_button_btn'> 

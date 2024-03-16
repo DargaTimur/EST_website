@@ -6,18 +6,19 @@ const EventContainer = () => {
   const t = useTranslations('Events');
   return (
     <div >
-      <div style={{display: "flex", flexWrap: "wrap"}}>
+      <div className='events_display'>
         {EVENTS.map((element, index) => (
-          <div key={index} style={{display: "flex", marginBottom: "3%", margin: '1%', padding: "1%"}}>
-            <a href={element.href} style={{ display: "block", width: "50%", position: "relative" }}>
+          <div key={index} className='events_display_container'>
+            <a href={element.href} className='events_display_image_cont'>
               <img
                 src={element.src}
                 alt='images'
                 width='100%'
                 height='auto'
+                style={{borderRadius: "10px"}}
               />
             </a>
-            <div style={{ width: "50%" }}>
+            <div className='events_display_text_cont'>
               <p className='event_block_header'>{t(`event-container.${index}.title`)}</p>
               <p className='event_block_desc'>
                 {t(`event-container.${index}.description`)}

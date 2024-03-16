@@ -149,9 +149,32 @@
   padding: 1.5%;
   margin: 0;
   text-align: justify;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 /*Events*/
+
+.events_display {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.events_display_container {
+  display: flex;
+  margin-bottom: 3%;
+  padding-bottom: 5%;
+}
+
+.events_display_image_cont {
+  width: 50%;
+  display: block;
+  position: relative;
+}
+
+.events_display_text_cont {
+  width: 50%;
+}
 
 .event_block_header {
   margin-right: 3%;
@@ -163,7 +186,7 @@
 .event_block_desc {
   margin-right: 3%;
   margin-left: 3%;
-  font-size: 110%;
+  font-size: 120%;
   text-align: justify;
 }
 
@@ -218,6 +241,11 @@
   font-size: 130%;
 }
 
+.information_text_container_left_margin {
+  margin-left: 1.5%;
+  text-align: justify;
+}
+
 /*ABOUT*/
 
 .about_titles {
@@ -228,7 +256,7 @@
 }
 
 .about_text {
-  font-size: 120%;
+  font-size: 140%;
   margin-bottom: 3%;
   margin-top: 3%;
 }
@@ -263,6 +291,11 @@
   justify-content: space-between;
 }
 
+.phone_page_display {
+  display: flex;
+  gap: 10%;
+}
+
 /*Contacts*/
 
 .contact_plank {
@@ -292,11 +325,36 @@
 }
 
 /*Footer*/
+.footer_display {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
 .footer_containers_title {
   font-size: 160%;
   font-weight: bolder;
   margin-bottom: 3%;
+}
+
+.footer_first_column {
+  flex: 1;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.footer_second_column {
+  flex: 1;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-left: 9%;
+}
+
+.footer_third_column {
+  flex: 1;
+  padding-top: 2%;
+  align-self: flex-end;
+  margin-left: 8%;
 }
 
 .footer_containers_text {
@@ -456,15 +514,6 @@
   color: #000;
 }
 
-.switcher_btn {
-  background-color: transparent;
-  border: none;
-  outline: none;
-  font-size: 110%;
-  font-weight: 500;
-  transition: color 0.4s ease;
-}
-
 .switcher_change_btn {
   font-size: 106%;
   font-weight: 500;
@@ -516,8 +565,8 @@
   border: 1px solid #a38305;
   border-radius: 10px;
   cursor: pointer;
-  height: 40px;
-  width: 100px;
+  height: 44px;
+  width: 116px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -604,12 +653,155 @@
   margin-top: 72%;
 }
 
+.tours_main_description_header {
+  padding-top: 2%;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 2%;
+  font-size: 200%;
+  font-weight: bold;
+}
+
+.tours_main_description {
+  padding-bottom: 2%;
+  padding-left: 2%;
+  padding-right: 2%;
+  font-size: 120%;
+  font-weight: bolder;
+  text-align: justify;
+}
+
+.tours_background_color {
+  background-color: #f6f5ff;
+}
+
+.cars_desciption {
+  margin-top: 3%;
+  font-size: 130%;
+}
+
+.information_options_display {
+  display: Flex;
+  margin-bottom: 3%;
+}
+
+.information_option_width {
+  width: 50%;
+}
+
+.hotels_display {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4%;
+}
+
+.hotels_container_display {
+  width: 31%;
+}
+
+.hotels_top_margin {
+  margin-top: 10%;
+}
+
+.shangri_la_hotel,
+.blue_sky_hotel,
+.ramada_hotel,
+.edelweiss_hotel,
+.kempinski_hotel,
+.mika_hotel,
+.continental_hotel,
+.khongor_guesthouse,
+.mash_guesthouse {
+  position: absolute;
+  align-items: center;
+  text-align: center;
+  padding: 2%;
+  color: #ffde4d;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.shangri_la_hotel {
+  bottom: 47%;
+  left: 21%;
+}
+
+.blue_sky_hotel,
+.ramada_hotel {
+  bottom: 47%;
+  left: 25%;
+}
+
+.edelweiss_hotel,
+.kempinski_hotel {
+  bottom: 40%;
+  left: 22%;
+}
+
+.mika_hotel {
+  bottom: 40%;
+  left: 30%;
+}
+
+.continental_hotel {
+  bottom: 40%;
+  left: 19%;
+}
+
+.khongor_guesthouse {
+  bottom: 40%;
+  left: 15%;
+}
+
+.mash_guesthouse {
+  bottom: 40%;
+  left: 20%;
+}
+
+.about_border_top_left_radius {
+  border-top-left-radius: 10px;
+}
+
+.about_border_top_right_radius {
+  border-top-right-radius: 10px;
+}
+
+.about_border_bottom_left_radius {
+  border-bottom-left-radius: 10px;
+}
+
+.about_border_bottom_right_radius {
+  border-bottom-right-radius: 10px;
+}
+
+.about_block_border_top_left_radius {
+  border-top-left-radius: 0px;
+}
+
+.seasons_title_on_picture {
+  font-size: 400%;
+  font-weight: bold;
+  color: #fff;
+}
+
+.seasons_title_positioning {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.seasons_slider_text {
+  font-size: 120%;
+  font-weight: 500;
+  text-align: justify;
+}
+
 @media (max-width: 1250px) {
   .header_container {
-    font-size: 140%;
+    font-size: 200%;
   }
   .text_container {
-    font-size: 110%;
+    font-size: 120%;
   }
   .events_button {
     font-size: 110%;
@@ -637,9 +829,6 @@
   }
   .footer_containers_title {
     font-size: 140%;
-  }
-  .footer_containers_text {
-    font-size: 100%;
   }
   .header_on_picture {
     font-size: 300%;
@@ -670,6 +859,7 @@
   }
   .options_text {
     font-size: 120%;
+    margin-left: 0;
   }
   .contacts_form_header,
   .option_title{
@@ -678,13 +868,8 @@
   .information_desc {
     font-size: 130%;
   }
-  .visa_title,
   .about_titles {
     font-size: 180%;
-  }
-  .visa_text,
-  .about_text {
-    font-size: 110%;
   }
   .phone_titles,
   .contact_plank{
@@ -696,7 +881,6 @@
   .contact_subheader {
     font-size: 180%;
   }
-  .phone_text,
   .contact_form,
   .contact_text {
     font-size: 110%;
@@ -717,15 +901,12 @@
 
 @media (max-width: 992px) {
   .header_container {
-    font-size: 100%;
-  }
-  .text_container {
-    font-size: 80%;
+    font-size: 200%;
   }
   .events_button {
     font-size: 90%;
-    width: 70px;
-    height: 30px;
+    width: 80px;
+    height: 34px;
   }
   .header_container_for_picture{
     top: 32%
@@ -752,16 +933,12 @@
   .navbar_menu_buttons {
     font-size: 100%;
   }
-  .switcher_btn,
   .switcher_change_btn {
     font-size: 100%;
   }
   .visa_title,
   .footer_containers_title {
     font-size: 120%;
-  }
-  .footer_containers_text {
-    font-size: 80%;
   }
   .header_on_picture {
     font-size:260%;
@@ -770,10 +947,9 @@
     font-size: 160%;
   }
   .event_block_header {
-    font-size: 110%;
+    font-size: 120%;
   }
-  .tour_right_column_icons_text,
-  .event_block_desc {
+  .tour_right_column_icons_text {
     font-size: 80%;
   }
   .information_option,
@@ -781,26 +957,15 @@
   .information_main_header {
     font-size: 200%;
   }
-  .tour_individual_text,
-  .phone_titles,
-  .visa_text,
-  .options_text {
+  .tour_individual_text {
     font-size: 100%;
   }
   .information_desc {
-    font-size: 110%;
+    font-size: 124%;
   }
   .contacts_form_header,
   .option_title{
     font-size: 120%;
-  }
-  .about_titles {
-    font-size: 150%;
-  } 
-  .phone_text,
-  .about_mission_text,
-  .about_text {
-    font-size: 90%;
   }
   .tour_right_column_text,
   .contact_plank{
@@ -818,8 +983,7 @@
     font-size: 100%;
   }
   .tour_left_column_text_sec,
-  .tour_left_column_text,
-  .visa_points {
+  .tour_left_column_text {
     font-size: 90%;
   }
   .visa_margin_top {
@@ -844,20 +1008,18 @@
     margin-bottom: 3%;
     margin-top: 70%;
   }
+  .seasons_title_on_picture {
+    font-size: 300%;
+  }
 }
 
 @media (max-width: 767px) {
-  .tour_individual_text,
-  .header_container {
+  .tour_individual_text{
     font-size: 80%;
   }
-  .text_container {
-    font-size: 50%;
-  }
   .events_button {
-    font-size: 70%;
-    width: 60px;
-    height: 25px;
+    width: 80px;
+    height: 34px;
   }
 
   .tours_and_events_margin_top {
@@ -869,16 +1031,104 @@
     margin-top: 67%;
   }
 
+  .shangri_la_hotel {
+    bottom: 47%;
+    left: 30%;
+  }
 
+  .blue_sky_hotel,
+  .ramada_hotel {
+    bottom: 47%;
+    left: 34%;
+  }
 
+  .edelweiss_hotel,
+  .kempinski_hotel {
+    bottom: 40%;
+    left: 32%;
+  }
 
+  .mika_hotel {
+    bottom: 40%;
+    left: 37%;
+  }
 
+  .continental_hotel {
+    bottom: 40%;
+    left: 30%;
+  }
 
+  .khongor_guesthouse {
+    bottom: 40%;
+    left: 26%;
+  }
 
+  .mash_guesthouse {
+    bottom: 40%;
+    left: 30%;
+  }
 
+  .hotels_display {
+    display: block;
+    justify-content: space-between;
+    margin-bottom: 4%;
+  }
 
+  .hotels_container_display {
+    width: 100%;
+    margin-bottom: 5%;
+  }
 
+  .hotels_top_margin {
+    margin-top: 14%;
+  }
 
+  .about_position_margin_between_block {
+    margin-bottom: 5%;
+  }
+
+  .about_true_positioning {
+    display: block;
+  }
+
+  .about_chess_image_container,
+  .about_chess_text_container {
+    width: 100%;
+  }
+
+  .about_border_top_right_radius {
+    border-top-right-radius: 0;
+  }
+
+  .about_block_border_top_right_radius {
+    border-top-right-radius: 10px;
+  }
+
+  .about_block_border_bottom_right_radius,
+  .about_block_border_bottom_left_radius {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  
+  .about_border_bottom_left_radius {
+    border-bottom-left-radius: 0;
+  }
+
+  .about_block_border_top_left_radius {
+    border-top-left-radius: 10px;
+  }
+
+  .seasons_title_on_picture {
+    font-size: 200%;
+  }
+
+  .seasons_title_positioning {
+    display: none;
+  }
+
+  .seasons_slider_text {
+    font-size: 100%;
+  }
 
 
 
@@ -891,7 +1141,7 @@
     width: 30px;
     height: 20px;
     z-index: 52;
-    right: 50px;
+    right: 40px;
     top: 30px;
   } /*Это контейнер бургера*/
   .header_burger span {
@@ -922,7 +1172,8 @@
   .logo {
     position: fixed;
     top: 5px;
-    left: 2%;
+    left: 51%;
+    transform: translateX(-50%);
     width: 100px;
     z-index: 48;
     padding: 3px 0 0 0;
@@ -931,16 +1182,15 @@
   .header_menu {
     position: fixed;
     top: 0;
-    left: 0;
-    width: 100%;
-    padding: 70px 0 0 0;
-    z-index: 30;
-    height: 0;
+    right: -100%; 
+    width: 50%; 
+    height: 100%;
     overflow: auto;
+    z-index: 51;
     transition: all 0.3s ease 0s;
   }
   .header_menu.open {
-    opacity: 1;
+    right: 0;
     background-color: #ffde4d; /* blue #1c58c7*/
     height: 100%; /* Измените на необходимую высоту */
     transition: all 0.3s ease 0s;
@@ -948,14 +1198,17 @@
   }
 
   .navbar_menu_container {
+    margin-top: 15%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    width: 100%;
   }
 
   .navbar_menu_container a {
     margin-bottom: 30px;
     font-size: 150%;
+    border-bottom: #000 solid 1px;
+    padding-left: 12%;
   }
 
   .navbar{
@@ -977,7 +1230,8 @@
   }
   .navbar.scrolled .logo {
     transform: scale(1);
-    padding: 3px 0 0 0;
+    left: 51%;
+    transform: translateX(-50%);
   }
   .header_burger.scrolled {
     padding: 25px 0 0 0;
@@ -990,13 +1244,13 @@
   }
   .switcher_btn {
     position: fixed;
-    top: 11px;
-    z-index: 51;
-    left: 51%;
-    transform: translateX(-50%);
+    top: 12px;
+    z-index: 50;
+    left: 8%;
+    transform: translateX(-70%);
   }
   .switcher {
-    font-size: 150%;
+    font-size: 100%;
   }
   .header_burger.open:before {
     transform: rotate(45deg);
@@ -1009,6 +1263,21 @@
   .header_burger.open span {
     transform: scale(0);
   }
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0%; /* Левый край overlay находится после меню */
+    width: 100%; /* Ширина overlay */
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Затемненный фон */
+    z-index: 50; /* Должен быть ниже z-index меню */
+    display: none; /* Изначально overlay скрыт */
+  }
+  
+  .overlay.open {
+    display: block; /* Показать overlay, когда меню открыто */
+  }
+
   /*Burger end here*/
 
 
@@ -1062,16 +1331,11 @@
   .navbar_menu_container{
     gap: 1%;
   }
-  .phone_titles,
   .navbar_menu_buttons {
     font-size: 80%;
   }
-
-  .visa_title {
-    font-size: 100%;
-  }
   .phone_text{
-    font-size: 70%;
+    font-size: 120%;
   }
   .tours_page_image_container {
     width: 100%;
@@ -1083,22 +1347,18 @@
     font-size: 140%;
   }
   .tour_container_header_desc {
-    font-size: 100%;
+    font-size: 110%;
   }
   .tour_container_desc {
-    font-size: 70%;
+    font-size: 85%;
   }
   .tour_container_header_desc_mini {
-    font-size: 100%;
+    font-size: 110%;
   }
   .tour_container_desc_mini {
-    font-size: 70%;
+    font-size: 85%;
   }
-  .event_block_header {
-    font-size: 90%;
-  }
-  .tour_right_column_icons_text,
-  .event_block_desc {
+  .tour_right_column_icons_text {
     font-size: 60%;
   }
   .information_option,
@@ -1110,22 +1370,14 @@
     margin-top: 15%;
   }
   .information_desc {
-    font-size: 90%;
+    font-size: 110%;
   }
-  .visa_text,
-  .options_text {
-    font-size: 80%;
+  .visa_text {
+    font-size: 110%;
   }
   .contacts_form_header,
   .option_title{
     font-size: 100%;
-  }
-  .about_titles {
-    font-size: 125%;
-  }
-  .about_mission_text,
-  .about_text {
-    font-size: 70%;
   }
   .tour_left_column_text_sec,
   .tour_left_column_text,
@@ -1144,17 +1396,14 @@
   .contact_text {
     font-size: 80%;
   }
-  .visa_points {
-    font-size: 75%;
-  }
   .visa_margin_top {
     margin-top: 20%;
   }
   .phone_page_png_size {
-    width: 160px;
+    width: 250px;
   }
   .hotels_container_text{
-    font-size: 100%;
+    font-size: 200%;
   }
   .tour_left_column_header{
     font-size: 130%;
@@ -1165,43 +1414,50 @@
   .tour_right_column_icons {
     width: 25px;
   }
-  .about_chess_header {
-    font-size: 100%;
+  .footer_display {
+    display: block;
+  }
+  .footer_first_column {
+    border-bottom: #fff solid 1px;
+    padding-left: 2%;
+  }
+  .footer_second_column {
+    border-bottom: #fff solid 1px;
+    margin-left: 0;
+    padding-left: 2%;
+  }
+  .footer_third_column {
+    margin-left: 0;
+    padding-left: 2%;
+  }
+  .footer_containers_title {
+    font-size: 200%;
+  }
+  .event_block_desc {
+    font-size: 90%;
+  }
+  .information_text_container_left_margin {
+    margin-left: 1%;
+  }
+  .about_text {
+    font-size: 120%;
   }
 }
 
 @media (max-width: 580px) {
-  .event_block_header {
-    font-size: 80%;
-  }
-  .event_block_desc {
-    font-size: 50%;
-  }
   .information_margin {
     margin-top: 17%;
   }
-  .information_option,
-  .information_second_header {
-    font-size: 150%;
-  }
   .contacts_form_header,
   .options_title{
-    font-size: 90%;
+    font-size: 130%;
   }
-  .about_titles {
-    font-size: 110%;
-  }
-  .tour_individual_text,
-  .visa_points,
-  .about_mission_text,
-  .about_text {
+  .tour_individual_text {
     font-size: 60%;
   }
   .tour_right_column_text,
   .tour_left_column_text_sec,
   .tour_left_column_text,
-  .phone_titles,
-  .visa_text,
   .contact_plank{
     font-size: 70%;
   }
@@ -1209,7 +1465,6 @@
   .contact_subheader {
     font-size: 130%;
   }
-  .visa_title,
   .contact_form,
   .contact_text {
     font-size: 75%;
@@ -1217,27 +1472,20 @@
   .visa_margin_top {
     margin-top: 22%;
   }
-  .phone_page_png_size {
-    width: 90px;
-  }
-  .phone_text{
-    font-size: 60%;
-  }
-  .tour_left_column_subheader,
-  .hotels_container_text{
+  .tour_left_column_subheader {
     font-size: 80%;
   }
   .tour_container_header_desc {
-    font-size: 90%;
+    font-size: 110%;
   }
   .tour_container_desc {
-    font-size: 60%;
-  }
-  .tour_container_header_desc_mini {
     font-size: 90%;
   }
+  .tour_container_header_desc_mini {
+    font-size: 110%;
+  }
   .tour_container_desc_mini {
-    font-size: 60%;
+    font-size: 90%;
   }
   .tour_left_column_header{
     font-size: 120%;
@@ -1254,19 +1502,83 @@
   .navbar_menu_container{
     gap: 0.8rem;
   }
-  .about_chess_header {
-    font-size: 90%;
+  .switcher_btn {
+    left: 9%;
   }
-  .options_text {
-    font-size: 60%;
-  
+  .header_burger {
+    right: 30px;
   }
+  .header_menu {
+    width: 60%; 
+  }
+  .events_display {
+    display: block;
+  }
+  .events_display_container {
+    display: block;
+  }
+  .events_display_image_cont,
+  .events_display_text_cont {
+    width: 100%;
+  }
+  .information_options_display {
+    display: block;
+  }
+  .information_option_width {
+    width: 100%;
+  }
+  .information_text_container_left_margin {
+    margin-left: 0;
+  }
+  .shangri_la_hotel {
+    bottom: 47%;
+    left: 26%;
+  }
+
+  .blue_sky_hotel,
+  .ramada_hotel {
+    bottom: 47%;
+    left: 28%;
+  }
+
+  .edelweiss_hotel,
+  .kempinski_hotel {
+    bottom: 40%;
+    left: 26%;
+  }
+
+  .mika_hotel {
+    bottom: 40%;
+    left: 35%;
+  }
+
+  .continental_hotel {
+    bottom: 40%;
+    left: 24%;
+  }
+
+  .khongor_guesthouse {
+    bottom: 40%;
+    left: 20%;
+  }
+
+  .mash_guesthouse {
+    bottom: 40%;
+    left: 24%;
+  }
+  .seasons_title_on_picture {
+    font-size: 180%;
+  }
+  .seasons_title_positioning {
+    display: none;
+  }
+  .seasons_slider_text {
+    display: none;
+  }
+
 }
 
 @media (max-width: 480px) {
-  .header_container {
-    font-size: 50%;
-  }
   .header_container_for_picture{
     top: 17%
   }
@@ -1274,13 +1586,9 @@
   .mainpage_header_on_pictute {
     font-size: 70%;
   }
-  .text_container {
-    font-size: 40%;
-  }
   .events_button {
-    font-size: 50%;
-    width: 50px;
-    height: 20px;
+    width: 80px;
+    height: 34px;
   }
   
   .header_on_picture {
@@ -1289,15 +1597,7 @@
   .header_for_divede {
     font-size: 120%;
   }
-  .event_block_header {
-    font-size: 70%;
-  }
-  .event_block_desc {
-    font-size: 45%;
-  }
   .tours_page_main_header,
-  .information_option,
-  .information_second_header,
   .information_main_header {
     font-size: 120%;
   }
@@ -1309,24 +1609,11 @@
   .option_title{
     font-size: 80%;
   }
-  .visa_points
-  .options_text,
-  .information_desc {
-    font-size: 50%;
-  }
-  .about_titles {
-    font-size: 90%;
-  }
-  .tour_individual_text,
-  .phone_text,
-  .phone_titles,
-  .about_mission_text,
-  .about_text {
+  .tour_individual_text {
     font-size: 55%;
   }
   .tour_left_column_text_sec,
   .tour_left_column_text,
-  .visa_text,
   .contact_plank{
     font-size: 60%;
   }
@@ -1336,7 +1623,6 @@
   .contact_subheader {
     font-size: 120%;
   }
-  .visa_title,
   .contact_form,
   .contact_text {
     font-size: 70%;
@@ -1345,22 +1631,21 @@
     margin-top: 28%;
   }
   .phone_page_png_size {
-    width: 80px;
-  }
-  .hotels_container_text{
-    font-size: 70%;
+    width: 98%;
   }
   .tour_container_header_desc {
-    font-size: 80%;
+    font-size: 100%;
   }
   .tour_container_desc {
-    font-size: 45%;
-  }
-  .tour_container_header_desc_mini {
     font-size: 80%;
   }
-  .tour_right_column_icons_text,
+  .tour_container_header_desc_mini {
+    font-size: 100%;
+  }
   .tour_container_desc_mini {
+    font-size: 80%;
+  }
+  .tour_right_column_icons_text{
     font-size: 45%;
   }
   .tour_left_column_header{
@@ -1372,9 +1657,6 @@
   .tour_right_column_icons {
     width: 18px;
   }
-  .about_chess_header {
-    font-size: 80%;
-  }
   .navbar_menu_buttons {
     font-size: 60%;
   }
@@ -1385,13 +1667,72 @@
     flex-direction: column;
   }
   .footer_containers_title {
-    font-size: 120%;
-  }
-  .footer_containers_text {
-    font-size: 80%;
+    font-size: 180%;
   }
   .tours_and_events_margin_top {
     margin-top: 14%;
+  }
+  .switcher_btn {
+    left: 10%;
+  }
+  .header_burger {
+    right: 24px;
+  }
+  .footer_first_column {
+    padding-left: 4%;
+  }
+  .footer_second_column {
+    margin-left: 0;
+    padding-left: 4%;
+  }
+  .footer_third_column {
+    margin-left: 0;
+    padding-left: 4%;
+  }
+  .header_menu {
+    width: 70%; 
+  }
+  .shangri_la_hotel {
+    bottom: 47%;
+    left: 20%;
+  }
+
+  .blue_sky_hotel,
+  .ramada_hotel {
+    bottom: 47%;
+    left: 24%;
+  }
+
+  .edelweiss_hotel,
+  .kempinski_hotel {
+    bottom: 40%;
+    left: 22%;
+  }
+
+  .mika_hotel {
+    bottom: 40%;
+    left: 30%;
+  }
+
+  .continental_hotel {
+    bottom: 40%;
+    left: 20%;
+  }
+
+  .khongor_guesthouse {
+    bottom: 40%;
+    left: 12%;
+  }
+
+  .mash_guesthouse {
+    bottom: 40%;
+    left: 20%;
+  }
+  .phone_page_display {
+    display: block;
+  }
+  .seasons_title_positioning {
+    top: 50%;
   }
 }
 
@@ -1416,17 +1757,11 @@
   .tour_right_column_icons_text {
     font-size: 40%;
   }
-  .about_chess_header{
-    font-size: 75%;
-  }
   .navbar_menu_buttons {
     font-size: 45%;
   }
   .navbar_menu_container{
     gap: 0.5rem;
-  }
-  .about_text {
-    font-size: 40%;
   }
   .tour_individual_text {
     font-size: 50%;
@@ -1434,11 +1769,73 @@
   .tours_and_events_margin_top {
     margin-top: 18%;
   }
-  .options_text {
-    font-size: 45%;
+  .switcher_btn {
+    left: 12%;
   }
-  .hotels_container_text{
-    font-size: 55%;
+  .header_burger {
+    right: 20px;
+  }
+  .header_menu {
+    width: 80%; 
+  }
+  .shangri_la_hotel {
+    bottom: 47%;
+    left: 10%;
+  }
+
+  .blue_sky_hotel,
+  .ramada_hotel {
+    bottom: 47%;
+    left: 16%;
+  }
+
+  .edelweiss_hotel,
+  .kempinski_hotel {
+    bottom: 40%;
+    left: 12%;
+  }
+
+  .mika_hotel {
+    bottom: 40%;
+    left: 24%;
+  }
+
+  .continental_hotel {
+    bottom: 40%;
+    left: 9%;
+  }
+
+  .khongor_guesthouse {
+    bottom: 40%;
+    left: 0%;
+  }
+
+  .mash_guesthouse {
+    bottom: 40%;
+    left: 9%;
+  }
+
+  .hotels_top_margin {
+    margin-top: 18%;
+  }
+
+  .about_mission_text {
+    font-size: 100%;
+  }
+  .tour_container_header_desc {
+    font-size: 90%;
+  }
+  .tour_container_desc {
+    font-size: 65%;
+  }
+  .tour_container_header_desc_mini {
+    font-size: 90%;
+  }
+  .tour_container_desc_mini {
+    font-size: 65%;
+  }
+  .seasons_title_positioning {
+    top: 50%;
   }
 }
 
