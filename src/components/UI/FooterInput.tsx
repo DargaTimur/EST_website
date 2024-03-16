@@ -25,8 +25,10 @@ export default function FooterInput({title, mail, messages, button, pl1, pl2, ..
     });
 
     if (!response.ok) {
-      // Обработка ошибок, если статус ответа не в диапазоне 200-299
+      alert('Somthing went wrong, please try again!')
       console.error(`Ошибка запроса: ${response.status}`);
+    } else {
+      alert('Message sent successfully!');
     }
 
     setName('');

@@ -15,7 +15,6 @@ const InputForm = ({...props}: any) => {
   const [message, setMessage] = useState('');
   const [agreeChecked, setAgreeChecked] = useState(false);
 
-
   const sendForm = async (e: FormEvent) => {
     console.log('Data', name, last, country, tour, number, email, message);
     e.preventDefault();
@@ -38,9 +37,9 @@ const InputForm = ({...props}: any) => {
 
     {/*Change it*/}
     if (response.ok) {
-      alert('Thanks'); {/*Please agree to the terms and conditions before submitting the form.*/}
+      alert('"Booking form submitted successfully!'); {/*Please agree to the terms and conditions before submitting the form.*/}
     } else {
-      alert("Successful")
+      alert("Something went wrong, please try again!")
     }
 
   setName('');
@@ -93,8 +92,8 @@ const InputForm = ({...props}: any) => {
         <div>
           <p style={{marginBottom: 0}}>{props.countryTitle}</p>
           <div>
-            <select className='Input'>
-              <option>{props.choice}</option>
+            <select value={country} className='Input' onChange={(e) => setCountry(e.target.value)}>
+              <option value="not selected">{props.choice}</option>
               <option value='South Korea'>{props.country1} </option>
               <option value='China'>{props.country2} </option>
               <option value='France'>{props.country3} </option>
@@ -112,8 +111,8 @@ const InputForm = ({...props}: any) => {
           </div>
           <p style={{marginBottom: 0}}>{props.tourTitle}</p>
           <div>
-            <select className='Input'>
-              <option>{props.choice}</option>
+            <select value={tour} className='Input' onChange={(e) => setTour(e.target.value)}>
+              <option value="not selected">{props.choice}</option>
               <option value='mask' disabled style={{color: 'rgba(0, 0, 0, 0.5)', fontWeight: "bolder", fontStyle: "italic"}}>{props.disabled_mask1} </option>
               <option value='city'>{props.choice1} </option>
               <option value='gobi'>{props.choice2} </option>
@@ -134,7 +133,14 @@ const InputForm = ({...props}: any) => {
             required
             value={number}
             onChange={(e) => {
-              setNumber(e.target.value)
+              const inputValue = parseInt(e.target.value);
+              if (!isNaN(inputValue)) { 
+                if (inputValue > 1) {
+                  setNumber(inputValue.toString()); 
+                } else {
+                  setNumber("1");
+                }
+              }
             }}
           />
         </div>
