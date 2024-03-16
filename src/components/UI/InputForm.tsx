@@ -37,7 +37,7 @@ const InputForm = ({...props}: any) => {
 
     {/*Change it*/}
     if (response.ok) {
-      alert('"Booking form submitted successfully!'); {/*Please agree to the terms and conditions before submitting the form.*/}
+      alert('Booking form submitted successfully!'); {/*Please agree to the terms and conditions before submitting the form.*/}
     } else {
       alert("Something went wrong, please try again!")
     }
