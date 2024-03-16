@@ -43,8 +43,6 @@ const Footer = () => {
                 </div>
                 <p>
                   <strong>{t('mail')} </strong>
-                  saibaitour1@gmail.com<br />
-                  <strong style={{opacity: "0"}}>{t('mail')} </strong>
                   info@saibaitour.mn<br />
                 </p>
               </div>

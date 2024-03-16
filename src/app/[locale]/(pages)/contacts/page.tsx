@@ -28,8 +28,8 @@ const Contacts = async ({params: {locale}}: {params: {locale: string}}) => {
                 height='auto'
                 className='contact_paddings'
               />
-              <a href={`tel:${+976-88109099}`} style={{textDecoration: "none"}}>+976-88109099<br /></a>
-              <a href={`tel:${+976-89750308}`} style={{textDecoration: "none"}}>+976-89750308</a>
+              <a href="tel:+97688109099" style={{textDecoration: "none"}}>+976-88109099<br /></a>
+              <a href="tel:+97689750308" style={{textDecoration: "none"}}>+976-89750308</a>
             </div>
             <div style={{padding: "2%"}}>
               <img
@@ -38,7 +38,7 @@ const Contacts = async ({params: {locale}}: {params: {locale: string}}) => {
                 height='auto'
                 className='contact_paddings'
               />
-              <a href={`mailto:${'saibaitour1@gmail.com'}`} style={{textDecoration: "none"}}>saibaitour1@gmail.com<br /></a>
+              <a href="mailto:info@saibaitour.mn" style={{textDecoration: "none"}}>info@saibaitour.mn<br /></a>
             </div>
             <div style={{padding: "2%"}}>
               <img
